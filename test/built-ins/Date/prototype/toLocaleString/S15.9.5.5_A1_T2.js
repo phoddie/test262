@@ -5,17 +5,8 @@
 info: The Date.prototype property "toLocaleString" has { DontEnum } attributes
 esid: sec-date.prototype.tolocalestring
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-
-assert.notSameValue(
-  delete Date.prototype.toLocaleString,
-  false,
-  'The value of delete Date.prototype.toLocaleString is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('toLocaleString'),
-  'The value of !Date.prototype.hasOwnProperty(\'toLocaleString\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "toLocaleString", {
+  configurable: true,
+});

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.setUTCDate, "name", {
+verifyBuiltinProperty(Date.prototype.setUTCDate, "name", {
   value: "setUTCDate",
   writable: false,
   enumerable: false,

@@ -7,14 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.setutcfullyear
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.setUTCFullYear.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.setUTCFullYear.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-for (var x in Date.prototype.setUTCFullYear) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setUTCFullYear, "length", {
+  enumerable: false,
+});

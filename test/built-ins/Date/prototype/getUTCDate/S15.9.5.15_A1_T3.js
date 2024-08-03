@@ -5,14 +5,8 @@
 info: The Date.prototype property "getUTCDate" has { DontEnum } attributes
 esid: sec-date.prototype.getutcdate
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.propertyIsEnumerable('getUTCDate'),
-  'The value of !Date.prototype.propertyIsEnumerable(\'getUTCDate\') is expected to be true'
-);
-
-for (var x in Date.prototype) {
-  assert.notSameValue(x, "getUTCDate", 'The value of x is not "getUTCDate"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getUTCDate", {
+  enumerable: false,
+});

@@ -7,17 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.tolocalestring
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-
-assert.sameValue(
-  delete Date.prototype.toLocaleString.length,
-  true,
-  'The value of `delete Date.prototype.toLocaleString.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.toLocaleString.hasOwnProperty('length'),
-  'The value of !Date.prototype.toLocaleString.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.toLocaleString, "length", {
+  configurable: true
+});

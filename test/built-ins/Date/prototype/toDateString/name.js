@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.toDateString, "name", {
+verifyBuiltinProperty(Date.prototype.toDateString, "name", {
   value: "toDateString",
   writable: false,
   enumerable: false,

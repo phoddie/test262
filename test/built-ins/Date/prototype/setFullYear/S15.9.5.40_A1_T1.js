@@ -5,19 +5,9 @@
 info: The Date.prototype property "setFullYear" has { DontEnum } attributes
 esid: sec-date.prototype.setfullyear
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.setFullYear;
-if (x === 1) {
-  Date.prototype.setFullYear = 2;
-} else {
-  Date.prototype.setFullYear = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.setFullYear,
-  x,
-  'The value of Date.prototype.setFullYear is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setFullYear", {
+  writable: true,
+});

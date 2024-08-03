@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date, "name", {
+verifyBuiltinProperty(Date, "name", {
   value: "Date",
   writable: false,
   enumerable: false,

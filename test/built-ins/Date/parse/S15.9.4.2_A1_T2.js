@@ -5,8 +5,9 @@
 info: The Date property "parse" has { DontEnum } attributes
 esid: sec-date.parse
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.notSameValue(delete Date.parse, false, 'The value of delete Date.parse is not false');
-assert(!Date.hasOwnProperty('parse'), 'The value of !Date.hasOwnProperty(\'parse\') is expected to be true');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date, "parse", {
+  configurable: true,
+ });
+ 

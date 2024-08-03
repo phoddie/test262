@@ -5,16 +5,8 @@
 info: The Date.prototype property "setMilliseconds" has { DontEnum } attributes
 esid: sec-date.prototype.setmilliseconds
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.notSameValue(
-  delete Date.prototype.setMilliseconds,
-  false,
-  'The value of delete Date.prototype.setMilliseconds is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('setMilliseconds'),
-  'The value of !Date.prototype.hasOwnProperty(\'setMilliseconds\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setMilliseconds", {
+  configurable: true,
+});

@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.gettimezoneoffset
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.getTimezoneOffset.length,
-  true,
-  'The value of `delete Date.prototype.getTimezoneOffset.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.getTimezoneOffset.hasOwnProperty('length'),
-  'The value of !Date.prototype.getTimezoneOffset.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getTimezoneOffset, "length", {
+  configurable: true
+});

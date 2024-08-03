@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.setUTCFullYear, "name", {
+verifyBuiltinProperty(Date.prototype.setUTCFullYear, "name", {
   value: "setUTCFullYear",
   writable: false,
   enumerable: false,

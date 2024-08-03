@@ -5,19 +5,9 @@
 info: The Date.prototype property "setUTCMinutes" has { DontEnum } attributes
 esid: sec-date.prototype.setutcminutes
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.setUTCMinutes;
-if (x === 1) {
-  Date.prototype.setUTCMinutes = 2;
-} else {
-  Date.prototype.setUTCMinutes = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.setUTCMinutes,
-  x,
-  'The value of Date.prototype.setUTCMinutes is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setUTCMinutes", {
+  writable: true,
+});

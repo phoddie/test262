@@ -5,14 +5,9 @@
 info: The Date.prototype property "toTimeString" has { DontEnum } attributes
 esid: sec-date.prototype.totimestring
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.propertyIsEnumerable('toTimeString'),
-  'The value of !Date.prototype.propertyIsEnumerable(\'toTimeString\') is expected to be true'
-);
 
-for (var x in Date.prototype) {
-  assert.notSameValue(x, "toTimeString", 'The value of x is not "toTimeString"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "toTimeString", {
+  enumerable: false,
+});

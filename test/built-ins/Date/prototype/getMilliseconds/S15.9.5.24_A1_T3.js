@@ -6,14 +6,8 @@ esid: sec-date.prototype.getmilliseconds
 info: The Date.prototype property "getMilliseconds" has { DontEnum } attributes
 es5id: 15.9.5.24_A1_T3
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.propertyIsEnumerable('getMilliseconds'),
-  'The value of !Date.prototype.propertyIsEnumerable(\'getMilliseconds\') is expected to be true'
-);
-
-for (var x in Date.prototype) {
-  assert.notSameValue(x, "getMilliseconds", 'The value of x is not "getMilliseconds"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getMilliseconds", {
+  enumerable: false,
+});

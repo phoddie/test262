@@ -11,6 +11,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(this, "Date");
-verifyWritable(this, "Date");
-verifyConfigurable(this, "Date");
+verifyProperty(globalThis, "Date", {
+  enumerable: false,
+  writable: true,
+  configurable: true
+});

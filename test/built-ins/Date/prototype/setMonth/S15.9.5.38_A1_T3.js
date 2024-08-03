@@ -5,14 +5,8 @@
 info: The Date.prototype property "setMonth" has { DontEnum } attributes
 esid: sec-date.prototype.setmonth
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.propertyIsEnumerable('setMonth'),
-  'The value of !Date.prototype.propertyIsEnumerable(\'setMonth\') is expected to be true'
-);
-
-for (var x in Date.prototype) {
-  assert.notSameValue(x, "setMonth", 'The value of x is not "setMonth"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setMonth", {
+  enumerable: false,
+});

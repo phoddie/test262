@@ -10,8 +10,7 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-var x = Date.parse.length;
-verifyNotWritable(Date.parse, "length", null, 1);
-assert.sameValue(Date.parse.length, x, 'The value of Date.parse.length is expected to equal the value of x');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.parse, "length", {
+    value: 1,
+    writable: false
+});

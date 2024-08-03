@@ -8,13 +8,9 @@ info: |
     attributes
 es5id: 15.9.4.3_A3_T2
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(delete Date.UTC.length, true, 'The value of `delete Date.UTC.length` is expected to be true');
-
-assert(
-  !Date.UTC.hasOwnProperty('length'),
-  'The value of !Date.UTC.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.UTC, "length", {
+  configurable: true,
+});

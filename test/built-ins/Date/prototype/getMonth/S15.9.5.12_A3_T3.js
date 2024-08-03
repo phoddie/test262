@@ -7,14 +7,8 @@ info: |
     DontEnum } attributes
 esid: sec-date.prototype.getmonth
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.getMonth.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.getMonth.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-for (var x in Date.prototype.getMonth) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getMonth, "length", {
+  enumerable: false,
+});

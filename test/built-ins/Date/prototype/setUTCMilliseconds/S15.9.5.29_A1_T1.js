@@ -7,19 +7,9 @@ info: |
     attributes
 esid: sec-date.prototype.setutcmilliseconds
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.setUTCMilliseconds;
-if (x === 1) {
-  Date.prototype.setUTCMilliseconds = 2;
-} else {
-  Date.prototype.setUTCMilliseconds = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.setUTCMilliseconds,
-  x,
-  'The value of Date.prototype.setUTCMilliseconds is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setUTCMilliseconds", {
+  writable: true,
+});

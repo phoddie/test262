@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.setutcfullyear
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.setUTCFullYear.length,
-  true,
-  'The value of `delete Date.prototype.setUTCFullYear.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.setUTCFullYear.hasOwnProperty('length'),
-  'The value of !Date.prototype.setUTCFullYear.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setUTCFullYear, "length", {
+  configurable: true
+});

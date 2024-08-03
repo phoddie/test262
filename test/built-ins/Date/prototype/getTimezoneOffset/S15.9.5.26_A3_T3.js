@@ -7,14 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.gettimezoneoffset
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.getTimezoneOffset.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.getTimezoneOffset.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-for (var x in Date.prototype.getTimezoneOffset) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getTimezoneOffset, "length", {
+  enumerable: false,
+});

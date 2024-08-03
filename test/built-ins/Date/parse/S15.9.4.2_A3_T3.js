@@ -7,14 +7,9 @@ info: |
     attributes
 esid: sec-date.parse
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.parse.propertyIsEnumerable('length'),
-  'The value of !Date.parse.propertyIsEnumerable(\'length\') is expected to be true'
-);
+verifyBuiltinProperty(Date.parse, "length", {
+  enumerable: false
+});
 
-for (var x in Date.parse) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.

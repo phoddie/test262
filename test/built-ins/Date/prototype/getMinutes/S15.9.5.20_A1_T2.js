@@ -6,16 +6,8 @@ esid: sec-date.prototype.getminutes
 info: The Date.prototype property "getMinutes" has { DontEnum } attributes
 es5id: 15.9.5.20_A1_T2
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.notSameValue(
-  delete Date.prototype.getMinutes,
-  false,
-  'The value of delete Date.prototype.getMinutes is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('getMinutes'),
-  'The value of !Date.prototype.hasOwnProperty(\'getMinutes\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getMinutes", {
+  configurable: true,
+});

@@ -5,19 +5,9 @@
 info: The Date.prototype property "getMonth" has { DontEnum } attributes
 esid: sec-date.prototype.getmonth
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.getMonth;
-if (x === 1) {
-  Date.prototype.getMonth = 2;
-} else {
-  Date.prototype.getMonth = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.getMonth,
-  x,
-  'The value of Date.prototype.getMonth is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getMonth", {
+  writable: true,
+});

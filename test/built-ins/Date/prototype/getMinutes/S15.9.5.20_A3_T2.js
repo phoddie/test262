@@ -8,16 +8,8 @@ info: |
     DontDelete, DontEnum } attributes
 es5id: 15.9.5.20_A3_T2
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.getMinutes.length,
-  true,
-  'The value of `delete Date.prototype.getMinutes.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.getMinutes.hasOwnProperty('length'),
-  'The value of !Date.prototype.getMinutes.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getMinutes, "length", {
+  configurable: true
+});

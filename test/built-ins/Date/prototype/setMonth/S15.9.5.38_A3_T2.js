@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.setmonth
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.setMonth.length,
-  true,
-  'The value of `delete Date.prototype.setMonth.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.setMonth.hasOwnProperty('length'),
-  'The value of !Date.prototype.setMonth.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setMonth, "length", {
+  configurable: true
+});

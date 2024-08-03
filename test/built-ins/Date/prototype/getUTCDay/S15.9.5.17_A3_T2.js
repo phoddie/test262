@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.getutcdaty
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.getUTCDay.length,
-  true,
-  'The value of `delete Date.prototype.getUTCDay.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.getUTCDay.hasOwnProperty('length'),
-  'The value of !Date.prototype.getUTCDay.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getUTCDay, "length", {
+  configurable: true
+});

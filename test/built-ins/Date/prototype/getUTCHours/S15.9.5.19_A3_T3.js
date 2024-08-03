@@ -7,14 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.getutchours
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.getUTCHours.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.getUTCHours.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-for (var x in Date.prototype.getUTCHours) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getUTCHours, "length", {
+  enumerable: false,
+});

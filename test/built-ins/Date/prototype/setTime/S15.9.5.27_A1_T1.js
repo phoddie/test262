@@ -5,19 +5,9 @@
 info: The Date.prototype property "setTime" has { DontEnum } attributes
 esid: sec-date.prototype.settime
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.setTime;
-if (x === 1) {
-  Date.prototype.setTime = 2;
-} else {
-  Date.prototype.setTime = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.setTime,
-  x,
-  'The value of Date.prototype.setTime is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "setTime", {
+  writable: true,
+});

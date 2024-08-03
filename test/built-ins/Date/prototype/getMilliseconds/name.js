@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.getMilliseconds, "name", {
+verifyBuiltinProperty(Date.prototype.getMilliseconds, "name", {
   value: "getMilliseconds",
   writable: false,
   enumerable: false,

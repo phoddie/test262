@@ -7,17 +7,8 @@ info: |
     attributes
 esid: sec-date.prototype.tolocaletimestring
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-
-assert.notSameValue(
-  delete Date.prototype.toLocaleTimeString,
-  false,
-  'The value of delete Date.prototype.toLocaleTimeString is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('toLocaleTimeString'),
-  'The value of !Date.prototype.hasOwnProperty(\'toLocaleTimeString\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "toLocaleTimeString", {
+  configurable: true,
+});

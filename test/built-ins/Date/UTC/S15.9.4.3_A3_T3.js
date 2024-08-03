@@ -8,14 +8,9 @@ info: |
     attributes
 es5id: 15.9.4.3_A3_T3
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.UTC.propertyIsEnumerable('length'),
-  'The value of !Date.UTC.propertyIsEnumerable(\'length\') is expected to be true'
-);
 
-for (var x in Date.UTC) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.UTC, "length", {
+  enumerable: false,
+});

@@ -5,19 +5,9 @@
 info: The Date.prototype property "constructor" has { DontEnum } attributes
 esid: sec-date.prototype.constructor
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.constructor;
-if (x === 1) {
-  Date.prototype.constructor = 2;
-} else {
-  Date.prototype.constructor = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.constructor,
-  x,
-  'The value of Date.prototype.constructor is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "constructor", {
+  writable: true
+});

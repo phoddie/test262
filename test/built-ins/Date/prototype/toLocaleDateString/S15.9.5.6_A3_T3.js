@@ -7,14 +7,9 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.tolocaledatestring
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.toLocaleDateString.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.toLocaleDateString.propertyIsEnumerable(\'length\') is expected to be true'
-);
 
-for (var x in Date.prototype.toLocaleDateString) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.toLocaleDateString, "length", {
+  enumerable: false,
+});

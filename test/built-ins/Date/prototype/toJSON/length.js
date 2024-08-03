@@ -15,7 +15,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.toJSON, 'length', {
+verifyBuiltinProperty(Date.prototype.toJSON, 'length', {
   value: 1,
   writable: false,
   enumerable: false,

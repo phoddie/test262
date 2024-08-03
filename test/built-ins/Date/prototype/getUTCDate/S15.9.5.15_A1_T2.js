@@ -5,16 +5,8 @@
 info: The Date.prototype property "getUTCDate" has { DontEnum } attributes
 esid: sec-date.prototype.getutcdate
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.notSameValue(
-  delete Date.prototype.getUTCDate,
-  false,
-  'The value of delete Date.prototype.getUTCDate is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('getUTCDate'),
-  'The value of !Date.prototype.hasOwnProperty(\'getUTCDate\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getUTCDate", {
+  configurable: true,
+});

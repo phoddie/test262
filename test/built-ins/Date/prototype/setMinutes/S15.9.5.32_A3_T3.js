@@ -7,14 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.setminutes
 description: Checking DontEnum attribute
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !Date.prototype.setMinutes.propertyIsEnumerable('length'),
-  'The value of !Date.prototype.setMinutes.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-for (var x in Date.prototype.setMinutes) {
-  assert.notSameValue(x, "length", 'The value of x is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setMinutes, "length", {
+  enumerable: false,
+});

@@ -7,16 +7,8 @@ info: |
     attributes
 esid: sec-date.prototype.getutcmilliseconds
 description: Checking absence of DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.notSameValue(
-  delete Date.prototype.getUTCMilliseconds,
-  false,
-  'The value of delete Date.prototype.getUTCMilliseconds is not false'
-);
-
-assert(
-  !Date.prototype.hasOwnProperty('getUTCMilliseconds'),
-  'The value of !Date.prototype.hasOwnProperty(\'getUTCMilliseconds\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getUTCMilliseconds", {
+  configurable: true,
+});

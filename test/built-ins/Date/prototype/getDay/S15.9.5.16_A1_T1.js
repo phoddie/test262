@@ -6,19 +6,8 @@ esid: sec-date.prototype.getday
 info: The Date.prototype property "getDay" has { DontEnum } attributes
 es5id: 15.9.5.16_A1_T1
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
-
-var x = Date.prototype.getDay;
-if (x === 1) {
-  Date.prototype.getDay = 2;
-} else {
-  Date.prototype.getDay = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.getDay,
-  x,
-  'The value of Date.prototype.getDay is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getDate", {
+  writable: true
+});

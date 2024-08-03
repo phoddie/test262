@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.setseconds
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.setSeconds.length,
-  true,
-  'The value of `delete Date.prototype.setSeconds.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.setSeconds.hasOwnProperty('length'),
-  'The value of !Date.prototype.setSeconds.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setSeconds, "length", {
+  configurable: true
+});

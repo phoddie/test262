@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.toLocaleTimeString, "name", {
+verifyBuiltinProperty(Date.prototype.toLocaleTimeString, "name", {
   value: "toLocaleTimeString",
   writable: false,
   enumerable: false,

@@ -7,16 +7,8 @@ info: |
     DontDelete, DontEnum } attributes
 esid: sec-date.prototype.totimestring
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.toTimeString.length,
-  true,
-  'The value of `delete Date.prototype.toTimeString.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.toTimeString.hasOwnProperty('length'),
-  'The value of !Date.prototype.toTimeString.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.toTimeString, "length", {
+  configurable: true
+});

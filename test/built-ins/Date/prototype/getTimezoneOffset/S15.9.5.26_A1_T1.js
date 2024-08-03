@@ -7,19 +7,9 @@ info: |
     attributes
 esid: sec-date.prototype.gettimezoneoffset
 description: Checking absence of ReadOnly attribute
+includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.getTimezoneOffset;
-if (x === 1) {
-  Date.prototype.getTimezoneOffset = 2;
-} else {
-  Date.prototype.getTimezoneOffset = 1;
-}
-
-assert.notSameValue(
-  Date.prototype.getTimezoneOffset,
-  x,
-  'The value of Date.prototype.getTimezoneOffset is expected to not equal the value of `x`'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype, "getTimezoneOffset", {
+  writable: true,
+});

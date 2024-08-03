@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.getTimezoneOffset, "name", {
+verifyBuiltinProperty(Date.prototype.getTimezoneOffset, "name", {
   value: "getTimezoneOffset",
   writable: false,
   enumerable: false,

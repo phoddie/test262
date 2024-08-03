@@ -8,16 +8,8 @@ info: |
     DontDelete, DontEnum } attributes
 es5id: 15.9.5.10_A3_T2
 description: Checking DontDelete attribute
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  delete Date.prototype.getFullYear.length,
-  true,
-  'The value of `delete Date.prototype.getFullYear.length` is expected to be true'
-);
-
-assert(
-  !Date.prototype.getFullYear.hasOwnProperty('length'),
-  'The value of !Date.prototype.getFullYear.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getFullYear, "length", {
+  configurable: true,
+});
