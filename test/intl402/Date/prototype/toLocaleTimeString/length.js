@@ -24,7 +24,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype.toLocaleTimeString, "length", {
+verifyBuiltinProperty(Date.prototype.toLocaleTimeString, "length", {
   value: 0,
   writable: false,
   enumerable: false,

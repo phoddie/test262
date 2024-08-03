@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Date.prototype, "getYear", {
+verifyBuiltinProperty(Date.prototype, "getYear", {
   enumerable: false,
   writable: true,
   configurable: true
