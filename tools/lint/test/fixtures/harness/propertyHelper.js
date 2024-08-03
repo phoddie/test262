@@ -227,3 +227,22 @@ function verifyNotConfigurable(obj, name) {
     throw new Test262Error("Expected obj[" + String(name) + "] NOT to be configurable, but was.");
   }
 }
+
+function verifyBuiltinProperty(obj, name, desc, options) {
+  assert(
+    arguments.length > 2,
+    'verifyProperty should receive at least 3 arguments: obj, name, and descriptor'
+  );
+
+  if (desc && (true === desc.writable) || (true === desc.configurable)) {
+    const LOCKED_DOWN = !Object.getOwnPropertyDescriptor(Object, "getOwnPropertyDescriptor").writable;    // very imperfect
+
+    if (LOCKED_DOWN) {
+      desc = {...desc};
+      if (desc.writable) desc.writable = false;
+      if (desc.configurable) desc.configurable = false;
+    }
+  }
+
+  return verifyProperty(obj, name, desc, options);
+}
