@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Promise.prototype.then, "name", {
+verifyBuiltinProperty(Promise.prototype.then, "name", {
   value: "then",
   writable: false,
   enumerable: false,

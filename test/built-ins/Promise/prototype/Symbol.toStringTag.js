@@ -16,6 +16,9 @@ features: [Symbol.toStringTag]
 
 assert.sameValue(Promise.prototype[Symbol.toStringTag], 'Promise');
 
-verifyNotEnumerable(Promise.prototype, Symbol.toStringTag);
-verifyNotWritable(Promise.prototype, Symbol.toStringTag);
-verifyConfigurable(Promise.prototype, Symbol.toStringTag);
+verifyBuiltinProperty(Promise.prototype, Symbol.toStringTag, {
+    configurable: true,
+    writable: false,
+    enumerable: false,
+  });
+  

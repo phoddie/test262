@@ -12,6 +12,9 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Promise.prototype.then, 'function');
 
-verifyNotEnumerable(Promise.prototype, 'then');
-verifyWritable(Promise.prototype, 'then');
-verifyConfigurable(Promise.prototype, 'then');
+verifyBuiltinProperty(Promise.prototype, 'then', {
+    configurable: true,
+    writable: true,
+    enumerable: false,
+  });
+  

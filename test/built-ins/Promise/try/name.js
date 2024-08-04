@@ -6,7 +6,7 @@ includes: [propertyHelper.js]
 features: [promise-try]
 ---*/
 
-verifyProperty(Promise.try, "name", {
+verifyBuiltinProperty(Promise.try, "name", {
   value: "try",
   writable: false,
   enumerable: false,

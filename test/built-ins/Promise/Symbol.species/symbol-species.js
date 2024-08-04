@@ -13,6 +13,11 @@ features: [Symbol.species]
 
 assert.sameValue(Promise[Symbol.species], Promise, "Promise[Symbol.species] is Promise");
 
-verifyNotWritable(Promise, Symbol.species, Symbol.species);
-verifyNotEnumerable(Promise, Symbol.species);
-verifyConfigurable(Promise, Symbol.species);
+//@@ verifyNotWritable(Promise, Symbol.species, Symbol.species);	
+
+verifyBuiltinProperty(Promise, Symbol.species, {
+	writable: false,
+	enumerable: false,
+	configurable: true
+ });
+ 

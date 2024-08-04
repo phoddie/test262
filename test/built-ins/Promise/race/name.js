@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Promise.race, "name", {
+verifyBuiltinProperty(Promise.race, "name", {
   value: "race",
   writable: false,
   enumerable: false,

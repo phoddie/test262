@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [Promise.prototype.finally]
 ---*/
 
-verifyProperty(Promise.prototype.finally, "name", {
+verifyBuiltinProperty(Promise.prototype.finally, "name", {
   value: "finally",
   writable: false,
   enumerable: false,

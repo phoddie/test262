@@ -8,7 +8,7 @@ features: [promise-try]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Promise, 'try', {
+verifyBuiltinProperty(Promise, 'try', {
   value: Promise.try,
   writable: true,
   enumerable: false,

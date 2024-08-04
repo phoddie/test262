@@ -9,6 +9,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Promise, 'prototype');
-verifyNotWritable(Promise, 'prototype');
-verifyNotConfigurable(Promise, 'prototype');
+verifyBuiltinProperty(Promise, 'prototype', {
+  configurable: false,
+  writable: false,
+  enumerable: false,
+});

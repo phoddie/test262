@@ -14,6 +14,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Promise, 'reject');
-verifyWritable(Promise, 'reject');
-verifyConfigurable(Promise, 'reject');
+verifyBuiltinProperty(Promise, 'reject', {
+    configurable: true,
+    writable: true,
+    enumerable: false,
+  });
+  

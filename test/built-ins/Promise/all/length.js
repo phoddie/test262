@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Promise.all, "length", {
+verifyBuiltinProperty(Promise.all, "length", {
   value: 1,
   writable: false,
   enumerable: false,

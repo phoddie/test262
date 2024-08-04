@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Promise.any]
 ---*/
 
-verifyProperty(Promise, 'any', {
+verifyBuiltinProperty(Promise, 'any', {
   configurable: true,
   writable: true,
   enumerable: false,
