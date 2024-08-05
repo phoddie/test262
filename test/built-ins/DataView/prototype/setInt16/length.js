@@ -23,7 +23,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(DataView.prototype.setInt16, "length", {
+verifyBuiltinProperty(DataView.prototype.setInt16, "length", {
   value: 2,
   writable: false,
   enumerable: false,

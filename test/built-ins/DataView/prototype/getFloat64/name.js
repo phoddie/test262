@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(DataView.prototype.getFloat64, "name", {
+verifyBuiltinProperty(DataView.prototype.getFloat64, "name", {
   value: "getFloat64",
   writable: false,
   enumerable: false,

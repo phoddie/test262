@@ -25,7 +25,7 @@ includes: [propertyHelper.js]
 features: [DataView]
 ---*/
 
-verifyProperty(DataView, "length", {
+verifyBuiltinProperty(DataView, "length", {
     value: 1,
     enumerable: false,
     writable: false,

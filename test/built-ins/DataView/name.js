@@ -8,7 +8,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(DataView, "name", {
+verifyBuiltinProperty(DataView, "name", {
   value: "DataView",
   writable: false,
   enumerable: false,

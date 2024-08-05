@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [DataView, ArrayBuffer, BigInt]
 ---*/
 
-verifyProperty(DataView.prototype.getBigInt64, "length", {
+verifyBuiltinProperty(DataView.prototype.getBigInt64, "length", {
   value: 1,
   writable: false,
   enumerable: false,

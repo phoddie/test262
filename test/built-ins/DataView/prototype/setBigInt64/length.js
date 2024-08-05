@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [DataView, ArrayBuffer, BigInt]
 ---*/
 
-verifyProperty(DataView.prototype.setBigInt64, "length", {
+verifyBuiltinProperty(DataView.prototype.setBigInt64, "length", {
   value: 2,
   writable: false,
   enumerable: false,

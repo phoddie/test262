@@ -19,5 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(DataView.prototype, "buffer");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyNotEnumerable(DataView.prototype, "buffer");
-verifyConfigurable(DataView.prototype, "buffer");
+verifyBuiltinProperty(DataView.prototype, "buffer", {
+  enumerable: false,
+  configurable: true
+});
