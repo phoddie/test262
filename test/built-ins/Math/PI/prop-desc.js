@@ -11,6 +11,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, 'PI');
-verifyNotWritable(Math, 'PI');
-verifyNotConfigurable(Math, 'PI');
+verifyBuiltinProperty(Math, "PI", {
+	writable: false,
+	enumerable: false,
+	configurable: false
+ });
+ 

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.log10, "name", {
+verifyBuiltinProperty(Math.log10, "name", {
   value: "log10",
   writable: false,
   enumerable: false,

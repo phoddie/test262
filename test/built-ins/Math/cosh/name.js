@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.cosh, "name", {
+verifyBuiltinProperty(Math.cosh, "name", {
   value: "cosh",
   writable: false,
   enumerable: false,

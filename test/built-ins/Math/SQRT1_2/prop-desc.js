@@ -11,6 +11,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, 'SQRT1_2');
-verifyNotWritable(Math, 'SQRT1_2');
-verifyNotConfigurable(Math, 'SQRT1_2');
+verifyBuiltinProperty(Math, "SQRT1_2", {
+	writable: false,
+	enumerable: false,
+	configurable: false
+ });
+ 

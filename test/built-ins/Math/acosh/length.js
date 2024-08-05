@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.acosh, "length", {
+verifyBuiltinProperty(Math.acosh, "length", {
   value: 1,
   writable: false,
   enumerable: false,

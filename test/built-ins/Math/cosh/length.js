@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.cosh, "length", {
+verifyBuiltinProperty(Math.cosh, "length", {
   value: 1,
   writable: false,
   enumerable: false,

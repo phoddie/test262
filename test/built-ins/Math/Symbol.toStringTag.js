@@ -14,8 +14,10 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(Math[Symbol.toStringTag], 'Math');
-
-verifyNotEnumerable(Math, Symbol.toStringTag);
-verifyNotWritable(Math, Symbol.toStringTag);
-verifyConfigurable(Math, Symbol.toStringTag);
+verifyBuiltinProperty(Math, Symbol.toStringTag, {
+    value: "Math",
+    configurable: true,
+    writable: false,
+    enumerable: false,
+  });
+  

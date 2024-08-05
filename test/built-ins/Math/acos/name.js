@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.acos, "name", {
+verifyBuiltinProperty(Math.acos, "name", {
   value: "acos",
   writable: false,
   enumerable: false,

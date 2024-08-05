@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.atanh, "length", {
+verifyBuiltinProperty(Math.atanh, "length", {
   value: 1,
   writable: false,
   enumerable: false,

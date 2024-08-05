@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.cos, "length", {
+verifyBuiltinProperty(Math.cos, "length", {
   value: 1,
   writable: false,
   enumerable: false,

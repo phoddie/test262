@@ -12,6 +12,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, "log");
-verifyWritable(Math, "log");
-verifyConfigurable(Math, "log");
+verifyBuiltinProperty(Math, "log", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

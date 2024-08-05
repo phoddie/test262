@@ -12,6 +12,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, "max");
-verifyWritable(Math, "max");
-verifyConfigurable(Math, "max");
+verifyBuiltinProperty(Math, "max", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

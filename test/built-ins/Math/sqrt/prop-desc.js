@@ -12,6 +12,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, "sqrt");
-verifyWritable(Math, "sqrt");
-verifyConfigurable(Math, "sqrt");
+verifyBuiltinProperty(Math, "sqrt", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

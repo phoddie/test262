@@ -12,6 +12,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, "min");
-verifyWritable(Math, "min");
-verifyConfigurable(Math, "min");
+verifyBuiltinProperty(Math, "min", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

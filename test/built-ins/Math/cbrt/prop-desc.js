@@ -7,6 +7,9 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.9
 ---*/
 
-verifyNotEnumerable(Math, "cbrt");
-verifyWritable(Math, "cbrt");
-verifyConfigurable(Math, "cbrt");
+verifyBuiltinProperty(Math, "cbrt", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

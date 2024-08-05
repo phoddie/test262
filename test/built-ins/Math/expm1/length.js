@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.expm1, "length", {
+verifyBuiltinProperty(Math.expm1, "length", {
   value: 1,
   writable: false,
   enumerable: false,

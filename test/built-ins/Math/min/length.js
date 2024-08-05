@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.min, "length", {
+verifyBuiltinProperty(Math.min, "length", {
   value: 2,
   writable: false,
   enumerable: false,

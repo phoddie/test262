@@ -12,6 +12,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, "floor");
-verifyWritable(Math, "floor");
-verifyConfigurable(Math, "floor");
+verifyBuiltinProperty(Math, "floor", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 

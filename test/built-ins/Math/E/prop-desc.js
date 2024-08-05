@@ -11,6 +11,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Math, 'E');
-verifyNotWritable(Math, 'E');
-verifyNotConfigurable(Math, 'E');
+verifyBuiltinProperty(Math, "E", {
+	writable: false,
+	enumerable: false,
+	configurable: false
+ });
+ 

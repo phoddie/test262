@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.sign, "length", {
+verifyBuiltinProperty(Math.sign, "length", {
   value: 1,
   writable: false,
   enumerable: false,

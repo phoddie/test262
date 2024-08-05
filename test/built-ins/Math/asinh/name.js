@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.asinh, "name", {
+verifyBuiltinProperty(Math.asinh, "name", {
   value: "asinh",
   writable: false,
   enumerable: false,

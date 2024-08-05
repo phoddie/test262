@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.imul, "name", {
+verifyBuiltinProperty(Math.imul, "name", {
   value: "imul",
   writable: false,
   enumerable: false,

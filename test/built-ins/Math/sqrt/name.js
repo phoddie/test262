@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.sqrt, "name", {
+verifyBuiltinProperty(Math.sqrt, "name", {
   value: "sqrt",
   writable: false,
   enumerable: false,

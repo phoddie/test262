@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Math.trunc, "name", {
+verifyBuiltinProperty(Math.trunc, "name", {
   value: "trunc",
   writable: false,
   enumerable: false,

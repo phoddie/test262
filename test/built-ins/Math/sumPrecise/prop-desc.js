@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 features: [Math.sumPrecise]
 ---*/
 
-verifyProperty(Math, "sumPrecise", {
+verifyBuiltinProperty(Math, "sumPrecise", {
   writable: true,
   enumerable: false,
   configurable: true

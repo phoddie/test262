@@ -7,6 +7,9 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.5
 ---*/
 
-verifyNotEnumerable(Math, "asinh");
-verifyWritable(Math, "asinh");
-verifyConfigurable(Math, "asinh");
+verifyBuiltinProperty(Math, "asinh", {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 
