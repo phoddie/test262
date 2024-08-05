@@ -14,9 +14,8 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(Promise.prototype[Symbol.toStringTag], 'Promise');
-
 verifyBuiltinProperty(Promise.prototype, Symbol.toStringTag, {
+    value: "Promise",
     configurable: true,
     writable: false,
     enumerable: false,
