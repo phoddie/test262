@@ -23,7 +23,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.prototype.some, "length", {
+verifyBuiltinProperty(TypedArray.prototype.some, "length", {
   value: 1,
   writable: false,
   enumerable: false,

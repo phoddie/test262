@@ -20,7 +20,7 @@ includes: [testTypedArray.js, propertyHelper.js]
 features: [TypedArray, change-array-by-copy]
 ---*/
 
-verifyProperty(TypedArray.prototype.with, "name", {
+verifyBuiltinProperty(TypedArray.prototype.with, "name", {
   value: "with",
   writable: false,
   enumerable: false,

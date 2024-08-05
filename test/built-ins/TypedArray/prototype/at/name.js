@@ -23,7 +23,7 @@ assert.sameValue(
   'The value of TypedArray.prototype.at.name is "at"'
 );
 
-verifyProperty(TypedArray.prototype.at, 'name', {
+verifyBuiltinProperty(TypedArray.prototype.at, 'name', {
   enumerable: false,
   writable: false,
   configurable: true

@@ -18,7 +18,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray, "name", {
+verifyBuiltinProperty(TypedArray, "name", {
   value: "TypedArray",
   writable: false,
   enumerable: false,

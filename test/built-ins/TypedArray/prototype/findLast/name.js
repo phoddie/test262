@@ -22,7 +22,7 @@ features: [TypedArray, array-find-from-last]
 
 assert.sameValue(TypedArray.prototype.findLast.name, "findLast");
 
-verifyProperty(TypedArray.prototype.findLast, "name", {
+verifyBuiltinProperty(TypedArray.prototype.findLast, "name", {
   enumerable: false,
   writable: false,
   configurable: true

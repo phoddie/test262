@@ -22,7 +22,7 @@ features: [BigInt, Symbol.toStringTag]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray.prototype, Symbol.toStringTag);
 
-verifyProperty(desc.get, "name", {
+verifyBuiltinProperty(desc.get, "name", {
   value: "get [Symbol.toStringTag]",
   writable: false,
   enumerable: false,

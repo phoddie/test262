@@ -20,5 +20,7 @@ var desc = Object.getOwnPropertyDescriptor(TypedArrayPrototype, "byteOffset");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyNotEnumerable(TypedArrayPrototype, "byteOffset");
-verifyConfigurable(TypedArrayPrototype, "byteOffset");
+verifyBuiltinProperty(TypedArray.prototype, "byteOffset", {
+  enumerable: false,
+  configurable: true
+});

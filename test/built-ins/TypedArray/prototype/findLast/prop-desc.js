@@ -12,10 +12,8 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray, array-find-from-last]
 ---*/
 
-var TypedArrayPrototype = TypedArray.prototype;
-
-verifyProperty(TypedArray.prototype, "findLast", {
-  enumerable: false,
+verifyBuiltinProperty(TypedArray.prototype, "findLast", {
   writable: true,
+  enumerable: false,
   configurable: true
 });

@@ -12,8 +12,8 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-var TypedArrayPrototype = TypedArray.prototype;
-
-verifyNotEnumerable(TypedArrayPrototype, 'reverse');
-verifyWritable(TypedArrayPrototype, 'reverse');
-verifyConfigurable(TypedArrayPrototype, 'reverse');
+verifyBuiltinProperty(TypedArray.prototype, "reverse", {
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

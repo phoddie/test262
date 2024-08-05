@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.prototype.subarray, "name", {
+verifyBuiltinProperty(TypedArray.prototype.subarray, "name", {
   value: "subarray",
   writable: false,
   enumerable: false,

@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.of, "name", {
+verifyBuiltinProperty(TypedArray.of, "name", {
   value: "of",
   writable: false,
   enumerable: false,

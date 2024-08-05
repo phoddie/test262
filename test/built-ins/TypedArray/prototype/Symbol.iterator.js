@@ -15,8 +15,9 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [Symbol.iterator]
 ---*/
 
-assert.sameValue(TypedArray.prototype[Symbol.iterator], TypedArray.prototype.values);
-
-verifyNotEnumerable(TypedArray.prototype, Symbol.iterator);
-verifyWritable(TypedArray.prototype, Symbol.iterator);
-verifyConfigurable(TypedArray.prototype, Symbol.iterator);
+verifyBuiltinProperty(TypedArray.prototype, Symbol.iterator, {
+  value: TypedArray.prototype.values,
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

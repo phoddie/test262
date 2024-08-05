@@ -22,7 +22,7 @@ features: [TypedArray]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray.prototype, "buffer");
 
-verifyProperty(desc.get, "name", {
+verifyBuiltinProperty(desc.get, "name", {
   value: "get buffer",
   writable: false,
   enumerable: false,

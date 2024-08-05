@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.prototype.reverse, "name", {
+verifyBuiltinProperty(TypedArray.prototype.reverse, "name", {
   value: "reverse",
   writable: false,
   enumerable: false,

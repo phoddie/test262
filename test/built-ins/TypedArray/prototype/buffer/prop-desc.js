@@ -20,5 +20,7 @@ var desc = Object.getOwnPropertyDescriptor(TypedArrayPrototype, "buffer");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyNotEnumerable(TypedArrayPrototype, "buffer");
-verifyConfigurable(TypedArrayPrototype, "buffer");
+verifyBuiltinProperty(TypedArray.prototype, "buffer", {
+  enumerable: false,
+  configurable: true
+});

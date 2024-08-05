@@ -12,8 +12,8 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-var TypedArrayPrototype = TypedArray.prototype;
-
-verifyNotEnumerable(TypedArrayPrototype, 'map');
-verifyWritable(TypedArrayPrototype, 'map');
-verifyConfigurable(TypedArrayPrototype, 'map');
+verifyBuiltinProperty(TypedArray.prototype, "map", {
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.prototype.lastIndexOf, "name", {
+verifyBuiltinProperty(TypedArray.prototype.lastIndexOf, "name", {
   value: "lastIndexOf",
   writable: false,
   enumerable: false,

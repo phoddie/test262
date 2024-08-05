@@ -24,7 +24,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(TypedArray.from, "length", {
+verifyBuiltinProperty(TypedArray.from, "length", {
   value: 1,
   writable: false,
   enumerable: false,
