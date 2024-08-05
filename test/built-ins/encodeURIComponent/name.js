@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(encodeURIComponent, "name", {
+verifyBuiltinProperty(encodeURIComponent, "name", {
   value: "encodeURIComponent",
   writable: false,
   enumerable: false,

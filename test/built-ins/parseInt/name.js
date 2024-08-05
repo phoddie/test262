@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(parseInt, "name", {
+verifyBuiltinProperty(parseInt, "name", {
   value: "parseInt",
   writable: false,
   enumerable: false,

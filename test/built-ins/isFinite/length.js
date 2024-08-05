@@ -8,7 +8,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(isFinite, "length", {
+verifyBuiltinProperty(isFinite, "length", {
   value: 1,
   writable: false,
   enumerable: false,
