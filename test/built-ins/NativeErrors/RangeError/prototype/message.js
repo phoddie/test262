@@ -16,8 +16,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(RangeError.prototype.message, "");
-
-verifyNotEnumerable(RangeError.prototype, "message");
-verifyWritable(RangeError.prototype, "message");
-verifyConfigurable(RangeError.prototype, "message");
+verifyBuiltinProperty(RangeError.prototype, 'message', {
+  value: "",
+  enumerable: false,
+  writable: true,
+  configurable: true
+});

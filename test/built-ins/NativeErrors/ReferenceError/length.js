@@ -25,7 +25,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(ReferenceError, "length", {
+verifyBuiltinProperty(ReferenceError, "length", {
   value: 1,
   writable: false,
   enumerable: false,

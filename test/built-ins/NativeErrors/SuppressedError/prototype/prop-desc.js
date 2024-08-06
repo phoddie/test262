@@ -17,7 +17,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof SuppressedError.prototype, 'object');
 
-verifyProperty(SuppressedError, 'prototype', {
+verifyBuiltinProperty(SuppressedError, 'prototype', {
   enumerable: false,
   writable: false,
   configurable: false

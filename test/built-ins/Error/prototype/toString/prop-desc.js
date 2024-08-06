@@ -6,7 +6,7 @@ description: Property descriptor of Error.prototype.toString
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Error.prototype, 'toString', {
+verifyBuiltinProperty(Error.prototype, 'toString', {
   enumerable: false,
   writable: true,
   configurable: true,

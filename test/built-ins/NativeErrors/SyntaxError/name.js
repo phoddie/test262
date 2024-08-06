@@ -17,7 +17,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(SyntaxError, "name", {
+verifyBuiltinProperty(SyntaxError, "name", {
   value: "SyntaxError",
   writable: false,
   enumerable: false,

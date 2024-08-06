@@ -17,7 +17,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(TypeError, "name", {
+verifyBuiltinProperty(TypeError, "name", {
   value: "TypeError",
   writable: false,
   enumerable: false,

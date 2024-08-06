@@ -25,7 +25,7 @@ includes: [propertyHelper.js]
 features: [explicit-resource-management]
 ---*/
 
-verifyProperty(SuppressedError, 'name', {
+verifyBuiltinProperty(SuppressedError, 'name', {
   value: 'SuppressedError',
   writable: false,
   enumerable: false,

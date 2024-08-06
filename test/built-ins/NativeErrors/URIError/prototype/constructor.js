@@ -16,8 +16,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(URIError.prototype.constructor, URIError);
-
-verifyNotEnumerable(URIError.prototype, "constructor");
-verifyWritable(URIError.prototype, "constructor");
-verifyConfigurable(URIError.prototype, "constructor");
+verifyBuiltinProperty(URIError.prototype, 'constructor', {
+  value: URIError,
+  enumerable: false,
+  writable: true,
+  configurable: true
+});

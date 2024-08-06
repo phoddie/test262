@@ -16,8 +16,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(URIError.prototype.message, "");
-
-verifyNotEnumerable(URIError.prototype, "message");
-verifyWritable(URIError.prototype, "message");
-verifyConfigurable(URIError.prototype, "message");
+verifyBuiltinProperty(URIError.prototype, 'message', {
+  value: "",
+  enumerable: false,
+  writable: true,
+  configurable: true
+});
