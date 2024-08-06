@@ -11,6 +11,9 @@ features: [Symbol.hasInstance]
 ---*/
 
 assert.sameValue(typeof Symbol.hasInstance, 'symbol');
-verifyNotEnumerable(Symbol, 'hasInstance');
-verifyNotWritable(Symbol, 'hasInstance');
-verifyNotConfigurable(Symbol, 'hasInstance');
+
+verifyBuiltinProperty(Symbol, 'hasInstance', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});

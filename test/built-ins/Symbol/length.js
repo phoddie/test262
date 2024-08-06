@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 features: [Symbol]
 ---*/
 
-verifyProperty(Symbol, "length", {
+verifyBuiltinProperty(Symbol, "length", {
   value: 0,
   writable: false,
   enumerable: false,

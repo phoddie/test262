@@ -12,6 +12,9 @@ features: [Symbol.toPrimitive]
 ---*/
 
 assert.sameValue(typeof Symbol.toPrimitive, 'symbol');
-verifyNotEnumerable(Symbol, 'toPrimitive');
-verifyNotWritable(Symbol, 'toPrimitive');
-verifyNotConfigurable(Symbol, 'toPrimitive');
+
+verifyBuiltinProperty(Symbol, 'toPrimitive', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});

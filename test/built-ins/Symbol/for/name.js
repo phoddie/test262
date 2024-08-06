@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Symbol]
 ---*/
 
-verifyProperty(Symbol.for, "name", {
+verifyBuiltinProperty(Symbol.for, "name", {
   value: "for",
   writable: false,
   enumerable: false,

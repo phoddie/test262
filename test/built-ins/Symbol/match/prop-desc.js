@@ -12,6 +12,9 @@ features: [Symbol.match]
 ---*/
 
 assert.sameValue(typeof Symbol.match, 'symbol');
-verifyNotEnumerable(Symbol, 'match');
-verifyNotWritable(Symbol, 'match');
-verifyNotConfigurable(Symbol, 'match');
+
+verifyBuiltinProperty(Symbol, 'match', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});

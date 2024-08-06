@@ -12,6 +12,9 @@ features: [Symbol.unscopables]
 ---*/
 
 assert.sameValue(typeof Symbol.unscopables, 'symbol');
-verifyNotEnumerable(Symbol, 'unscopables');
-verifyNotWritable(Symbol, 'unscopables');
-verifyNotConfigurable(Symbol, 'unscopables');
+
+verifyBuiltinProperty(Symbol, 'unscopables', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});

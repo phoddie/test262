@@ -13,6 +13,8 @@ features: [Symbol]
 
 assert.sameValue(typeof Symbol.keyFor, 'function');
 
-verifyNotEnumerable(Symbol, 'keyFor');
-verifyWritable(Symbol, 'keyFor');
-verifyConfigurable(Symbol, 'keyFor');
+verifyBuiltinProperty(Symbol, 'keyFor', {
+    writable: true,
+    enumerable: false,
+    configurable: true
+});

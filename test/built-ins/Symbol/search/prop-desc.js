@@ -12,6 +12,9 @@ features: [Symbol.search]
 ---*/
 
 assert.sameValue(typeof Symbol.search, 'symbol');
-verifyNotEnumerable(Symbol, 'search');
-verifyNotWritable(Symbol, 'search');
-verifyNotConfigurable(Symbol, 'search');
+
+verifyBuiltinProperty(Symbol, 'search', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});
