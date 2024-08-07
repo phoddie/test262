@@ -25,5 +25,7 @@ assert.sameValue(
   'typeof descriptor.set is undefined'
 );
 
-verifyNotEnumerable(Map.prototype, 'size');
-verifyConfigurable(Map.prototype, 'size');
+verifyBuiltinProperty(Map.prototype, 'size', {
+  enumerable: false,
+  configurable: true
+});

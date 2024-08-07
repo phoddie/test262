@@ -14,8 +14,9 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(Map.prototype[Symbol.toStringTag], 'Map');
-
-verifyNotEnumerable(Map.prototype, Symbol.toStringTag);
-verifyNotWritable(Map.prototype, Symbol.toStringTag);
-verifyConfigurable(Map.prototype, Symbol.toStringTag);
+verifyBuiltinProperty(Map.prototype, Symbol.toStringTag, {
+  value: "Map",
+  writable: false,
+  enumerable: false,
+  configurable: true
+});

@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(Map.prototype, 'size');
 
-verifyProperty(descriptor.get, "length", {
+verifyBuiltinProperty(descriptor.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

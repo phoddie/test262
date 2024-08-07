@@ -13,7 +13,10 @@ includes: [propertyHelper.js]
 features: [Symbol.iterator]
 ---*/
 
-assert.sameValue(Map.prototype[Symbol.iterator], Map.prototype.entries);
-verifyNotEnumerable(Map.prototype, Symbol.iterator);
-verifyWritable(Map.prototype, Symbol.iterator);
-verifyConfigurable(Map.prototype, Symbol.iterator);
+verifyBuiltinProperty(Map.prototype, Symbol.iterator, {
+  value: Map.prototype.entries,
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });
+ 
