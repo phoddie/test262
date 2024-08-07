@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakMap.prototype.set, "name", {
+verifyBuiltinProperty(WeakMap.prototype.set, "name", {
   value: "set",
   writable: false,
   enumerable: false,

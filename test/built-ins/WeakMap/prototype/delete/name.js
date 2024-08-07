@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakMap.prototype.delete, "name", {
+verifyBuiltinProperty(WeakMap.prototype.delete, "name", {
   value: "delete",
   writable: false,
   enumerable: false,
