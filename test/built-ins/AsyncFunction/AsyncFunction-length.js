@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 ---*/
 
 var AsyncFunction = async function foo() {}.constructor;
-verifyProperty(AsyncFunction, "length", {
+verifyBuiltinProperty(AsyncFunction, "length", {
   value: 1,
   writable: false,
   enumerable: false,

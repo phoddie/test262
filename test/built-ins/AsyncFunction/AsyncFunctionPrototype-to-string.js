@@ -12,7 +12,10 @@ features: [Symbol.toStringTag]
 
 var AsyncFunction = async function foo() {}.constructor;
 var AFP = AsyncFunction.prototype;
-assert.sameValue(AFP[Symbol.toStringTag], "AsyncFunction", "toStringTag value");
-verifyNotWritable(AFP, Symbol.toStringTag);
-verifyNotEnumerable(AFP, Symbol.toStringTag);
-verifyConfigurable(AFP, Symbol.toStringTag);
+
+verifyBuiltinProperty(AFP, Symbol.toStringTag, {
+  value: "AsyncFunction",
+  writable: false,
+  enumerable: false,
+  configurable: true
+});
