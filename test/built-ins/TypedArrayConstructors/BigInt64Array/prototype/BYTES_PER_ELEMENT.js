@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyProperty(BigInt64Array.prototype, "BYTES_PER_ELEMENT", {
+verifyBuiltinProperty(BigInt64Array.prototype, "BYTES_PER_ELEMENT", {
   value: 8,
   writable: false,
   enumerable: false,

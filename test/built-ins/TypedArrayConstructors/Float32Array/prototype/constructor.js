@@ -17,8 +17,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Float32Array.prototype.constructor, Float32Array);
-
-verifyNotEnumerable(Float32Array.prototype, "constructor");
-verifyWritable(Float32Array.prototype, "constructor");
-verifyConfigurable(Float32Array.prototype, "constructor");
+verifyBuiltinProperty(Float32Array.prototype, "constructor", {
+  value: Float32Array,
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

@@ -14,8 +14,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Uint8ClampedArray.prototype.BYTES_PER_ELEMENT, 1);
-
-verifyNotEnumerable(Uint8ClampedArray.prototype, "BYTES_PER_ELEMENT");
-verifyNotWritable(Uint8ClampedArray.prototype, "BYTES_PER_ELEMENT");
-verifyNotConfigurable(Uint8ClampedArray.prototype, "BYTES_PER_ELEMENT");
+verifyBuiltinProperty(Uint8ClampedArray.prototype, "BYTES_PER_ELEMENT", {
+  value: 1,
+  writable: false,
+  enumerable: false,
+  configurable: false
+});

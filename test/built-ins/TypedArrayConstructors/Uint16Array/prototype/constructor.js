@@ -17,8 +17,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Uint16Array.prototype.constructor, Uint16Array);
-
-verifyNotEnumerable(Uint16Array.prototype, "constructor");
-verifyWritable(Uint16Array.prototype, "constructor");
-verifyConfigurable(Uint16Array.prototype, "constructor");
+verifyBuiltinProperty(Uint16Array.prototype, "constructor", {
+  value: Uint16Array,
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

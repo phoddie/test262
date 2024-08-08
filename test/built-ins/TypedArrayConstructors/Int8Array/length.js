@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(Int8Array, "length", {
+verifyBuiltinProperty(Int8Array, "length", {
   value: 3,
   writable: false,
   enumerable: false,

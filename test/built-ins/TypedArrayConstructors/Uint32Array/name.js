@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(Uint32Array, "name", {
+verifyBuiltinProperty(Uint32Array, "name", {
   value: "Uint32Array",
   writable: false,
   enumerable: false,

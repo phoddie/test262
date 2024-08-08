@@ -13,8 +13,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Uint32Array.prototype, Object.getPrototypeOf(new Uint32Array(0)));
-
-verifyNotEnumerable(Uint32Array, "prototype");
-verifyNotWritable(Uint32Array, "prototype");
-verifyNotConfigurable(Uint32Array, "prototype");
+verifyBuiltinProperty(Uint32Array, "prototype", {
+  value: Object.getPrototypeOf(new Uint32Array(0)),
+  writable: false,
+  enumerable: false,
+  configurable: false
+});

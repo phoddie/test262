@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyProperty(Uint8ClampedArray, "name", {
+verifyBuiltinProperty(Uint8ClampedArray, "name", {
   value: "Uint8ClampedArray",
   writable: false,
   enumerable: false,

@@ -14,8 +14,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Float64Array.BYTES_PER_ELEMENT, 8);
-
-verifyNotEnumerable(Float64Array, "BYTES_PER_ELEMENT");
-verifyNotWritable(Float64Array, "BYTES_PER_ELEMENT");
-verifyNotConfigurable(Float64Array, "BYTES_PER_ELEMENT");
+verifyBuiltinProperty(Float64Array, "BYTES_PER_ELEMENT", {
+  value: 8,
+  writable: false,
+  enumerable: false,
+  configurable: false
+});

@@ -17,8 +17,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Int8Array.prototype.constructor, Int8Array);
-
-verifyNotEnumerable(Int8Array.prototype, "constructor");
-verifyWritable(Int8Array.prototype, "constructor");
-verifyConfigurable(Int8Array.prototype, "constructor");
+verifyBuiltinProperty(Int8Array.prototype, "constructor", {
+  value: Int8Array,
+  writable: true,
+  enumerable: false,
+  configurable: true
+});

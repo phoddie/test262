@@ -13,8 +13,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Uint8ClampedArray.prototype, Object.getPrototypeOf(new Uint8ClampedArray(0)));
-
-verifyNotEnumerable(Uint8ClampedArray, "prototype");
-verifyNotWritable(Uint8ClampedArray, "prototype");
-verifyNotConfigurable(Uint8ClampedArray, "prototype");
+verifyBuiltinProperty(Uint8ClampedArray, "prototype", {
+  value: Object.getPrototypeOf(new Uint8ClampedArray(0)),
+  writable: false,
+  enumerable: false,
+  configurable: false
+});

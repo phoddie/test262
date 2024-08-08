@@ -28,7 +28,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyProperty(BigInt64Array, "name", {
+verifyBuiltinProperty(BigInt64Array, "name", {
   value: "BigInt64Array",
   writable: false,
   enumerable: false,

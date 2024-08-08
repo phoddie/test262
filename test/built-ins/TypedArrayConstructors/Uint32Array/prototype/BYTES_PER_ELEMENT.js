@@ -14,8 +14,9 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-assert.sameValue(Uint32Array.prototype.BYTES_PER_ELEMENT, 4);
-
-verifyNotEnumerable(Uint32Array.prototype, "BYTES_PER_ELEMENT");
-verifyNotWritable(Uint32Array.prototype, "BYTES_PER_ELEMENT");
-verifyNotConfigurable(Uint32Array.prototype, "BYTES_PER_ELEMENT");
+verifyBuiltinProperty(Uint32Array.prototype, "BYTES_PER_ELEMENT", {
+  value: 4,
+  writable: false,
+  enumerable: false,
+  configurable: false
+});
