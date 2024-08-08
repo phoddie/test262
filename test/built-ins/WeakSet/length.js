@@ -7,7 +7,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakSet, "length", {
+verifyBuiltinProperty(WeakSet, "length", {
   value: 0,
   writable: false,
   enumerable: false,

@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakSet.prototype.has, "length", {
+verifyBuiltinProperty(WeakSet.prototype.has, "length", {
   value: 1,
   writable: false,
   enumerable: false,

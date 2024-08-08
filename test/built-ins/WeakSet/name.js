@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakSet, "name", {
+verifyBuiltinProperty(WeakSet, "name", {
   value: "WeakSet",
   writable: false,
   enumerable: false,

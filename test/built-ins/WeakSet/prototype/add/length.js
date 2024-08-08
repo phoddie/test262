@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(WeakSet.prototype.add, "length", {
+verifyBuiltinProperty(WeakSet.prototype.add, "length", {
   value: 1,
   writable: false,
   enumerable: false,

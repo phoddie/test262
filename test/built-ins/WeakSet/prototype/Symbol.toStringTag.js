@@ -14,8 +14,10 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(WeakSet.prototype[Symbol.toStringTag], 'WeakSet');
-
-verifyNotEnumerable(WeakSet.prototype, Symbol.toStringTag);
-verifyNotWritable(WeakSet.prototype, Symbol.toStringTag);
-verifyConfigurable(WeakSet.prototype, Symbol.toStringTag);
+verifyBuiltinProperty(WeakSet.prototype, Symbol.toStringTag, {
+    value: 'WeakSet',
+    writable: false,
+    enumerable: false,
+    configurable: true
+  });
+  
