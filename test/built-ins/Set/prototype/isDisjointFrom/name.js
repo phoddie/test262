@@ -10,7 +10,7 @@ features: [set-methods]
 ---*/
 assert.sameValue(typeof Set.prototype.isDisjointFrom, "function");
 
-verifyProperty(Set.prototype.isDisjointFrom, "name", {
+verifyBuiltinProperty(Set.prototype.isDisjointFrom, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

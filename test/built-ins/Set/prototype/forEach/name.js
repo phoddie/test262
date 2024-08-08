@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Set.prototype.forEach, "name", {
+verifyBuiltinProperty(Set.prototype.forEach, "name", {
   value: "forEach",
   writable: false,
   enumerable: false,

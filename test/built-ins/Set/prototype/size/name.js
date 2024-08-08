@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 var descriptor = Object.getOwnPropertyDescriptor(Set.prototype, "size");
 
 
-verifyProperty(descriptor.get, "name", {
+verifyBuiltinProperty(descriptor.get, "name", {
   value: "get size",
   writable: false,
   enumerable: false,

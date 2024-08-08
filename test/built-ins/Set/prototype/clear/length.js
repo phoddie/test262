@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Set.prototype.clear, "length", {
+verifyBuiltinProperty(Set.prototype.clear, "length", {
   value: 0,
   writable: false,
   enumerable: false,

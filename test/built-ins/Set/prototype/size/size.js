@@ -23,5 +23,7 @@ assert.sameValue(
   "`typeof descriptor.set` is `\"undefined\"`"
 );
 
-verifyNotEnumerable(Set.prototype, "size");
-verifyConfigurable(Set.prototype, "size");
+verifyBuiltinProperty(Set.prototype, 'size', {
+  enumerable: false,
+  configurable: true
+});

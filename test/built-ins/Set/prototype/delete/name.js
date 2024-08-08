@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Set.prototype.delete, "name", {
+verifyBuiltinProperty(Set.prototype.delete, "name", {
   value: "delete",
   writable: false,
   enumerable: false,

@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.symmetricDifference` is `'function'`"
 );
 
-verifyProperty(Set.prototype, "symmetricDifference", {
+verifyBuiltinProperty(Set.prototype, "symmetricDifference", {
   enumerable: false,
   writable: true,
   configurable: true,

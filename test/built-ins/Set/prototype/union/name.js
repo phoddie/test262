@@ -10,7 +10,7 @@ features: [set-methods]
 ---*/
 assert.sameValue(typeof Set.prototype.union, "function");
 
-verifyProperty(Set.prototype.union, "name", {
+verifyBuiltinProperty(Set.prototype.union, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

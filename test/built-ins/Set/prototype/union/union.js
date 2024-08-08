@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.union` is `'function'`"
 );
 
-verifyProperty(Set.prototype, "union", {
+verifyBuiltinProperty(Set.prototype, "union", {
   enumerable: false,
   writable: true,
   configurable: true,

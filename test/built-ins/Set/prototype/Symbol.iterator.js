@@ -14,7 +14,10 @@ includes: [propertyHelper.js]
 features: [Symbol.iterator]
 ---*/
 
-assert.sameValue(Set.prototype[Symbol.iterator], Set.prototype.values);
-verifyNotEnumerable(Set.prototype, Symbol.iterator);
-verifyWritable(Set.prototype, Symbol.iterator);
-verifyConfigurable(Set.prototype, Symbol.iterator);
+verifyBuiltinProperty(Set.prototype, Symbol.iterator, {
+    value: Set.prototype.values,
+    writable: true,
+    enumerable: false,
+    configurable: true
+  });
+  

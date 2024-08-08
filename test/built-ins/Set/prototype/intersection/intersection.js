@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.intersection` is `'function'`"
 );
 
-verifyProperty(Set.prototype, "intersection", {
+verifyBuiltinProperty(Set.prototype, "intersection", {
   enumerable: false,
   writable: true,
   configurable: true,

@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.isSupersetOf` is `'function'`"
 );
 
-verifyProperty(Set.prototype, "isSupersetOf", {
+verifyBuiltinProperty(Set.prototype, "isSupersetOf", {
   enumerable: false,
   writable: true,
   configurable: true,
