@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag, Reflect]
 ---*/
 
-verifyProperty(Reflect, Symbol.toStringTag, {
+verifyBuiltinProperty(Reflect, Symbol.toStringTag, {
   value: 'Reflect',
   enumerable: false,
   writable: false,

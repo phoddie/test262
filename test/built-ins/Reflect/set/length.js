@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 features: [Reflect, Reflect.set]
 ---*/
 
-verifyProperty(Reflect.set, "length", {
+verifyBuiltinProperty(Reflect.set, "length", {
   value: 3,
   writable: false,
   enumerable: false,

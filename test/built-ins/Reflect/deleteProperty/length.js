@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Reflect]
 ---*/
 
-verifyProperty(Reflect.deleteProperty, "length", {
+verifyBuiltinProperty(Reflect.deleteProperty, "length", {
   value: 2,
   writable: false,
   enumerable: false,

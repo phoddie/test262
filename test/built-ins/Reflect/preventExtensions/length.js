@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Reflect]
 ---*/
 
-verifyProperty(Reflect.preventExtensions, "length", {
+verifyBuiltinProperty(Reflect.preventExtensions, "length", {
   value: 1,
   writable: false,
   enumerable: false,

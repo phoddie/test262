@@ -24,9 +24,11 @@ Reflect.defineProperty(o, 'p1', {
 
 assert.sameValue(o.p1, 42);
 
-verifyWritable(o, 'p1');
-verifyNotConfigurable(o, 'p1');
-verifyEnumerable(o, 'p1');
+verifyProperty(o, 'p1', {
+  writable: true,
+  configurable: false,
+  enumerable: true
+});
 
 var f1 = function() {};
 var f2 = function() {};

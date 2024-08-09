@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Reflect, Reflect.setPrototypeOf]
 ---*/
 
-verifyProperty(Reflect.setPrototypeOf, "length", {
+verifyBuiltinProperty(Reflect.setPrototypeOf, "length", {
   value: 2,
   writable: false,
   enumerable: false,
