@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [Proxy]
 ---*/
 
-verifyProperty(Proxy, "name", {
+verifyBuiltinProperty(Proxy, "name", {
   value: "Proxy",
   writable: false,
   enumerable: false,

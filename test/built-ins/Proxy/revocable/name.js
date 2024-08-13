@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Proxy]
 ---*/
 
-verifyProperty(Proxy.revocable, "name", {
+verifyBuiltinProperty(Proxy.revocable, "name", {
   value: "revocable",
   writable: false,
   enumerable: false,
