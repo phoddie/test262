@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer, resizable-arraybuffer]
 ---*/
 
-verifyProperty(SharedArrayBuffer.prototype, 'grow', {
+verifyBuiltinProperty(SharedArrayBuffer.prototype, 'grow', {
   enumerable: false,
   writable: true,
   configurable: true

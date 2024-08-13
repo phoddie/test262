@@ -24,7 +24,7 @@ features: [SharedArrayBuffer, resizable-arraybuffer]
 
 var desc = Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, 'maxByteLength');
 
-verifyProperty(desc.get, 'length', {
+verifyBuiltinProperty(desc.get, 'length', {
   value: 0,
   enumerable: false,
   writable: false,

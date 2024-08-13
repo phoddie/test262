@@ -25,7 +25,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer]
 ---*/
 
-verifyProperty(SharedArrayBuffer, "length", {
+verifyBuiltinProperty(SharedArrayBuffer, "length", {
   value: 1,
   enumerable: false,
   writable: false,

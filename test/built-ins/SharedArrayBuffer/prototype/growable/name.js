@@ -16,7 +16,7 @@ features: [SharedArrayBuffer, resizable-arraybuffer]
 
 var desc = Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, 'growable');
 
-verifyProperty(desc.get, 'name', {
+verifyBuiltinProperty(desc.get, 'name', {
   value: 'get growable',
   enumerable: false,
   writable: false,

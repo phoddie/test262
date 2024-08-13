@@ -14,8 +14,10 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer, Symbol.toStringTag]
 ---*/
 
-assert.sameValue(SharedArrayBuffer.prototype[Symbol.toStringTag], 'SharedArrayBuffer');
-
-verifyNotEnumerable(SharedArrayBuffer.prototype, Symbol.toStringTag);
-verifyNotWritable(SharedArrayBuffer.prototype, Symbol.toStringTag);
-verifyConfigurable(SharedArrayBuffer.prototype, Symbol.toStringTag);
+verifyBuiltinProperty(SharedArrayBuffer.prototype, Symbol.toStringTag, {
+    value: 'SharedArrayBuffer',
+    writable: false,
+    enumerable: false,
+    configurable: true
+  });
+  

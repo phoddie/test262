@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, 'maxByte
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyProperty(SharedArrayBuffer.prototype, 'maxByteLength', {
+verifyBuiltinProperty(SharedArrayBuffer.prototype, 'maxByteLength', {
   enumerable: false,
   configurable: true
 });

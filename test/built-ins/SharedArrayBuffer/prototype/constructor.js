@@ -9,8 +9,9 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer]
 ---*/
 
-assert.sameValue(SharedArrayBuffer.prototype.constructor, SharedArrayBuffer);
-
-verifyNotEnumerable(SharedArrayBuffer.prototype, "constructor");
-verifyWritable(SharedArrayBuffer.prototype, "constructor");
-verifyConfigurable(SharedArrayBuffer.prototype, "constructor");
+verifyBuiltinProperty(SharedArrayBuffer.prototype, 'constructor', {
+  value: SharedArrayBuffer,
+  writable: true,
+  enumerable: false,
+  configurable: true
+});
