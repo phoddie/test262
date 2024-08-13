@@ -22,7 +22,7 @@ var actual = WeakRef.prototype.hasOwnProperty('constructor');
 
 // If implemented, it should conform to the spec text
 if (actual) {
-  verifyProperty(WeakRef.prototype, 'constructor', {
+  verifyBuiltinProperty(WeakRef.prototype, 'constructor', {
     value: WeakRef,
     writable: true,
     enumerable: false,

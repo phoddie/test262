@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 features: [WeakRef, Symbol, Symbol.toStringTag]
 ---*/
 
-verifyProperty(WeakRef.prototype, Symbol.toStringTag, {
+verifyBuiltinProperty(WeakRef.prototype, Symbol.toStringTag, {
   value: 'WeakRef',
   writable: false,
   enumerable: false,
