@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry]
 ---*/
 
-verifyProperty(FinalizationRegistry.prototype.unregister, 'length', {
+verifyBuiltinProperty(FinalizationRegistry.prototype.unregister, 'length', {
   value: 1,
   writable: false,
   enumerable: false,

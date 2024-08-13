@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry]
 ---*/
 
-verifyProperty(FinalizationRegistry.prototype.unregister, 'name', {
+verifyBuiltinProperty(FinalizationRegistry.prototype.unregister, 'name', {
   value: 'unregister',
   writable: false,
   enumerable: false,

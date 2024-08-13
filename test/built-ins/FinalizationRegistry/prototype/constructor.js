@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry]
 ---*/
 
-verifyProperty(FinalizationRegistry.prototype, 'constructor', {
+verifyBuiltinProperty(FinalizationRegistry.prototype, 'constructor', {
   value: FinalizationRegistry,
   writable: true,
   enumerable: false,

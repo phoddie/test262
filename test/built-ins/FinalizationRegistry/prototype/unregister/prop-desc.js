@@ -17,7 +17,7 @@ features: [FinalizationRegistry]
 
 assert.sameValue(typeof FinalizationRegistry.prototype.unregister, 'function');
 
-verifyProperty(FinalizationRegistry.prototype, 'unregister', {
+verifyBuiltinProperty(FinalizationRegistry.prototype, 'unregister', {
   enumerable: false,
   writable: true,
   configurable: true
