@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 
 var SetIteratorProto = Object.getPrototypeOf(new Set().values());
 
-verifyProperty(SetIteratorProto.next, "name", {
+verifyBuiltinProperty(SetIteratorProto.next, "name", {
   value: "next",
   writable: false,
   enumerable: false,

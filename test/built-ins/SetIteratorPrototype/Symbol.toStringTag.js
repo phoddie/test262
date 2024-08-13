@@ -18,12 +18,9 @@ features:
 
 var SetIteratorProto = Object.getPrototypeOf(new Set()[Symbol.iterator]());
 
-assert.sameValue(
-  'Set Iterator',
-  SetIteratorProto[Symbol.toStringTag],
-  '`Set Iterator` is `SetIteratorProto[Symbol.toStringTag]`'
-);
-
-verifyNotEnumerable(SetIteratorProto, Symbol.toStringTag);
-verifyNotWritable(SetIteratorProto, Symbol.toStringTag);
-verifyConfigurable(SetIteratorProto, Symbol.toStringTag);
+verifyBuiltinProperty(SetIteratorProto, Symbol.toStringTag, {
+  value: "Set Iterator",
+  writable: false,
+  enumerable: false,
+  configurable: true
+});
