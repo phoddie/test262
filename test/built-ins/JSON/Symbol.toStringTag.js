@@ -14,8 +14,9 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(JSON[Symbol.toStringTag], 'JSON');
-
-verifyNotEnumerable(JSON, Symbol.toStringTag);
-verifyNotWritable(JSON, Symbol.toStringTag);
-verifyConfigurable(JSON, Symbol.toStringTag);
+verifyBuiltinProperty(JSON, Symbol.toStringTag, {
+  value: 'JSON',
+  writable: false,
+  enumerable: false,
+  configurable: true,
+});
