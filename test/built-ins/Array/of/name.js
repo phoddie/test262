@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.of, "name", {
+verifyBuiltinProperty(Array.of, "name", {
   value: "of",
   writable: false,
   enumerable: false,

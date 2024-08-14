@@ -29,52 +29,72 @@ var unscopables = Array.prototype[Symbol.unscopables];
 
 assert.sameValue(Object.getPrototypeOf(unscopables), null);
 
-assert.sameValue(unscopables.copyWithin, true, '`copyWithin` property value');
-verifyEnumerable(unscopables, 'copyWithin');
-verifyWritable(unscopables, 'copyWithin');
-verifyConfigurable(unscopables, 'copyWithin');
+verifyBuiltinProperty(unscopables, "copyWithin", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.entries, true, '`entries` property value');
-verifyEnumerable(unscopables, 'entries');
-verifyWritable(unscopables, 'entries');
-verifyConfigurable(unscopables, 'entries');
+verifyBuiltinProperty(unscopables, "entries", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.fill, true, '`fill` property value');
-verifyEnumerable(unscopables, 'fill');
-verifyWritable(unscopables, 'fill');
-verifyConfigurable(unscopables, 'fill');
+verifyBuiltinProperty(unscopables, "fill", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.find, true, '`find` property value');
-verifyEnumerable(unscopables, 'find');
-verifyWritable(unscopables, 'find');
-verifyConfigurable(unscopables, 'find');
+verifyBuiltinProperty(unscopables, "find", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.findIndex, true, '`findIndex` property value');
-verifyEnumerable(unscopables, 'findIndex');
-verifyWritable(unscopables, 'findIndex');
-verifyConfigurable(unscopables, 'findIndex');
+verifyBuiltinProperty(unscopables, "findIndex", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.flat, true, '`flat` property value');
-verifyEnumerable(unscopables, 'flat');
-verifyWritable(unscopables, 'flat');
-verifyConfigurable(unscopables, 'flat');
+verifyBuiltinProperty(unscopables, "flat", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.flatMap, true, '`flatMap` property value');
-verifyEnumerable(unscopables, 'flatMap');
-verifyWritable(unscopables, 'flatMap');
-verifyConfigurable(unscopables, 'flatMap');
+verifyBuiltinProperty(unscopables, "flatMap", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.includes, true, '`includes` property value');
-verifyEnumerable(unscopables, 'includes');
-verifyWritable(unscopables, 'includes');
-verifyConfigurable(unscopables, 'includes');
+verifyBuiltinProperty(unscopables, "includes", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.keys, true, '`keys` property value');
-verifyEnumerable(unscopables, 'keys');
-verifyWritable(unscopables, 'keys');
-verifyConfigurable(unscopables, 'keys');
+verifyBuiltinProperty(unscopables, "keys", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
 
-assert.sameValue(unscopables.values, true, '`values` property value');
-verifyEnumerable(unscopables, 'values');
-verifyWritable(unscopables, 'values');
-verifyConfigurable(unscopables, 'values');
+verifyBuiltinProperty(unscopables, "values", {
+    value: true,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});

@@ -15,7 +15,7 @@ assert.sameValue(
   '`typeof Array.prototype.flat` is `function`'
 );
 
-verifyProperty(Array.prototype, 'flat', {
+verifyBuiltinProperty(Array.prototype, 'flat', {
   enumerable: false,
   writable: true,
   configurable: true,

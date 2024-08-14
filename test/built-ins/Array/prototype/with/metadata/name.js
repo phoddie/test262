@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyProperty(Array.prototype.with, "name", {
+verifyBuiltinProperty(Array.prototype.with, "name", {
   value: "with",
   writable: false,
   enumerable: false,

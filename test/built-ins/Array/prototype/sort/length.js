@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.sort, "length", {
+verifyBuiltinProperty(Array.prototype.sort, "length", {
   value: 1,
   writable: false,
   enumerable: false,

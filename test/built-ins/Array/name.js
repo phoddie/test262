@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array, "name", {
+verifyBuiltinProperty(Array, "name", {
   value: "Array",
   writable: false,
   enumerable: false,

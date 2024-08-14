@@ -16,9 +16,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Array.prototype.length, 0);
-
-verifyNotEnumerable(Array.prototype, 'length');
-// specify the value so it avoids a RangeError while setting the length
-verifyWritable(Array.prototype, 'length', false, 42);
-verifyNotConfigurable(Array.prototype, 'length');
+verifyBuiltinProperty(Array.prototype, "length", {
+  value: 0,
+  writable: true,
+  enumerable: false,
+  configurable: false
+});

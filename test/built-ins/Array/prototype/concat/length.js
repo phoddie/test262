@@ -25,7 +25,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.concat, "length", {
+verifyBuiltinProperty(Array.prototype.concat, "length", {
   value: 1,
   writable: false,
   enumerable: false,

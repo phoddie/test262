@@ -23,7 +23,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.forEach, "length", {
+verifyBuiltinProperty(Array.prototype.forEach, "length", {
   value: 1,
   writable: false,
   enumerable: false,

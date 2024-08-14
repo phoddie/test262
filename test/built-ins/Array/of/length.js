@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.of, "length", {
+verifyBuiltinProperty(Array.of, "length", {
   value: 0,
   writable: false,
   enumerable: false,

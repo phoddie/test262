@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.filter, "name", {
+verifyBuiltinProperty(Array.prototype.filter, "name", {
   value: "filter",
   writable: false,
   enumerable: false,

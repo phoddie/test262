@@ -14,7 +14,7 @@ assert.sameValue(
   'The value of `Array.prototype.flatMap.name` is `"flatMap"`'
 );
 
-verifyProperty(Array.prototype.flatMap, 'name', {
+verifyBuiltinProperty(Array.prototype.flatMap, 'name', {
   enumerable: false,
   writable: false,
   configurable: true,

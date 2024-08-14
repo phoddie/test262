@@ -14,7 +14,7 @@ features: [Array.fromAsync]
 
 assert.sameValue(typeof Array.fromAsync, "function", "Array.fromAsync is callable");
 
-verifyProperty(Array, 'fromAsync', {
+verifyBuiltinProperty(Array, 'fromAsync', {
   writable: true,
   enumerable: false,
   configurable: true,

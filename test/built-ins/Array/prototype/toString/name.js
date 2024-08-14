@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.toString, "name", {
+verifyBuiltinProperty(Array.prototype.toString, "name", {
   value: "toString",
   writable: false,
   enumerable: false,

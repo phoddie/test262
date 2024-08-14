@@ -18,7 +18,7 @@ includes: [propertyHelper.js]
 features: [Array.fromAsync]
 ---*/
 
-verifyProperty(Array.fromAsync, "name", {
+verifyBuiltinProperty(Array.fromAsync, "name", {
   value: "fromAsync",
   writable: false,
   enumerable: false,

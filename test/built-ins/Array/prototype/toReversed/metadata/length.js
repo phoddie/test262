@@ -22,7 +22,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyProperty(Array.prototype.toReversed, "length", {
+verifyBuiltinProperty(Array.prototype.toReversed, "length", {
   value: 0,
   writable: false,
   enumerable: false,

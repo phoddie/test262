@@ -23,7 +23,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.filter, "length", {
+verifyBuiltinProperty(Array.prototype.filter, "length", {
   value: 1,
   writable: false,
   enumerable: false,

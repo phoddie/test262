@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.reduce, "name", {
+verifyBuiltinProperty(Array.prototype.reduce, "name", {
   value: "reduce",
   writable: false,
   enumerable: false,

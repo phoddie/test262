@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.pop, "name", {
+verifyBuiltinProperty(Array.prototype.pop, "name", {
   value: "pop",
   writable: false,
   enumerable: false,

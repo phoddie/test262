@@ -15,7 +15,7 @@ assert.sameValue(
   'The value of `Array.prototype.flat.name` is `"flat"`'
 );
 
-verifyProperty(Array.prototype.flat, 'name', {
+verifyBuiltinProperty(Array.prototype.flat, 'name', {
   enumerable: false,
   writable: false,
   configurable: true,

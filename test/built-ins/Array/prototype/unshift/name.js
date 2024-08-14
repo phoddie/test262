@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.unshift, "name", {
+verifyBuiltinProperty(Array.prototype.unshift, "name", {
   value: "unshift",
   writable: false,
   enumerable: false,

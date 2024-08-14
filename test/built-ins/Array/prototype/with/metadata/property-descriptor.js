@@ -17,7 +17,7 @@ features: [change-array-by-copy]
 
 assert.sameValue(typeof Array.prototype.with, "function", "typeof");
 
-verifyProperty(Array.prototype, "with", {
+verifyBuiltinProperty(Array.prototype, "with", {
   value: Array.prototype.with,
   writable: true,
   enumerable: false,

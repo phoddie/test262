@@ -20,7 +20,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.isArray, "name", {
+verifyBuiltinProperty(Array.isArray, "name", {
   value: "isArray",
   writable: false,
   enumerable: false,

@@ -8,7 +8,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.findIndex, "length", {
+verifyBuiltinProperty(Array.prototype.findIndex, "length", {
   value: 1,
   writable: false,
   enumerable: false,

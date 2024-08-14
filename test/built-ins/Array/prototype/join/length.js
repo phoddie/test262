@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.join, "length", {
+verifyBuiltinProperty(Array.prototype.join, "length", {
   value: 1,
   writable: false,
   enumerable: false,

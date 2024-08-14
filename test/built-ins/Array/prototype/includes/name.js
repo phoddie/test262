@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Array.prototype.includes]
 ---*/
 
-verifyProperty(Array.prototype.includes, "name", {
+verifyBuiltinProperty(Array.prototype.includes, "name", {
   value: "includes",
   writable: false,
   enumerable: false,

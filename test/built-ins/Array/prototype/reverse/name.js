@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.reverse, "name", {
+verifyBuiltinProperty(Array.prototype.reverse, "name", {
   value: "reverse",
   writable: false,
   enumerable: false,

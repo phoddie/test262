@@ -18,7 +18,7 @@ assert.sameValue(
   'The value of `Array.prototype.findLastIndex.name` is `"findLastIndex"`'
 );
 
-verifyProperty(Array.prototype.findLastIndex, "name", {
+verifyBuiltinProperty(Array.prototype.findLastIndex, "name", {
   enumerable: false,
   writable: false,
   configurable: true

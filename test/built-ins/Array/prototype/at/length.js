@@ -18,7 +18,7 @@ assert.sameValue(
   'The value of `typeof Array.prototype.at` is expected to be "function"'
 );
 
-verifyProperty(Array.prototype.at, "length", {
+verifyBuiltinProperty(Array.prototype.at, "length", {
   value: 1,
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.shift, "name", {
+verifyBuiltinProperty(Array.prototype.shift, "name", {
   value: "shift",
   writable: false,
   enumerable: false,

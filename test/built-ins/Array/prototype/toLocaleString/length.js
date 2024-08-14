@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.toLocaleString, "length", {
+verifyBuiltinProperty(Array.prototype.toLocaleString, "length", {
   value: 0,
   writable: false,
   enumerable: false,

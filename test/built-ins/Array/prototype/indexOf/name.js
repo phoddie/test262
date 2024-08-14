@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.indexOf, "name", {
+verifyBuiltinProperty(Array.prototype.indexOf, "name", {
   value: "indexOf",
   writable: false,
   enumerable: false,

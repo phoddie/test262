@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype.reverse, "length", {
+verifyBuiltinProperty(Array.prototype.reverse, "length", {
   value: 0,
   writable: false,
   enumerable: false,
