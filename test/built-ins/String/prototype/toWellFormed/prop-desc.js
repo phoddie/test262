@@ -18,7 +18,7 @@ assert.sameValue(
   'The value of `typeof String.prototype.toWellFormed` is "function"'
 );
 
-verifyProperty(String.prototype, 'toWellFormed', {
+verifyBuiltinProperty(String.prototype, 'toWellFormed', {
   enumerable: false,
   writable: true,
   configurable: true

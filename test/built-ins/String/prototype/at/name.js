@@ -19,7 +19,7 @@ assert.sameValue(
   'The value of String.prototype.at.name is "at"'
 );
 
-verifyProperty(String.prototype.at, 'name', {
+verifyBuiltinProperty(String.prototype.at, 'name', {
   enumerable: false,
   writable: false,
   configurable: true

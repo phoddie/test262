@@ -12,6 +12,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(String, 'raw');
-verifyWritable(String, 'raw');
-verifyConfigurable(String, 'raw');
+verifyBuiltinProperty(String, 'raw', {
+	writable: true,
+	enumerable: false,
+	configurable: true
+ });

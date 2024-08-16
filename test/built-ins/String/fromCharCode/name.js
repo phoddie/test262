@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.fromCharCode, "name", {
+verifyBuiltinProperty(String.fromCharCode, "name", {
   value: "fromCharCode",
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.slice, "name", {
+verifyBuiltinProperty(String.prototype.slice, "name", {
   value: "slice",
   writable: false,
   enumerable: false,

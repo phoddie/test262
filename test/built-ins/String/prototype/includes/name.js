@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.includes]
 ---*/
 
-verifyProperty(String.prototype.includes, "name", {
+verifyBuiltinProperty(String.prototype.includes, "name", {
   value: "includes",
   writable: false,
   enumerable: false,

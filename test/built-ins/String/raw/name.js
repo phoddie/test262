@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.raw, "name", {
+verifyBuiltinProperty(String.raw, "name", {
   value: "raw",
   writable: false,
   enumerable: false,

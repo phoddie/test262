@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [String.fromCodePoint]
 ---*/
 
-verifyProperty(String.fromCodePoint, "length", {
+verifyBuiltinProperty(String.fromCodePoint, "length", {
   value: 1,
   writable: false,
   enumerable: false,

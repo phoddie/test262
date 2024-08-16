@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.lastIndexOf, "name", {
+verifyBuiltinProperty(String.prototype.lastIndexOf, "name", {
   value: "lastIndexOf",
   writable: false,
   enumerable: false,

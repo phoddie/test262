@@ -12,12 +12,13 @@ includes: [propertyHelper.js]
 
 var str = new String('');
 
-verifyNotEnumerable(str, 'length');
-verifyNotWritable(str, 'length');
-verifyNotConfigurable(str, 'length');
-
-assert.sameValue(str.length, 0, 'empty string');
-
+verifyBuiltinProperty(str, "length", {
+  value: 0,
+	writable: false,
+	enumerable: false,
+	configurable: false
+ });
+ 
 str = new String(' ');
 assert.sameValue(str.length, 1, 'whitespace');
 

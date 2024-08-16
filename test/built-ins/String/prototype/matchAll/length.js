@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.matchAll]
 ---*/
 
-verifyProperty(String.prototype.matchAll, "length", {
+verifyBuiltinProperty(String.prototype.matchAll, "length", {
   value: 1,
   writable: false,
   enumerable: false,

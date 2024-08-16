@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.matchAll]
 ---*/
 
-verifyProperty(String.prototype.matchAll, "name", {
+verifyBuiltinProperty(String.prototype.matchAll, "name", {
   value: "matchAll",
   writable: false,
   enumerable: false,

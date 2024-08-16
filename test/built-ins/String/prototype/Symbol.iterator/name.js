@@ -22,7 +22,7 @@ features: [Symbol.iterator]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype[Symbol.iterator], "name", {
+verifyBuiltinProperty(String.prototype[Symbol.iterator], "name", {
   value: "[Symbol.iterator]",
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ features: [Symbol.iterator]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype[Symbol.iterator], "length", {
+verifyBuiltinProperty(String.prototype[Symbol.iterator], "length", {
   value: 0,
   writable: false,
   enumerable: false,

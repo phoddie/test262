@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [string-trimming, String.prototype.trimEnd]
 ---*/
 
-verifyProperty(String.prototype.trimEnd, "name", {
+verifyBuiltinProperty(String.prototype.trimEnd, "name", {
   value: "trimEnd",
   enumerable: false,
   writable: false,

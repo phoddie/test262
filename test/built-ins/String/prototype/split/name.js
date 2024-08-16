@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.split, "name", {
+verifyBuiltinProperty(String.prototype.split, "name", {
   value: "split",
   writable: false,
   enumerable: false,
