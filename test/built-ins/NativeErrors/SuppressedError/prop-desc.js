@@ -19,7 +19,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof SuppressedError, 'function');
 
-verifyBuiltinProperty(this, 'SuppressedError', {
+verifyProperty(this, 'SuppressedError', {
   enumerable: false,
   writable: true,
   configurable: true
