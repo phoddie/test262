@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "strike", {
+verifyBuiltinProperty(String.prototype, "strike", {
   enumerable: false,
   writable: true,
   configurable: true

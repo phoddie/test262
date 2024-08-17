@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.anchor, "name", {
+verifyBuiltinProperty(String.prototype.anchor, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

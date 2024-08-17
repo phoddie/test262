@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "italics", {
+verifyBuiltinProperty(String.prototype, "italics", {
   enumerable: false,
   writable: true,
   configurable: true

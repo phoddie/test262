@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "sup", {
+verifyBuiltinProperty(String.prototype, "sup", {
   enumerable: false,
   writable: true,
   configurable: true

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.blink, "name", {
+verifyBuiltinProperty(String.prototype.blink, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

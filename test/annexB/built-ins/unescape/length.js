@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(unescape, "length", {
+verifyBuiltinProperty(unescape, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

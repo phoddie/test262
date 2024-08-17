@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(escape, "name", {
+verifyBuiltinProperty(escape, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

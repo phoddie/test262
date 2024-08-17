@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "big", {
+verifyBuiltinProperty(String.prototype, "big", {
   enumerable: false,
   writable: true,
   configurable: true

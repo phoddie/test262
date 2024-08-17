@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "bold", {
+verifyBuiltinProperty(String.prototype, "bold", {
   enumerable: false,
   writable: true,
   configurable: true

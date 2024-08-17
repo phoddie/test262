@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.fontcolor, "name", {
+verifyBuiltinProperty(String.prototype.fontcolor, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

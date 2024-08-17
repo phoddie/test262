@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 features: [string-trimming]
 ---*/
 
-verifyProperty(String.prototype, "trimRight", {
+verifyBuiltinProperty(String.prototype, "trimRight", {
   enumerable: false,
   writable: true,
   configurable: true,

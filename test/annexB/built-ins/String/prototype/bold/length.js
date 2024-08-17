@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.bold, "length", {
+verifyBuiltinProperty(String.prototype.bold, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

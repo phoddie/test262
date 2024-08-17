@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "link", {
+verifyBuiltinProperty(String.prototype, "link", {
   enumerable: false,
   writable: true,
   configurable: true
