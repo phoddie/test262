@@ -14,12 +14,8 @@ features: [async-iteration]
 
 var AsyncGeneratorFunctionPrototype = Object.getPrototypeOf(async function*() {});
 
-assert.sameValue(
-  AsyncGeneratorFunctionPrototype.prototype,
-  Object.getPrototypeOf(async function*() {}.prototype)
-);
-
-verifyProperty(AsyncGeneratorFunctionPrototype, "prototype", {
+verifyBuiltinProperty(AsyncGeneratorFunctionPrototype, "prototype", {
+  value: Object.getPrototypeOf(async function*() {}.prototype),
   enumerable: false,
   writable: false,
   configurable: true,

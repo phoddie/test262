@@ -18,7 +18,7 @@ var AsyncGeneratorFunction = Object.getPrototypeOf(async function* () {}).constr
 
 assert.sameValue(AsyncGeneratorFunction.prototype.constructor, AsyncGeneratorFunction);
 
-verifyProperty(AsyncGeneratorFunction.prototype, "constructor", {
+verifyBuiltinProperty(AsyncGeneratorFunction.prototype, "constructor", {
   enumerable: false,
   writable: false,
   configurable: true,

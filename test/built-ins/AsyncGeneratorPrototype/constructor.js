@@ -22,7 +22,7 @@ async function* g() {}
 var AsyncGenerator = Object.getPrototypeOf(g);
 var AsyncGeneratorPrototype = AsyncGenerator.prototype;
 
-verifyProperty(AsyncGeneratorPrototype, 'constructor', {
+verifyBuiltinProperty(AsyncGeneratorPrototype, 'constructor', {
   value: AsyncGenerator,
   enumerable: false,
   writable: false,

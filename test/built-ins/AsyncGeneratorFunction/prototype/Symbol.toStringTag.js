@@ -17,7 +17,7 @@ features: [async-iteration, Symbol.toStringTag]
 
 var AsyncGeneratorFunctionPrototype = Object.getPrototypeOf(async function*() {});
 
-verifyProperty(AsyncGeneratorFunctionPrototype, Symbol.toStringTag, {
+verifyBuiltinProperty(AsyncGeneratorFunctionPrototype, Symbol.toStringTag, {
   value: 'AsyncGeneratorFunction',
   enumerable: false,
   writable: false,
