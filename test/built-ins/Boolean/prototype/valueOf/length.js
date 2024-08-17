@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Boolean.prototype.valueOf, "length", {
+verifyBuiltinProperty(Boolean.prototype.valueOf, "length", {
   value: 0,
   writable: false,
   enumerable: false,
