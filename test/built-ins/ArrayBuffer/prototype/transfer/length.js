@@ -22,7 +22,7 @@ includes: [propertyHelper.js]
 features: [arraybuffer-transfer]
 ---*/
 
-verifyProperty(ArrayBuffer.prototype.transfer, 'length', {
+verifyBuiltinProperty(ArrayBuffer.prototype.transfer, 'length', {
   value: 0,
   enumerable: false,
   writable: false,

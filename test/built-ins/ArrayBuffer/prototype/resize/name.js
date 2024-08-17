@@ -19,7 +19,7 @@ features: [resizable-arraybuffer]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(ArrayBuffer.prototype.resize, 'name', {
+verifyBuiltinProperty(ArrayBuffer.prototype.resize, 'name', {
   value: 'resize',
   enumerable: false,
   writable: false,

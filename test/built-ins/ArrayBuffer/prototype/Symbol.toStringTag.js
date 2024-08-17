@@ -14,8 +14,10 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-assert.sameValue(ArrayBuffer.prototype[Symbol.toStringTag], 'ArrayBuffer');
-
-verifyNotEnumerable(ArrayBuffer.prototype, Symbol.toStringTag);
-verifyNotWritable(ArrayBuffer.prototype, Symbol.toStringTag);
-verifyConfigurable(ArrayBuffer.prototype, Symbol.toStringTag);
+verifyBuiltinProperty(ArrayBuffer.prototype, Symbol.toStringTag, {
+    value: 'ArrayBuffer',
+    enumerable: false,
+    writable: false,
+    configurable: true,
+  });
+  

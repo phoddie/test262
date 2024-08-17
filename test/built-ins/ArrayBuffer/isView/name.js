@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(ArrayBuffer.isView, "name", {
+verifyBuiltinProperty(ArrayBuffer.isView, "name", {
   value: "isView",
   writable: false,
   enumerable: false,

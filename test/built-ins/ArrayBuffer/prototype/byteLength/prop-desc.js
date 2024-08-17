@@ -18,5 +18,7 @@ var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, "byteLength");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyNotEnumerable(ArrayBuffer.prototype, "byteLength");
-verifyConfigurable(ArrayBuffer.prototype, "byteLength");
+verifyBuiltinProperty(ArrayBuffer.prototype, "byteLength", {
+  enumerable: false,
+  configurable: true,
+});

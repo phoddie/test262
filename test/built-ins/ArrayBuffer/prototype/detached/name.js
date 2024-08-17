@@ -16,7 +16,7 @@ features: [ArrayBuffer, arraybuffer-transfer]
 
 var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'detached');
 
-verifyProperty(desc.get, 'name', {
+verifyBuiltinProperty(desc.get, 'name', {
   value: 'get detached',
   enumerable: false,
   writable: false,

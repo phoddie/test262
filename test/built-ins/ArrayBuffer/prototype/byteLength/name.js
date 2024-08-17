@@ -17,7 +17,7 @@ var descriptor = Object.getOwnPropertyDescriptor(
   ArrayBuffer.prototype, 'byteLength'
 );
 
-verifyProperty(descriptor.get, "name", {
+verifyBuiltinProperty(descriptor.get, "name", {
   value: "get byteLength",
   writable: false,
   enumerable: false,

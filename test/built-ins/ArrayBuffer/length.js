@@ -25,7 +25,7 @@ includes: [propertyHelper.js]
 features: [ArrayBuffer]
 ---*/
 
-verifyProperty(ArrayBuffer, "length", {
+verifyBuiltinProperty(ArrayBuffer, "length", {
   value: 1,
   enumerable: false,
   writable: false,

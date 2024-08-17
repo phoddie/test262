@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(ArrayBuffer.isView, "length", {
+verifyBuiltinProperty(ArrayBuffer.isView, "length", {
   value: 1,
   writable: false,
   enumerable: false,
