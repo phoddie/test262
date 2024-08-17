@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Number.prototype.toExponential, "length", {
+verifyBuiltinProperty(Number.prototype.toExponential, "length", {
   value: 1,
   writable: false,
   enumerable: false,

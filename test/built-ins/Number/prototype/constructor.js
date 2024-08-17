@@ -13,8 +13,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Number.prototype.constructor, Number);
-
-verifyNotEnumerable(Number.prototype, "constructor");
-verifyWritable(Number.prototype, "constructor");
-verifyConfigurable(Number.prototype, "constructor");
+verifyBuiltinProperty(Number.prototype, "constructor", {
+  value: Number,
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

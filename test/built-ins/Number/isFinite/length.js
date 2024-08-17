@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Number.isFinite, "length", {
+verifyBuiltinProperty(Number.isFinite, "length", {
   value: 1,
   writable: false,
   enumerable: false,

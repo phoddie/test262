@@ -12,6 +12,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Number.prototype, "toExponential");
-verifyWritable(Number.prototype, "toExponential");
-verifyConfigurable(Number.prototype, "toExponential");
+verifyBuiltinProperty(Number.prototype, "toExponential", {
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

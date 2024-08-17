@@ -14,6 +14,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Number.prototype, "toFixed");
-verifyWritable(Number.prototype, "toFixed");
-verifyConfigurable(Number.prototype, "toFixed");
+verifyBuiltinProperty(Number.prototype, "toFixed", {
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

@@ -20,8 +20,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Number.parseFloat, parseFloat);
-
-verifyNotEnumerable(Number, "parseFloat");
-verifyWritable(Number, "parseFloat");
-verifyConfigurable(Number, "parseFloat");
+verifyBuiltinProperty(Number, "parseFloat", {
+  value: parseFloat,
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

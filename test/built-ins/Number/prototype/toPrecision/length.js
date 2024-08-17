@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Number.prototype.toPrecision, "length", {
+verifyBuiltinProperty(Number.prototype.toPrecision, "length", {
   value: 1,
   writable: false,
   enumerable: false,

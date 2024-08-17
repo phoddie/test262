@@ -20,8 +20,9 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Number.parseInt, parseInt);
-
-verifyNotEnumerable(Number, "parseInt");
-verifyWritable(Number, "parseInt");
-verifyConfigurable(Number, "parseInt");
+verifyBuiltinProperty(Number, "parseInt", {
+  value: parseInt,
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

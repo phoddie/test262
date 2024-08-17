@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Number.isNaN, "name", {
+verifyBuiltinProperty(Number.isNaN, "name", {
   value: "isNaN",
   writable: false,
   enumerable: false,
