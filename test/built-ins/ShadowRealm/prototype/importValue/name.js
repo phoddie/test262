@@ -19,7 +19,7 @@ includes: [propertyHelper.js]
 features: [ShadowRealm]
 ---*/
 
-verifyProperty(ShadowRealm.prototype.importValue, "name", {
+verifyBuiltinProperty(ShadowRealm.prototype.importValue, "name", {
   value: "importValue",
   enumerable: false,
   writable: false,

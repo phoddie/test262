@@ -18,8 +18,9 @@ es6id: 22.1.5.2.2
 
 var ArrayIteratorProto = Object.getPrototypeOf([][Symbol.iterator]());
 
-assert.sameValue("Array Iterator", ArrayIteratorProto[Symbol.toStringTag]);
-
-verifyNotEnumerable(ArrayIteratorProto, Symbol.toStringTag);
-verifyNotWritable(ArrayIteratorProto, Symbol.toStringTag);
-verifyConfigurable(ArrayIteratorProto, Symbol.toStringTag);
+verifyBuiltinProperty(ArrayIteratorProto, Symbol.toStringTag, {
+    value: "Array Iterator",
+    enumerable: false,
+    writable: false,
+    configurable: true,
+});

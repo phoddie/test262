@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [uint8array-base64, TypedArray]
 ---*/
 
-verifyProperty(Uint8Array.fromBase64, 'name', {
+verifyBuiltinProperty(Uint8Array.fromBase64, 'name', {
   value: 'fromBase64',
   enumerable: false,
   writable: false,

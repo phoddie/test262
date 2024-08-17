@@ -16,8 +16,10 @@ includes: [propertyHelper.js]
 
 var StringIteratorProto = Object.getPrototypeOf(''[Symbol.iterator]());
 
-assert.sameValue(StringIteratorProto[Symbol.toStringTag], 'String Iterator');
-
-verifyNotEnumerable(StringIteratorProto, Symbol.toStringTag);
-verifyNotWritable(StringIteratorProto, Symbol.toStringTag);
-verifyConfigurable(StringIteratorProto, Symbol.toStringTag);
+verifyBuiltinProperty(StringIteratorProto, Symbol.toStringTag, {
+    value: 'String Iterator',
+    enumerable: false,
+    writable: false,
+    configurable: true,
+  });
+  

@@ -18,7 +18,7 @@ includes: [propertyHelper.js]
 features: [ShadowRealm]
 ---*/
 
-verifyProperty(ShadowRealm.prototype.importValue, "length", {
+verifyBuiltinProperty(ShadowRealm.prototype.importValue, "length", {
   value: 2,
   enumerable: false,
   writable: false,

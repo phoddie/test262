@@ -13,7 +13,7 @@ flags: [module]
 ---*/
 
 assert.sameValue(typeof $262.AbstractModuleSource, 'function');
-verifyProperty($262.AbstractModuleSource, 'length', {
+verifyBuiltinProperty($262.AbstractModuleSource, 'length', {
   value: 0,
   writable: false,
   enumerable: false,

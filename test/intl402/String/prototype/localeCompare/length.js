@@ -24,7 +24,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype.localeCompare, "length", {
+verifyBuiltinProperty(String.prototype.localeCompare, "length", {
   value: 1,
   writable: false,
   enumerable: false,

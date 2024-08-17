@@ -16,7 +16,7 @@ flags: [module]
 ---*/
 
 assert.sameValue(typeof $262.AbstractModuleSource, 'function');
-verifyProperty($262.AbstractModuleSource, 'name', {
+verifyBuiltinProperty($262.AbstractModuleSource, 'name', {
   value: 'AbstractModuleSource',
   writable: false,
   enumerable: false,
