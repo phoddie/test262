@@ -16,7 +16,7 @@ features: [__proto__]
 
 var descriptor = Object.getOwnPropertyDescriptor(Object.prototype, '__proto__');
 
-verifyProperty(descriptor.set, "name", {
+verifyBuiltinProperty(descriptor.set, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

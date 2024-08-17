@@ -8,7 +8,7 @@ author: Jordan Harband
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.getOwnPropertyDescriptors, "length", {
+verifyBuiltinProperty(Object.getOwnPropertyDescriptors, "length", {
   value: 1,
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.isExtensible, "name", {
+verifyBuiltinProperty(Object.isExtensible, "name", {
   value: "isExtensible",
   writable: false,
   enumerable: false,

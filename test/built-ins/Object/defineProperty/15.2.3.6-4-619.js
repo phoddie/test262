@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype, "reduce", {
+verifyBuiltinProperty(Array.prototype, "reduce", {
   writable: true,
   enumerable: false,
   configurable: true,

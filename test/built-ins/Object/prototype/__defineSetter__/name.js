@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [__setter__]
 ---*/
 
-verifyProperty(Object.prototype.__defineSetter__, "name", {
+verifyBuiltinProperty(Object.prototype.__defineSetter__, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype, "indexOf", {
+verifyBuiltinProperty(Array.prototype, "indexOf", {
   writable: true,
   enumerable: false,
   configurable: true,

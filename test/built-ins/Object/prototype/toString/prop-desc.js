@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.prototype, "toString", {
+verifyBuiltinProperty(Object.prototype, "toString", {
   writable: true,
   enumerable: false,
   configurable: true,

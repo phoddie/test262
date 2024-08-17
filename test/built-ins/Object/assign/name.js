@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.assign, "name", {
+verifyBuiltinProperty(Object.assign, "name", {
   value: "assign",
   writable: false,
   enumerable: false,

@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.freeze are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "freeze", {
+verifyBuiltinProperty(Object, "freeze", {
   writable: true,
   enumerable: false,
   configurable: true,

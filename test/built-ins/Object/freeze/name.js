@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.freeze, "name", {
+verifyBuiltinProperty(Object.freeze, "name", {
   value: "freeze",
   writable: false,
   enumerable: false,

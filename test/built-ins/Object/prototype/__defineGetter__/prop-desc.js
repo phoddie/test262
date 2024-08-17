@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [__getter__]
 ---*/
 
-verifyProperty(Object.prototype, "__defineGetter__", {
+verifyBuiltinProperty(Object.prototype, "__defineGetter__", {
   enumerable: false,
   writable: true,
   configurable: true,

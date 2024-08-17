@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.setPrototypeOf, "length", {
+verifyBuiltinProperty(Object.setPrototypeOf, "length", {
   value: 2,
   writable: false,
   enumerable: false,

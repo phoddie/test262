@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.getOwnPropertySymbols, "length", {
+verifyBuiltinProperty(Object.getOwnPropertySymbols, "length", {
   value: 1,
   writable: false,
   enumerable: false,

@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Object.fromEntries]
 ---*/
 
-verifyProperty(Object.fromEntries, "length", {
+verifyBuiltinProperty(Object.fromEntries, "length", {
   value: 1,
   enumerable: false,
   writable: false,

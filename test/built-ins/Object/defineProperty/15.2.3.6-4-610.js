@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.keys are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "keys", {
+verifyBuiltinProperty(Object, "keys", {
   writable: true,
   enumerable: false,
   configurable: true,

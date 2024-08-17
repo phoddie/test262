@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [__getter__]
 ---*/
 
-verifyProperty(Object.prototype.__defineGetter__, "name", {
+verifyBuiltinProperty(Object.prototype.__defineGetter__, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

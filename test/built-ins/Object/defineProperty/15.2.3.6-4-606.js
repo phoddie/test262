@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "preventExtensions", {
+verifyBuiltinProperty(Object, "preventExtensions", {
   writable: true,
   enumerable: false,
   configurable: true,

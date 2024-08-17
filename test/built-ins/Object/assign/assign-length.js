@@ -15,7 +15,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.assign, "length", {
+verifyBuiltinProperty(Object.assign, "length", {
   value: 2,
   writable: false,
   enumerable: false,

@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.isExtensible are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "isExtensible", {
+verifyBuiltinProperty(Object, "isExtensible", {
   writable: true,
   enumerable: false,
   configurable: true,

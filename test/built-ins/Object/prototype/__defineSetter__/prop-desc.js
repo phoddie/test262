@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [__setter__]
 ---*/
 
-verifyProperty(Object.prototype, "__defineSetter__", {
+verifyBuiltinProperty(Object.prototype, "__defineSetter__", {
   enumerable: false,
   writable: true,
   configurable: true,

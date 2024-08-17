@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.isSealed, "name", {
+verifyBuiltinProperty(Object.isSealed, "name", {
   value: "isSealed",
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.getOwnPropertySymbols, "name", {
+verifyBuiltinProperty(Object.getOwnPropertySymbols, "name", {
   value: "getOwnPropertySymbols",
   writable: false,
   enumerable: false,

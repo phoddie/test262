@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.preventExtensions, "name", {
+verifyBuiltinProperty(Object.preventExtensions, "name", {
   value: "preventExtensions",
   writable: false,
   enumerable: false,

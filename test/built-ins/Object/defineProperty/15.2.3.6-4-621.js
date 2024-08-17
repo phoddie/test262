@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(String.prototype, "trim", {
+verifyBuiltinProperty(String.prototype, "trim", {
   writable: true,
   enumerable: false,
   configurable: true,

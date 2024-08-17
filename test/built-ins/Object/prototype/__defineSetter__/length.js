@@ -19,7 +19,7 @@ includes: [propertyHelper.js]
 features: [__setter__]
 ---*/
 
-verifyProperty(Object.prototype.__defineSetter__, "length", {
+verifyBuiltinProperty(Object.prototype.__defineSetter__, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

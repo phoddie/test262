@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.setPrototypeOf, "name", {
+verifyBuiltinProperty(Object.setPrototypeOf, "name", {
   value: "setPrototypeOf",
   writable: false,
   enumerable: false,

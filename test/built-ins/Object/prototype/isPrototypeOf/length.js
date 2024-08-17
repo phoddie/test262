@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.prototype.isPrototypeOf, "length", {
+verifyBuiltinProperty(Object.prototype.isPrototypeOf, "length", {
   value: 1,
   writable: false,
   enumerable: false,

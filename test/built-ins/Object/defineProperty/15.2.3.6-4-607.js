@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.isSealed are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "isSealed", {
+verifyBuiltinProperty(Object, "isSealed", {
   writable: true,
   enumerable: false,
   configurable: true,

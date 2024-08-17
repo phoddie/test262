@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object, "defineProperties", {
+verifyBuiltinProperty(Object, "defineProperties", {
   writable: true,
   enumerable: false,
   configurable: true,

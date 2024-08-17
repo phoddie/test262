@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.seal, "name", {
+verifyBuiltinProperty(Object.seal, "name", {
   value: "seal",
   writable: false,
   enumerable: false,

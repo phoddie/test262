@@ -8,7 +8,7 @@ author: Jordan Harband
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.entries, "name", {
+verifyBuiltinProperty(Object.entries, "name", {
   value: "entries",
   writable: false,
   enumerable: false,

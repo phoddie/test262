@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Array.prototype, "forEach", {
+verifyBuiltinProperty(Array.prototype, "forEach", {
   writable: true,
   enumerable: false,
   configurable: true,

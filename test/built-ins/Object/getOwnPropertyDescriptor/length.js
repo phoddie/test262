@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Object.getOwnPropertyDescriptor, "length", {
+verifyBuiltinProperty(Object.getOwnPropertyDescriptor, "length", {
   value: 2,
   writable: false,
   enumerable: false,

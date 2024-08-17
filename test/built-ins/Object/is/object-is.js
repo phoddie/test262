@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Object.is, "function");
 
-verifyProperty(Object, "is", {
+verifyBuiltinProperty(Object, "is", {
   writable: true,
   enumerable: false,
   configurable: true,
