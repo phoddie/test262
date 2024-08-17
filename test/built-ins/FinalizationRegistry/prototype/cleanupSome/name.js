@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry.prototype.cleanupSome, FinalizationRegistry]
 ---*/
 
-verifyProperty(FinalizationRegistry.prototype.cleanupSome, 'name', {
+verifyBuiltinProperty(FinalizationRegistry.prototype.cleanupSome, 'name', {
   value: 'cleanupSome',
   writable: false,
   enumerable: false,

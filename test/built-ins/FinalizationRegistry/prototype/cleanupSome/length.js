@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry.prototype.cleanupSome, FinalizationRegistry]
 ---*/
 
-verifyProperty(FinalizationRegistry.prototype.cleanupSome, 'length', {
+verifyBuiltinProperty(FinalizationRegistry.prototype.cleanupSome, 'length', {
   value: 0,
   writable: false,
   enumerable: false,
