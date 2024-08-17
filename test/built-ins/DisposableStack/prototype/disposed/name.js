@@ -18,11 +18,9 @@ features: [explicit-resource-management]
 
 var descriptor = Object.getOwnPropertyDescriptor(DisposableStack.prototype, 'disposed');
 
-assert.sameValue(descriptor.get.name,
-  'get disposed',
-  'The value of `descriptor.get.name` is `get disposed`'
-);
-
-verifyNotEnumerable(descriptor.get, 'name');
-verifyNotWritable(descriptor.get, 'name');
-verifyConfigurable(descriptor.get, 'name');
+verifyBuiltinProperty(descriptor.get, "name", {
+  value: 'get disposed',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});

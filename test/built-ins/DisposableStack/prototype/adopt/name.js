@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [explicit-resource-management]
 ---*/
 
-verifyProperty(DisposableStack.prototype.adopt, 'name', {
+verifyBuiltinProperty(DisposableStack.prototype.adopt, 'name', {
   value: 'adopt',
   writable: false,
   enumerable: false,

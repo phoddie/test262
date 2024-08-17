@@ -17,7 +17,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof AsyncDisposableStack.prototype.defer, 'function');
 
-verifyProperty(AsyncDisposableStack.prototype, 'defer', {
+verifyBuiltinProperty(AsyncDisposableStack.prototype, 'defer', {
   enumerable: false,
   writable: true,
   configurable: true
