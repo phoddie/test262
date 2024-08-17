@@ -25,7 +25,7 @@ features: [Symbol.species]
 
 var desc = Object.getOwnPropertyDescriptor(RegExp, Symbol.species);
 
-verifyProperty(desc.get, "length", {
+verifyBuiltinProperty(desc.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

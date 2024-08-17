@@ -14,6 +14,9 @@ includes: [propertyHelper.js]
 features: [Symbol.replace]
 ---*/
 
-verifyNotEnumerable(RegExp.prototype, Symbol.replace);
-verifyWritable(RegExp.prototype, Symbol.replace);
-verifyConfigurable(RegExp.prototype, Symbol.replace);
+verifyBuiltinProperty(RegExp.prototype, Symbol.replace, {
+    enumerable: false,
+    writable: true,
+    configurable: true,
+});
+  

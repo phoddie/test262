@@ -14,7 +14,7 @@ var d = Object.getOwnPropertyDescriptor(RegExp.prototype, 'source');
 assert.sameValue(typeof d.get, 'function', 'typeof d.get');
 assert.sameValue(d.set, undefined, 'd.set');
 
-verifyProperty(RegExp.prototype, 'source', {
+verifyBuiltinProperty(RegExp.prototype, 'source', {
   enumerable: false,
   configurable: true,
 });

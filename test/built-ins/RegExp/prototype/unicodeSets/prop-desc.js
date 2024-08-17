@@ -23,7 +23,7 @@ var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "unicodeSets");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyProperty(RegExp.prototype, "unicodeSets", {
+verifyBuiltinProperty(RegExp.prototype, "unicodeSets", {
   enumerable: false,
   configurable: true,
 });

@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [Symbol.match]
 ---*/
 
-verifyProperty(RegExp.prototype[Symbol.match], "name", {
+verifyBuiltinProperty(RegExp.prototype[Symbol.match], "name", {
   value: "[Symbol.match]",
   writable: false,
   enumerable: false,

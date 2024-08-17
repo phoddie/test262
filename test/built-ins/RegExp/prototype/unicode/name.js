@@ -28,7 +28,7 @@ includes: [propertyHelper.js]
 
 var getter = Object.getOwnPropertyDescriptor(RegExp.prototype, 'unicode').get;
 
-verifyProperty(getter, "name", {
+verifyBuiltinProperty(getter, "name", {
   value: "get unicode",
   writable: false,
   enumerable: false,

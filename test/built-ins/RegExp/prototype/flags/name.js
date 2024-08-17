@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 
 var get = Object.getOwnPropertyDescriptor(RegExp.prototype, 'flags').get;
 
-verifyProperty(get, 'name', {
+verifyBuiltinProperty(get, 'name', {
   value: 'get flags',
   writable: false,
   enumerable: false,

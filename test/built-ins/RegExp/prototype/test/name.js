@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(RegExp.prototype.test, "name", {
+verifyBuiltinProperty(RegExp.prototype.test, "name", {
   value: "test",
   writable: false,
   enumerable: false,

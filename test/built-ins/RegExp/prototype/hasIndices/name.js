@@ -20,7 +20,7 @@ assert.sameValue(
   "get hasIndices"
 );
 
-verifyProperty(desc.get, "name", {
+verifyBuiltinProperty(desc.get, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

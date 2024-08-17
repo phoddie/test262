@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [Symbol.replace]
 ---*/
 
-verifyProperty(RegExp.prototype[Symbol.replace], "name", {
+verifyBuiltinProperty(RegExp.prototype[Symbol.replace], "name", {
   value: "[Symbol.replace]",
   writable: false,
   enumerable: false,

@@ -14,6 +14,8 @@ includes: [propertyHelper.js]
 features: [Symbol.split]
 ---*/
 
-verifyNotEnumerable(RegExp.prototype, Symbol.split);
-verifyWritable(RegExp.prototype, Symbol.split);
-verifyConfigurable(RegExp.prototype, Symbol.split);
+verifyBuiltinProperty(RegExp.prototype, Symbol.split, {
+    enumerable: false,
+    writable: true,
+    configurable: true,
+});

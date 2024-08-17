@@ -19,7 +19,7 @@ includes: [propertyHelper.js]
 features: [Symbol.replace]
 ---*/
 
-verifyProperty(RegExp.prototype[Symbol.replace], "length", {
+verifyBuiltinProperty(RegExp.prototype[Symbol.replace], "length", {
   value: 2,
   writable: false,
   enumerable: false,

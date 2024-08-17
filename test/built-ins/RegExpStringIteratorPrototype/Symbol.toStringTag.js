@@ -16,8 +16,9 @@ includes: [propertyHelper.js]
 
 var RegExpStringIteratorProto = Object.getPrototypeOf(/./[Symbol.matchAll](''));
 
-assert.sameValue(RegExpStringIteratorProto[Symbol.toStringTag], 'RegExp String Iterator');
-
-verifyNotEnumerable(RegExpStringIteratorProto, Symbol.toStringTag);
-verifyNotWritable(RegExpStringIteratorProto, Symbol.toStringTag);
-verifyConfigurable(RegExpStringIteratorProto, Symbol.toStringTag);
+verifyBuiltinProperty(RegExpStringIteratorProto, Symbol.toStringTag, {
+    value: 'RegExp String Iterator',
+    enumerable: false,
+    writable: false,
+    configurable: true,
+});

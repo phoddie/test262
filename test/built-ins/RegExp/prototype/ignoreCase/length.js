@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 
 var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "ignoreCase");
 
-verifyProperty(desc.get, "length", {
+verifyBuiltinProperty(desc.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

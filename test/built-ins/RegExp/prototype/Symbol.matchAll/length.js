@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [Symbol.matchAll]
 ---*/
 
-verifyProperty(RegExp.prototype[Symbol.matchAll], "length", {
+verifyBuiltinProperty(RegExp.prototype[Symbol.matchAll], "length", {
   value: 1,
   writable: false,
   enumerable: false,

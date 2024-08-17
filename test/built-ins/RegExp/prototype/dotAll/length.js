@@ -27,7 +27,7 @@ var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "dotAll");
 
 assert.sameValue(desc.get.length, 0);
 
-verifyProperty(desc.get, "length", {
+verifyBuiltinProperty(desc.get, "length", {
   enumerable: false,
   writable: false,
   configurable: true,
