@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyProperty(BigInt, "length", {
+verifyBuiltinProperty(BigInt, "length", {
   value: 1,
   writable: false,
   enumerable: false,

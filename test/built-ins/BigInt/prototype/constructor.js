@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyProperty(BigInt.prototype, "constructor", {
+verifyBuiltinProperty(BigInt.prototype, "constructor", {
   value: BigInt,
   writable: true,
   enumerable: false,

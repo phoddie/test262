@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyProperty(BigInt.asIntN, "length", {
+verifyBuiltinProperty(BigInt.asIntN, "length", {
   value: 2,
   enumerable: false,
   writable: false,
