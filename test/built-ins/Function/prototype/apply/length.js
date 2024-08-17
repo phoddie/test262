@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype.apply, 'length', {
+verifyBuiltinProperty(Function.prototype.apply, 'length', {
   value: 2,
   writable: false,
   enumerable: false,

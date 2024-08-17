@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype.call, "name", {
+verifyBuiltinProperty(Function.prototype.call, "name", {
   value: "call",
   writable: false,
   enumerable: false,

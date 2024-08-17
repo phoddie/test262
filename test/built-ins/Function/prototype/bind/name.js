@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype.bind, "name", {
+verifyBuiltinProperty(Function.prototype.bind, "name", {
   value: "bind",
   writable: false,
   enumerable: false,

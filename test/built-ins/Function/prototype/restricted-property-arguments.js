@@ -23,5 +23,7 @@ assert.throws(TypeError, function() {
   FunctionPrototype.arguments = {};
 });
 
-verifyNotEnumerable(FunctionPrototype, 'arguments');
-verifyConfigurable(FunctionPrototype, 'arguments');
+verifyBuiltinProperty(FunctionPrototype, 'arguments', {
+  enumerable: false,
+  configurable: true
+});

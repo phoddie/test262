@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype.bind, "length", {
+verifyBuiltinProperty(Function.prototype.bind, "length", {
   value: 1,
   writable: false,
   enumerable: false,

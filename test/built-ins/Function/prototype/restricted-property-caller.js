@@ -24,5 +24,7 @@ assert.throws(TypeError, function() {
   FunctionPrototype.caller = {};
 });
 
-verifyNotEnumerable(FunctionPrototype, 'caller');
-verifyConfigurable(FunctionPrototype, 'caller');
+verifyBuiltinProperty(FunctionPrototype, 'caller', {
+  enumerable: false,
+  configurable: true,
+});

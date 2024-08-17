@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype, "name", {
+verifyBuiltinProperty(Function.prototype, "name", {
   value: "",
   writable: false,
   enumerable: false,

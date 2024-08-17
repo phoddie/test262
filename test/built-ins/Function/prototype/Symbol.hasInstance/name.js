@@ -10,7 +10,7 @@ features: [Symbol.hasInstance]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Function.prototype[Symbol.hasInstance], "name", {
+verifyBuiltinProperty(Function.prototype[Symbol.hasInstance], "name", {
   value: "[Symbol.hasInstance]",
   writable: false,
   enumerable: false,
