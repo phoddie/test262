@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyProperty(Atomics.add, 'length', {
+verifyBuiltinProperty(Atomics.add, 'length', {
   value: 3,
   enumerable: false,
   writable: false,

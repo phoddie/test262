@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [Atomics.waitAsync, Atomics]
 ---*/
 
-verifyProperty(Atomics.waitAsync, 'length', {
+verifyBuiltinProperty(Atomics.waitAsync, 'length', {
   value: 4,
   enumerable: false,
   writable: false,

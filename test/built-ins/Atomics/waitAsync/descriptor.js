@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Atomics.waitAsync, Atomics]
 ---*/
 
-verifyProperty(Atomics, 'waitAsync', {
+verifyBuiltinProperty(Atomics, 'waitAsync', {
   configurable: true,
   writable: true,
   enumerable: false,

@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyProperty(Atomics, 'add', {
+verifyBuiltinProperty(Atomics, 'add', {
   enumerable: false,
   writable: true,
   configurable: true,

@@ -7,7 +7,7 @@ description: Testing descriptor property of Atomics.or
 includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
-verifyProperty(Atomics, 'or', {
+verifyBuiltinProperty(Atomics, 'or', {
   enumerable: false,
   writable: true,
   configurable: true,

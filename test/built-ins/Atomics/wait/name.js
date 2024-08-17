@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyProperty(Atomics.wait, 'name', {
+verifyBuiltinProperty(Atomics.wait, 'name', {
   value: 'wait',
   enumerable: false,
   writable: false,

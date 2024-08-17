@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyProperty(Atomics, 'isLockFree', {
+verifyBuiltinProperty(Atomics, 'isLockFree', {
   enumerable: false,
   writable: true,
   configurable: true,

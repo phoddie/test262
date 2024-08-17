@@ -14,12 +14,9 @@ includes: [propertyHelper.js]
 features: [Atomics, Symbol, Symbol.toStringTag]
 ---*/
 
-assert.sameValue(
-  Atomics[Symbol.toStringTag],
-  'Atomics',
-  'The value of Atomics[Symbol.toStringTag] is "Atomics"'
-);
-
-verifyNotEnumerable(Atomics, Symbol.toStringTag);
-verifyNotWritable(Atomics, Symbol.toStringTag);
-verifyConfigurable(Atomics, Symbol.toStringTag);
+verifyBuiltinProperty(Atomics, Symbol.toStringTag, {
+  value: 'Atomics',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
