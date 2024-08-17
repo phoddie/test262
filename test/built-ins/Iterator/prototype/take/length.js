@@ -14,7 +14,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Iterator.prototype.take, 'length', {
+verifyBuiltinProperty(Iterator.prototype.take, 'length', {
   value: 1,
   writable: false,
   enumerable: false,

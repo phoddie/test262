@@ -21,7 +21,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Iterator.prototype.reduce, 'name', {
+verifyBuiltinProperty(Iterator.prototype.reduce, 'name', {
   value: 'reduce',
   writable: false,
   enumerable: false,

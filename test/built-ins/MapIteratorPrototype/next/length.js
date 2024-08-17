@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 
 var MapIteratorProto = Object.getPrototypeOf(new Map().values());
 
-verifyProperty(MapIteratorProto.next, "length", {
+verifyBuiltinProperty(MapIteratorProto.next, "length", {
   value: 0,
   writable: false,
   enumerable: false,

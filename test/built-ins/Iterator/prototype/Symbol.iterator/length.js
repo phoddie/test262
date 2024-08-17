@@ -22,7 +22,7 @@ const IteratorPrototype = Object.getPrototypeOf(
   Object.getPrototypeOf([][Symbol.iterator]())
 );
 
-verifyProperty(IteratorPrototype[Symbol.iterator], 'length', {
+verifyBuiltinProperty(IteratorPrototype[Symbol.iterator], 'length', {
   value: 0,
   writable: false,
   enumerable: false,

@@ -21,7 +21,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Iterator.prototype.filter, 'name', {
+verifyBuiltinProperty(Iterator.prototype.filter, 'name', {
   value: 'filter',
   writable: false,
   enumerable: false,

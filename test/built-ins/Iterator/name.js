@@ -22,7 +22,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Iterator, 'name', {
+verifyBuiltinProperty(Iterator, 'name', {
   value: 'Iterator',
   writable: false,
   enumerable: false,

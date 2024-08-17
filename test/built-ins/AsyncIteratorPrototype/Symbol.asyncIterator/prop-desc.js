@@ -18,7 +18,7 @@ var AsyncIteratorPrototype = Object.getPrototypeOf(Object.getPrototypeOf(generat
 
 assert.sameValue(typeof AsyncIteratorPrototype[Symbol.asyncIterator], 'function');
 
-verifyProperty(AsyncIteratorPrototype, Symbol.asyncIterator, {
+verifyBuiltinProperty(AsyncIteratorPrototype, Symbol.asyncIterator, {
   enumerable: false,
   writable: true,
   configurable: true,

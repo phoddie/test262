@@ -21,7 +21,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyProperty(Iterator.prototype.find, 'name', {
+verifyBuiltinProperty(Iterator.prototype.find, 'name', {
   value: 'find',
   writable: false,
   enumerable: false,
