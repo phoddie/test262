@@ -13,6 +13,9 @@ features: [generators]
 function* g() {}
 var GeneratorPrototype = Object.getPrototypeOf(g).prototype;
 
-verifyNotEnumerable(GeneratorPrototype, 'throw');
-verifyWritable(GeneratorPrototype, 'throw');
-verifyConfigurable(GeneratorPrototype, 'throw');
+verifyBuiltinProperty(GeneratorPrototype, 'throw', {
+    enumerable: false,
+    writable: true,
+    configurable: true,
+});
+  

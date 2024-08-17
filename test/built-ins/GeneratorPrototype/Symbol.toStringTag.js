@@ -19,8 +19,9 @@ var GeneratorPrototype = Object.getPrototypeOf(
   Object.getPrototypeOf(function*() {}())
 );
 
-assert.sameValue(GeneratorPrototype[Symbol.toStringTag], 'Generator');
-
-verifyNotEnumerable(GeneratorPrototype, Symbol.toStringTag);
-verifyNotWritable(GeneratorPrototype, Symbol.toStringTag);
-verifyConfigurable(GeneratorPrototype, Symbol.toStringTag);
+verifyBuiltinProperty(GeneratorPrototype, Symbol.toStringTag, {
+  value: 'Generator',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});

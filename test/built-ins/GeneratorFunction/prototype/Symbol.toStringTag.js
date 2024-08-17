@@ -17,10 +17,9 @@ features: [generators, Symbol.toStringTag]
 
 var GeneratorFunctionPrototype = Object.getPrototypeOf(function*() {});
 
-assert.sameValue(
-  GeneratorFunctionPrototype[Symbol.toStringTag], 'GeneratorFunction'
-);
-
-verifyNotEnumerable(GeneratorFunctionPrototype, Symbol.toStringTag);
-verifyNotWritable(GeneratorFunctionPrototype, Symbol.toStringTag);
-verifyConfigurable(GeneratorFunctionPrototype, Symbol.toStringTag);
+verifyBuiltinProperty(GeneratorFunctionPrototype, Symbol.toStringTag, {
+  value: 'GeneratorFunction',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});

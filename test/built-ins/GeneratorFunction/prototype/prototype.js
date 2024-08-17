@@ -13,11 +13,10 @@ features: [generators]
 ---*/
 
 var GeneratorFunctionPrototype = Object.getPrototypeOf(function*() {});
-assert.sameValue(
-  GeneratorFunctionPrototype.prototype,
-  Object.getPrototypeOf(function*() {}.prototype)
-);
 
-verifyNotEnumerable(GeneratorFunctionPrototype, 'prototype');
-verifyNotWritable(GeneratorFunctionPrototype, 'prototype');
-verifyConfigurable(GeneratorFunctionPrototype, 'prototype');
+verifyBuiltinProperty(GeneratorFunctionPrototype, 'prototype', {
+  value: Object.getPrototypeOf(function*() {}.prototype),
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});

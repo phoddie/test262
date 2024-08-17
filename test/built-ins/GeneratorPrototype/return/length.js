@@ -26,7 +26,7 @@ features: [generators]
 function* g() {}
 var GeneratorPrototype = Object.getPrototypeOf(g).prototype;
 
-verifyProperty(GeneratorPrototype.return, "length", {
+verifyBuiltinProperty(GeneratorPrototype.return, "length", {
   value: 1,
   writable: false,
   enumerable: false,
