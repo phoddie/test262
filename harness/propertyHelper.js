@@ -276,8 +276,7 @@ function verifyBuiltinProperty(obj, name, desc, options) {
   );
 
   if (desc && (true === desc.writable) || (true === desc.configurable)) {
-    const LOCKED_DOWN = !Object.getOwnPropertyDescriptor(Object, "getOwnPropertyDescriptor").writable;    // very imperfect
-
+    const LOCKED_DOWN = ($262 && (typeof $262.isLockedDown === "function")) ? $262.isLockedDown() : false
     if (LOCKED_DOWN) {
       desc = {...desc};
       if (desc.writable) desc.writable = false;
