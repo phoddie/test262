@@ -12,8 +12,7 @@ features: [Symbol.unscopables]
 ---*/
 
 verifyBuiltinProperty(Array.prototype, Symbol.unscopables, {
-    writable: true,
+    writable: false,
     enumerable: false,
     configurable: true
-  });
-  
+});
