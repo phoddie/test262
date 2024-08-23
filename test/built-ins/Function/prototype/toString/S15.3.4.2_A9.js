@@ -9,20 +9,9 @@ es5id: 15.3.4.2_A9
 description: >
     Checking if deleting the Function.prototype.toString.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  Function.prototype.toString.hasOwnProperty('length'),
-  'Function.prototype.toString.hasOwnProperty(\'length\') must return true'
-);
 
-assert(
-  delete Function.prototype.toString.length,
-  'The value of delete Function.prototype.toString.length is expected to be true'
-);
-
-assert(
-  !Function.prototype.toString.hasOwnProperty('length'),
-  'The value of !Function.prototype.toString.hasOwnProperty(\'length\') is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Function.prototype.toString, "length", {
+  configurable: true,
+});

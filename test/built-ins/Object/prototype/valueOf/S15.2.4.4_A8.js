@@ -7,20 +7,9 @@ es5id: 15.2.4.4_A8
 description: >
     Checking if enumerating the Object.prototype.valueOf.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.valueOf.hasOwnProperty('length'),
-  'The value of !!Object.prototype.valueOf.hasOwnProperty("length") is expected to be true'
-);
 
-assert(
-  !Object.prototype.valueOf.propertyIsEnumerable('length'),
-  'The value of !Object.prototype.valueOf.propertyIsEnumerable("length") is expected to be true'
-);
-
-for (var p in Object.prototype.valueOf) {
-  assert.notSameValue(p, "length", 'The value of p is not "length"');
-}
-//
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Object.prototype.valueOf, "length", {
+  enumerable: false,
+});

@@ -11,21 +11,7 @@ description: >
     property fails
 includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.toLocaleString.hasOwnProperty('length'),
-  'The value of !!Object.prototype.toLocaleString.hasOwnProperty("length") is expected to be true'
-);
 
-var obj = Object.prototype.toLocaleString.length;
-
-verifyNotWritable(Object.prototype.toLocaleString, "length", null, function() {
-  return "shifted";
+verifyBuiltinProperty(Object.prototype.toLocaleString, "length", {
+  writable: false,
 });
-
-assert.sameValue(
-  Object.prototype.toLocaleString.length,
-  obj,
-  'The value of Object.prototype.toLocaleString.length is expected to equal the value of obj'
-);
-
-// TODO: Convert to verifyProperty() format.

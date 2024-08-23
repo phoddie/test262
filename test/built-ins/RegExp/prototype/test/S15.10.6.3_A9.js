@@ -7,23 +7,9 @@ info: |
     DontDelete
 es5id: 15.10.6.3_A9
 description: Checking if deleting RegExp.prototype.test.length property fails
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  RegExp.prototype.exec.hasOwnProperty('length'),
-  true,
-  'RegExp.prototype.exec.hasOwnProperty(\'length\') must return true'
-);
 
-assert.sameValue(
-  delete RegExp.prototype.exec.length,
-  true,
-  'The value of `delete RegExp.prototype.exec.length` is expected to be true'
-);
-
-assert.sameValue(
-  RegExp.prototype.exec.hasOwnProperty('length'),
-  false,
-  'RegExp.prototype.exec.hasOwnProperty(\'length\') must return false'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(RegExp.prototype.test, "length", {
+	configurable: true,
+});

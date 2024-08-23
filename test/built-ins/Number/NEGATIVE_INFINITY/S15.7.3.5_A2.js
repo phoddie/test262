@@ -8,12 +8,6 @@ description: Checking if varying Number.NEGATIVE_INFINITY fails
 includes: [propertyHelper.js]
 ---*/
 
-// CHECK#1
-verifyNotWritable(Number, "NEGATIVE_INFINITY", null, 1);
-
-assert(
-  !isFinite(Number.NEGATIVE_INFINITY),
-  'The value of !isFinite(Number.NEGATIVE_INFINITY) is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Number, "NEGATIVE_INFINITY", {
+	writable: false,
+});

@@ -7,20 +7,9 @@ es5id: 15.3.4.2_A8
 description: >
     Checking if enumerating the Function.prototype.toString.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  Function.prototype.toString.hasOwnProperty('length'),
-  'Function.prototype.toString.hasOwnProperty(\'length\') must return true'
-);
 
-assert(
-  !Function.prototype.toString.propertyIsEnumerable('length'),
-  'The value of !Function.prototype.toString.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-// CHECK#2
-for (var p in Function.prototype.toString){
-  assert.notSameValue(p, "length", 'The value of p is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Function.prototype.toString, "length", {
+  enumerable: false,
+});

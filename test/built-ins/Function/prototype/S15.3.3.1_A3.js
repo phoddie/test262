@@ -8,19 +8,6 @@ description: Checking if deleting the Function.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotConfigurable(Function, "prototype");
-
-try {
-  assert.sameValue(delete Function.prototype, false);
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-  assert(e instanceof TypeError);
-}
-
-if (!(Function.hasOwnProperty('prototype'))) {
-  throw new Test262Error('#2: the Function.prototype property has the attributes DontDelete.');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Function, "prototype", {
+  configurable: false,
+});

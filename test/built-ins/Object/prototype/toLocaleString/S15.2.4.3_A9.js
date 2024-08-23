@@ -9,20 +9,9 @@ es5id: 15.2.4.3_A9
 description: >
     Checknig if deleting of the Object.prototype.toLocaleString.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.toLocaleString.hasOwnProperty('length'),
-  'The value of !!Object.prototype.toLocaleString.hasOwnProperty("length") is expected to be true'
-);
 
-assert(
-  !!delete Object.prototype.toLocaleString.length,
-  'The value of !!delete Object.prototype.toLocaleString.length is expected to be true'
-);
-
-assert(
-  !Object.prototype.toLocaleString.hasOwnProperty('length'),
-  'The value of !Object.prototype.toLocaleString.hasOwnProperty("length") is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Object.prototype.toLocaleString, "length", {
+  configurable: true,
+});

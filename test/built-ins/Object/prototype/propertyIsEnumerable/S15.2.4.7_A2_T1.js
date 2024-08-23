@@ -13,16 +13,9 @@ es5id: 15.2.4.7_A2_T1
 description: >
     Checking the type of Object.prototype.propertyIsEnumerable and the
     returned result
+includes: [propertyHelper.js]
 ---*/
-assert.sameValue(
-  typeof Object.prototype.propertyIsEnumerable,
-  "function",
-  'The value of `typeof Object.prototype.propertyIsEnumerable` is expected to be "function"'
-);
 
-assert(
-  !Object.prototype.propertyIsEnumerable("propertyIsEnumerable"),
-  'The value of !Object.prototype.propertyIsEnumerable("propertyIsEnumerable") is expected to be true'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Object.prototype, "propertyIsEnumerable", {
+  enumerable: false,
+});

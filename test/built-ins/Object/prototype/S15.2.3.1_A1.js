@@ -8,20 +8,6 @@ description: Checking if varying "Object.prototype" property fails
 includes: [propertyHelper.js]
 ---*/
 
-var obj = Object.prototype;
-verifyNotWritable(Object, "prototype", null, function() {
-  return "shifted";
+verifyBuiltinProperty(Object, "prototype", {
+  writable: false,
 });
-
-assert.sameValue(Object.prototype, obj, 'The value of Object.prototype is expected to equal the value of obj');
-
-try {
-  Object.prototype();
-  throw new Test262Error('#2: the Object.prototype property has the attributes ReadOnly');
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-}
-
-// TODO: Convert to verifyProperty() format.

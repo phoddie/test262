@@ -10,16 +10,6 @@ includes: [propertyHelper.js]
 
 var obj = Function.prototype;
 
-verifyNotWritable(Function, "prototype", null, function() {
-  return "shifted";
+verifyBuiltinProperty(Function, "prototype", {
+  writable: false,
 });
-
-assert.sameValue(Function.prototype, obj, 'The value of Function.prototype is expected to equal the value of obj');
-
-try {
-  assert.sameValue(Function.prototype(), undefined, 'Function.prototype() returns undefined');
-} catch (e) {
-  throw new Test262Error('#2.1: the Function.prototype property has the attributes ReadOnly: ' + e);
-}
-
-// TODO: Convert to verifyProperty() format.

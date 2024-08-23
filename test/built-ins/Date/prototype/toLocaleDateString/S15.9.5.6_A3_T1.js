@@ -10,13 +10,6 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.toLocaleDateString.length;
-verifyNotWritable(Date.prototype.toLocaleDateString, "length", null, 1);
-
-assert.sameValue(
-  Date.prototype.toLocaleDateString.length,
-  x,
-  'The value of Date.prototype.toLocaleDateString.length is expected to equal the value of x'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.toLocaleDateString, "length", {
+  writable: false
+});

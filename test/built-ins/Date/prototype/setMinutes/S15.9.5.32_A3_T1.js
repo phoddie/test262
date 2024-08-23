@@ -10,13 +10,6 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.setMinutes.length;
-verifyNotWritable(Date.prototype.setMinutes, "length", null, 1);
-
-assert.sameValue(
-  Date.prototype.setMinutes.length,
-  x,
-  'The value of Date.prototype.setMinutes.length is expected to equal the value of x'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.setMinutes, "length", {
+  writable: false
+});

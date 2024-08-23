@@ -9,20 +9,9 @@ es5id: 15.2.4.7_A8
 description: >
     Checking if enumerating the
     Object.prototype.propertyIsEnumerable.length property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.propertyIsEnumerable.hasOwnProperty('length'),
-  'The value of !!Object.prototype.propertyIsEnumerable.hasOwnProperty("length") is expected to be true'
-);
 
-assert(
-  !Object.prototype.propertyIsEnumerable.propertyIsEnumerable('length'),
-  'The value of !Object.prototype.propertyIsEnumerable.propertyIsEnumerable("length") is expected to be true'
-);
-
-for (var p in Object.prototype.propertyIsEnumerable) {
-  assert.notSameValue(p, "length", 'The value of p is not "length"');
-}
-//
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Object.prototype.propertyIsEnumerable, "length", {
+  enumerable: false,
+});

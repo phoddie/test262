@@ -12,23 +12,6 @@ includes: [propertyHelper.js]
 
 var f = new Function("", null);
 
-assert(f.hasOwnProperty('prototype'));
-
-var fproto = f.prototype;
-
-verifyNotConfigurable(f, "prototype");
-
-try {
-  assert.sameValue(delete f.prototype, false);
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-  assert(e instanceof TypeError);
-}
-
-if (f.prototype !== fproto) {
-  throw new Test262Error('#3: the prototype property has the attributes { DontDelete }');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(f, "prototype", {
+  configurable: false,
+});

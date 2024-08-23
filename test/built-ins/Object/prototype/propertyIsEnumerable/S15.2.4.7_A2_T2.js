@@ -13,6 +13,7 @@ es5id: 15.2.4.7_A2_T2
 description: >
     Argument of the propertyIsEnumerable method is a custom boolean
     property
+includes: [propertyHelper.js]
 ---*/
 assert.sameValue(
   typeof Object.prototype.propertyIsEnumerable,
@@ -30,15 +31,12 @@ assert.sameValue(
   'The value of `typeof obj.propertyIsEnumerable` is expected to be "function"'
 );
 
-assert(
-  !!obj.propertyIsEnumerable("the_property"),
-  'The value of !!obj.propertyIsEnumerable("the_property") is expected to be true'
-);
+verifyBuiltinProperty(obj, "the_property", {
+  enumerable: true,
+});
 
 var accum = "";
 for (var prop in obj) {
   accum += prop;
 }
 assert.sameValue(accum.indexOf("the_property"), 0, 'accum.indexOf("the_property") must return 0');
-
-// TODO: Convert to verifyProperty() format.

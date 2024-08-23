@@ -7,12 +7,9 @@ info: |
     DontDelete
 es5id: 15.10.7.3_A9
 description: Checking if deleting the ignoreCase property succeeds
+includes: [propertyHelper.js]
 ---*/
 
-var __re = RegExp.prototype;
-
-assert.sameValue(__re.hasOwnProperty('ignoreCase'), true, '__re.hasOwnProperty(\'ignoreCase\') must return true');
-assert.sameValue(delete __re.ignoreCase, true, 'The value of `delete __re.ignoreCase` is expected to be true');
-assert.sameValue(__re.hasOwnProperty('ignoreCase'), false, '__re.hasOwnProperty(\'ignoreCase\') must return false');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(RegExp.prototype, "ignoreCase", {
+	configurable: true,
+});

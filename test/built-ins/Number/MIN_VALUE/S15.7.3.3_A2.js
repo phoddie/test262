@@ -8,9 +8,6 @@ description: Checking if varying Number.MIN_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-// CHECK#1
-var x = Number.MIN_VALUE;
-verifyNotWritable(Number, "MIN_VALUE", null, 1);
-assert.sameValue(Number.MIN_VALUE, x, 'The value of Number.MIN_VALUE is expected to equal the value of x');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Number, "MIN_VALUE", {
+	writable: false,
+});

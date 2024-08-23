@@ -12,25 +12,6 @@ includes: [propertyHelper.js]
 
 var f = Function("arg1,arg2,arg3", null);
 
-assert(f.hasOwnProperty('length'));
-
-var flength = f.length;
-
-verifyNotWritable(f, "length", null, function() {});
-
-assert.sameValue(f.length, flength);
-
-try {
-  f.length();
-  throw new Test262Error('#3: the function.length property has the attributes ReadOnly');
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-}
-
-if (f.length !== 3) {
-  throw new Test262Error('#4: the length property has the attributes { ReadOnly }');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(f, "length", {
+  writable: false,
+});

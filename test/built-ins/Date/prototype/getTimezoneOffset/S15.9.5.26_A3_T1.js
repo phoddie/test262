@@ -10,13 +10,6 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-var x = Date.prototype.getTimezoneOffset.length;
-verifyNotWritable(Date.prototype.getTimezoneOffset, "length", null, 1);
-
-assert.sameValue(
-  Date.prototype.getTimezoneOffset.length,
-  x,
-  'The value of Date.prototype.getTimezoneOffset.length is expected to equal the value of x'
-);
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Date.prototype.getTimezoneOffset, "length", {
+  writable: false
+});

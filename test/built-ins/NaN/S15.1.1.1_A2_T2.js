@@ -6,10 +6,9 @@ info: The NaN is ReadOnly
 es5id: 15.1.1.1_A2_T2
 description: Checking typeof Functions
 flags: [noStrict]
+includes: [propertyHelper.js]
 ---*/
 
-// CHECK#1
-NaN = true;
-assert.notSameValue(typeof(NaN), "boolean", 'The value of typeof(NaN) is not "boolean"');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(this, "NaN", {
+	writable: false,
+});

@@ -8,15 +8,6 @@ description: Checking if deleting Number.MIN_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotConfigurable(Number, "MIN_VALUE");
-
-try {
-  assert.sameValue(delete Number.MIN_VALUE, false);
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-  assert(e instanceof TypeError);
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Number, "MIN_VALUE", {
+	configurable: false,
+});

@@ -8,16 +8,6 @@ description: Checking if deleting Number.MAX_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotConfigurable(Number, "MAX_VALUE");
-
-// CHECK#1
-try {
-  assert.sameValue(delete Number.MAX_VALUE, false);
-} catch (e) {
-  if (e instanceof Test262Error) {
-    throw e;
-  }
-  assert(e instanceof TypeError);
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Number, "MAX_VALUE", {
+	configurable: false,
+});

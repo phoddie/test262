@@ -8,9 +8,6 @@ description: Checking if varying Number.MAX_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-// CHECK#1
-var x = Number.MAX_VALUE;
-verifyNotWritable(Number, "MAX_VALUE", null, 1);
-assert.sameValue(Number.MAX_VALUE, x, 'The value of Number.MAX_VALUE is expected to equal the value of x');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Number, "MAX_VALUE", {
+	writable: false,
+});

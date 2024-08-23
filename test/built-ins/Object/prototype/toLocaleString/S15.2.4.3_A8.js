@@ -9,20 +9,9 @@ es5id: 15.2.4.3_A8
 description: >
     Checking if enumerating the Object.prototype.toLocaleString.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.toLocaleString.hasOwnProperty('length'),
-  'The value of !!Object.prototype.toLocaleString.hasOwnProperty("length") is expected to be true'
-);
 
-assert(
-  !Object.prototype.toLocaleString.propertyIsEnumerable('length'),
-  'The value of !Object.prototype.toLocaleString.propertyIsEnumerable("length") is expected to be true'
-);
-
-for (var p in Object.prototype.toLocaleString) {
-  assert.notSameValue(p, "length", 'The value of p is not "length"');
-}
-//
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Object.prototype.toLocaleString, "length", {
+  enumerable: false,
+});

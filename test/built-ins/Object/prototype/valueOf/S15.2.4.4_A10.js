@@ -9,21 +9,7 @@ description: >
     fails
 includes: [propertyHelper.js]
 ---*/
-assert(
-  !!Object.prototype.valueOf.hasOwnProperty('length'),
-  'The value of !!Object.prototype.valueOf.hasOwnProperty("length") is expected to be true'
-);
 
-var obj = Object.prototype.valueOf.length;
-
-verifyNotWritable(Object.prototype.valueOf, "length", null, function() {
-  return "shifted";
+verifyBuiltinProperty(Object.prototype.valueOf, "length", {
+  writable: false,
 });
-
-assert.sameValue(
-  Object.prototype.valueOf.length,
-  obj,
-  'The value of Object.prototype.valueOf.length is expected to equal the value of obj'
-);
-
-// TODO: Convert to verifyProperty() format.

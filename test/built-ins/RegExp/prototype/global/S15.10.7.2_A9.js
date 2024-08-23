@@ -7,12 +7,9 @@ info: |
     DontDelete
 es5id: 15.10.7.2_A9
 description: Checking if deleting the global property succeeds
+includes: [propertyHelper.js]
 ---*/
 
-var __re = RegExp.prototype;
-
-assert.sameValue(__re.hasOwnProperty('global'), true, '__re.hasOwnProperty(\'global\') must return true');
-assert.sameValue(delete __re.global, true, 'The value of `delete __re.global` is expected to be true');
-assert.sameValue(__re.hasOwnProperty('global'), false, '__re.hasOwnProperty(\'global\') must return false');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(RegExp.prototype, "global", {
+	configurable: true,
+});

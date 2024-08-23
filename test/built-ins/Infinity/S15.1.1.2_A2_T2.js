@@ -6,10 +6,9 @@ info: The Infinity is ReadOnly
 es5id: 15.1.1.2_A2_T2
 description: Checking typeof Functions
 flags: [noStrict]
+includes: [propertyHelper.js]
 ---*/
 
-// CHECK#1
-Infinity = true;
-assert.notSameValue(typeof(Infinity), "boolean", 'The value of typeof(Infinity) is not "boolean"');
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(this, "Infinity", {
+	writable: false,
+});

@@ -9,21 +9,7 @@ description: >
     fails
 includes: [propertyHelper.js]
 ---*/
-assert(
-  Function.prototype.call.hasOwnProperty('length'),
-  'Function.prototype.call.hasOwnProperty(\'length\') must return true'
-);
 
-var obj = Function.prototype.call.length;
-
-verifyNotWritable(Function.prototype.call, "length", null, function() {
-  return "shifted";
+verifyBuiltinProperty(Function.prototype.call, "length", {
+  writable: false,
 });
-
-assert.sameValue(
-  Function.prototype.call.length,
-  obj,
-  'The value of Function.prototype.call.length is expected to equal the value of obj'
-);
-
-// TODO: Convert to verifyProperty() format.

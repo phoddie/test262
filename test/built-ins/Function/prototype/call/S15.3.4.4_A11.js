@@ -7,20 +7,9 @@ es5id: 15.3.4.4_A11
 description: >
     Checking if enumerating the Function.prototype.call.length
     property fails
+includes: [propertyHelper.js]
 ---*/
-assert(
-  Function.prototype.call.hasOwnProperty('length'),
-  'Function.prototype.call.hasOwnProperty(\'length\') must return true'
-);
 
-assert(
-  !Function.prototype.call.propertyIsEnumerable('length'),
-  'The value of !Function.prototype.call.propertyIsEnumerable(\'length\') is expected to be true'
-);
-
-// CHECK#2
-for (var p in Function.prototype.call) {
-  assert.notSameValue(p, "length", 'The value of p is not "length"');
-}
-
-// TODO: Convert to verifyProperty() format.
+verifyBuiltinProperty(Function.prototype.call, "length", {
+  enumerable: false,
+});
