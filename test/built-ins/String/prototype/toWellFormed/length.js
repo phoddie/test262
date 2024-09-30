@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.toWellFormed]
 ---*/
 
-verifyBuiltinProperty(String.prototype.toWellFormed, 'length', {
+verifyPrimordialProperty(String.prototype.toWellFormed, 'length', {
   configurable: true,
   enumerable: false,
   writable: false,

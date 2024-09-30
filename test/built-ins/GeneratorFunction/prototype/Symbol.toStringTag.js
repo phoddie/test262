@@ -17,7 +17,7 @@ features: [generators, Symbol.toStringTag]
 
 var GeneratorFunctionPrototype = Object.getPrototypeOf(function*() {});
 
-verifyBuiltinProperty(GeneratorFunctionPrototype, Symbol.toStringTag, {
+verifyPrimordialProperty(GeneratorFunctionPrototype, Symbol.toStringTag, {
   value: 'GeneratorFunction',
   enumerable: false,
   writable: false,

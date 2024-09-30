@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [__setter__]
 ---*/
 
-verifyBuiltinProperty(Object.prototype, "__lookupSetter__", {
+verifyPrimordialProperty(Object.prototype, "__lookupSetter__", {
   enumerable: false,
   writable: true,
   configurable: true,

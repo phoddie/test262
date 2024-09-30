@@ -8,6 +8,6 @@ description: Checking if deleting Number.MIN_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "MIN_VALUE", {
+verifyPrimordialProperty(Number, "MIN_VALUE", {
 	configurable: false,
 });

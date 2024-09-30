@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype, "fontsize", {
+verifyPrimordialProperty(String.prototype, "fontsize", {
   enumerable: false,
   writable: true,
   configurable: true

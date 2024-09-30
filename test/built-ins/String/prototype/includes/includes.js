@@ -18,7 +18,7 @@ assert.sameValue(
   '`typeof String.prototype.includes` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'includes', {
+verifyPrimordialProperty(String.prototype, 'includes', {
 	writable: true,
 	enumerable: false,
 	configurable: true

@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'detached');
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(ArrayBuffer.prototype, 'detached', {
+verifyPrimordialProperty(ArrayBuffer.prototype, 'detached', {
   enumerable: false,
   configurable: true
 });

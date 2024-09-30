@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.some, "name", {
+verifyPrimordialProperty(Array.prototype.some, "name", {
   value: "some",
   writable: false,
   enumerable: false,

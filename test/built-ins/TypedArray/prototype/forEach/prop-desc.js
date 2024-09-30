@@ -12,7 +12,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype, "forEach", {
+verifyPrimordialProperty(TypedArray.prototype, "forEach", {
   writable: true,
   enumerable: false,
   configurable: true

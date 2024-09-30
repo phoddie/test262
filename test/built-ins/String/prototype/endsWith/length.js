@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.endsWith]
 ---*/
 
-verifyBuiltinProperty(String.prototype.endsWith, "length", {
+verifyPrimordialProperty(String.prototype.endsWith, "length", {
   value: 1,
   writable: false,
   enumerable: false,

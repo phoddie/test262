@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Float32Array.prototype, "BYTES_PER_ELEMENT", {
+verifyPrimordialProperty(Float32Array.prototype, "BYTES_PER_ELEMENT", {
   value: 4,
   writable: false,
   enumerable: false,

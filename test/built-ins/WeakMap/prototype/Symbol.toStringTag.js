@@ -16,7 +16,7 @@ features: [Symbol.toStringTag]
 
 assert.sameValue(WeakMap.prototype[Symbol.toStringTag], 'WeakMap');
 
-verifyBuiltinProperty(WeakMap.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(WeakMap.prototype, Symbol.toStringTag, {
     value: "WeakMap",
     writable: false,
     enumerable: false,

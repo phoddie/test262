@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype.toPrecision, "name", {
+verifyPrimordialProperty(Number.prototype.toPrecision, "name", {
   value: "toPrecision",
   writable: false,
   enumerable: false,

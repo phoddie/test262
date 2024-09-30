@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Promise.prototype.catch, "name", {
+verifyPrimordialProperty(Promise.prototype.catch, "name", {
   value: "catch",
   writable: false,
   enumerable: false,

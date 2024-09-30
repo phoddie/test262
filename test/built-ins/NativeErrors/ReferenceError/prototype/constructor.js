@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(ReferenceError.prototype, 'constructor', {
+verifyPrimordialProperty(ReferenceError.prototype, 'constructor', {
   value: ReferenceError,
   enumerable: false,
   writable: true,

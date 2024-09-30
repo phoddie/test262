@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.isFinite, "name", {
+verifyPrimordialProperty(Number.isFinite, "name", {
   value: "isFinite",
   writable: false,
   enumerable: false,

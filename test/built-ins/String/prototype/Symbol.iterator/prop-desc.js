@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof String.prototype[Symbol.iterator], 'function');
 
-verifyBuiltinProperty(String.prototype, Symbol.iterator, {
+verifyPrimordialProperty(String.prototype, Symbol.iterator, {
 	writable: true,
 	enumerable: false,
 	configurable: true

@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'resizable');
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(ArrayBuffer.prototype, 'resizable', {
+verifyPrimordialProperty(ArrayBuffer.prototype, 'resizable', {
   enumerable: false,
   configurable: true
 });

@@ -7,6 +7,6 @@ esid: sec-date.prototype.getutcmonth
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "getUTCMonth", {
+verifyPrimordialProperty(Date.prototype, "getUTCMonth", {
   configurable: true,
 });

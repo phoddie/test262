@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.map, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "map", {
+verifyPrimordialProperty(Array.prototype, "map", {
   writable: true,
   enumerable: false,
   configurable: true

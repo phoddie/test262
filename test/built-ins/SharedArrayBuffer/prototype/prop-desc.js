@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer]
 ---*/
 
-verifyBuiltinProperty(SharedArrayBuffer, 'prototype', {
+verifyPrimordialProperty(SharedArrayBuffer, 'prototype', {
     enumerable: false,
     writable: false,
     configurable: false

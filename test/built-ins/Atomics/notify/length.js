@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.notify, 'length', {
+verifyPrimordialProperty(Atomics.notify, 'length', {
   value: 3,
   enumerable: false,
   writable: false,

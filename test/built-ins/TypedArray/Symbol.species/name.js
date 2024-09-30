@@ -22,7 +22,7 @@ features: [Symbol.species]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray, Symbol.species);
 
-verifyBuiltinProperty(desc.get, "name", {
+verifyPrimordialProperty(desc.get, "name", {
   value: "get [Symbol.species]",
   writable: false,
   enumerable: false,

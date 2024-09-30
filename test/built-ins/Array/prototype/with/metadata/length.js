@@ -22,7 +22,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.with, "length", {
+verifyPrimordialProperty(Array.prototype.with, "length", {
   value: 2,
   writable: false,
   enumerable: false,

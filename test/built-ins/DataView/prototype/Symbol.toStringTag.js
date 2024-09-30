@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(DataView.prototype, Symbol.toStringTag, {
   value: "DataView",
   writable: false,
   enumerable: false,

@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.blink, "length", {
+verifyPrimordialProperty(String.prototype.blink, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

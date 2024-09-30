@@ -8,6 +8,6 @@ es5id: 15.9.5.10_A1_T2
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "getFullYear", {
+verifyPrimordialProperty(Date.prototype, "getFullYear", {
   configurable: true,
 });

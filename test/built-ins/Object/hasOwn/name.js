@@ -21,7 +21,7 @@ author: Jamie Kyle
 features: [Object.hasOwn]
 ---*/
 
-verifyBuiltinProperty(Object.hasOwn, "name", {
+verifyPrimordialProperty(Object.hasOwn, "name", {
   value: "hasOwn",
   writable: false,
   enumerable: false,

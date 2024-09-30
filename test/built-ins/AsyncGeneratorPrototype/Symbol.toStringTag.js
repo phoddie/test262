@@ -20,7 +20,7 @@ var AsyncGeneratorPrototype = Object.getPrototypeOf(
   Object.getPrototypeOf(async function*() {}())
 );
 
-verifyBuiltinProperty(AsyncGeneratorPrototype, Symbol.toStringTag, {
+verifyPrimordialProperty(AsyncGeneratorPrototype, Symbol.toStringTag, {
   value: 'AsyncGenerator',
   enumerable: false,
   writable: false,

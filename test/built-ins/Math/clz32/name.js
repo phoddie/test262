@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.clz32, "name", {
+verifyPrimordialProperty(Math.clz32, "name", {
   value: "clz32",
   writable: false,
   enumerable: false,

@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.splice, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "splice", {
+verifyPrimordialProperty(Array.prototype, "splice", {
   writable: true,
   enumerable: false,
   configurable: true

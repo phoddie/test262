@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 var StringIteratorProto = Object.getPrototypeOf(''[Symbol.iterator]());
 
-verifyBuiltinProperty(StringIteratorProto, Symbol.toStringTag, {
+verifyPrimordialProperty(StringIteratorProto, Symbol.toStringTag, {
     value: 'String Iterator',
     enumerable: false,
     writable: false,

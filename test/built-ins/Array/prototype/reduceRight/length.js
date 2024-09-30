@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.reduceRight, "length", {
+verifyPrimordialProperty(Array.prototype.reduceRight, "length", {
   value: 1,
   writable: false,
   enumerable: false,

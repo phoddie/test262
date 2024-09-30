@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.toString, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "toString", {
+verifyPrimordialProperty(Array.prototype, "toString", {
   writable: true,
   enumerable: false,
   configurable: true

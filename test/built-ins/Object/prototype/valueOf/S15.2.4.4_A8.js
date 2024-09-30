@@ -10,6 +10,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.prototype.valueOf, "length", {
+verifyPrimordialProperty(Object.prototype.valueOf, "length", {
   enumerable: false,
 });

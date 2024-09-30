@@ -17,7 +17,7 @@ assert.sameValue(
   'The value of `typeof TypedArray.prototype.at` is "function"'
 );
 
-verifyBuiltinProperty(TypedArray.prototype, 'at', {
+verifyPrimordialProperty(TypedArray.prototype, 'at', {
   enumerable: false,
   writable: true,
   configurable: true

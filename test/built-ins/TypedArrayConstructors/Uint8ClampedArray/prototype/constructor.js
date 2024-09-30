@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Uint8ClampedArray.prototype, "constructor", {
+verifyPrimordialProperty(Uint8ClampedArray.prototype, "constructor", {
   value: Uint8ClampedArray,
   writable: true,
   enumerable: false,

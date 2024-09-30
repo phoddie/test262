@@ -20,7 +20,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "parseFloat", {
+verifyPrimordialProperty(Number, "parseFloat", {
   value: parseFloat,
   enumerable: false,
   writable: true,

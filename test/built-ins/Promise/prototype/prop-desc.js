@@ -9,7 +9,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Promise, 'prototype', {
+verifyPrimordialProperty(Promise, 'prototype', {
   configurable: false,
   writable: false,
   enumerable: false,

@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "getOwnPropertyDescriptor", {
+verifyPrimordialProperty(Object, "getOwnPropertyDescriptor", {
   writable: true,
   enumerable: false,
   configurable: true,

@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [Reflect]
 ---*/
 
-verifyBuiltinProperty(Reflect, "get", {
+verifyPrimordialProperty(Reflect, "get", {
   writable: true,
   enumerable: false,
   configurable: true

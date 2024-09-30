@@ -9,7 +9,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer]
 ---*/
 
-verifyBuiltinProperty(SharedArrayBuffer.prototype, 'constructor', {
+verifyPrimordialProperty(SharedArrayBuffer.prototype, 'constructor', {
   value: SharedArrayBuffer,
   writable: true,
   enumerable: false,

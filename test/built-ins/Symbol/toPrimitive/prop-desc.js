@@ -13,7 +13,7 @@ features: [Symbol.toPrimitive]
 
 assert.sameValue(typeof Symbol.toPrimitive, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'toPrimitive', {
+verifyPrimordialProperty(Symbol, 'toPrimitive', {
     writable: false,
     enumerable: false,
     configurable: false

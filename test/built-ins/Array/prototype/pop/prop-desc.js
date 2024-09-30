@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.pop, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "pop", {
+verifyPrimordialProperty(Array.prototype, "pop", {
   writable: true,
   enumerable: false,
   configurable: true

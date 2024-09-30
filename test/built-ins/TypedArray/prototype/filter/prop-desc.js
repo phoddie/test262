@@ -12,7 +12,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype, "filter", {
+verifyPrimordialProperty(TypedArray.prototype, "filter", {
   writable: true,
   enumerable: false,
   configurable: true

@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.notify, 'name', {
+verifyPrimordialProperty(Atomics.notify, 'name', {
   value: 'notify',
   enumerable: false,
   writable: false,

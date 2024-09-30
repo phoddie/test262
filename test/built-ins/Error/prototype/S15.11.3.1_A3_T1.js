@@ -8,6 +8,6 @@ description: Checking if varying the Error.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error, "prototype", {
+verifyPrimordialProperty(Error, "prototype", {
   writable: false,
 });

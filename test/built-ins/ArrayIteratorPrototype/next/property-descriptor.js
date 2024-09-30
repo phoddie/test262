@@ -12,7 +12,7 @@ features: [Symbol.iterator]
 
 var ArrayIteratorProto = Object.getPrototypeOf([][Symbol.iterator]());
 
-verifyBuiltinProperty(ArrayIteratorProto, "next", {
+verifyPrimordialProperty(ArrayIteratorProto, "next", {
     enumerable: false,
     writable: true,
     configurable: true,

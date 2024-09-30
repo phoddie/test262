@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer]
 ---*/
 
-verifyBuiltinProperty(SharedArrayBuffer.prototype.slice, "length", {
+verifyPrimordialProperty(SharedArrayBuffer.prototype.slice, "length", {
   value: 2,
   writable: false,
   enumerable: false,

@@ -9,6 +9,6 @@ esid: sec-date.prototype.setutchours
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.setUTCHours, "length", {
+verifyPrimordialProperty(Date.prototype.setUTCHours, "length", {
   enumerable: false,
 });

@@ -21,7 +21,7 @@ var desc = Object.getOwnPropertyDescriptor(DataView.prototype, "byteLength");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(DataView.prototype, "byteLength", {
+verifyPrimordialProperty(DataView.prototype, "byteLength", {
   enumerable: false,
   configurable: true
 });

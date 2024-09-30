@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [BigInt, Symbol, Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(BigInt.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(BigInt.prototype, Symbol.toStringTag, {
   value: "BigInt",
   writable: false,
   enumerable: false,

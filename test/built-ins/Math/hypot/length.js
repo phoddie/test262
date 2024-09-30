@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.hypot, "length", {
+verifyPrimordialProperty(Math.hypot, "length", {
   value: 2,
   writable: false,
   enumerable: false,

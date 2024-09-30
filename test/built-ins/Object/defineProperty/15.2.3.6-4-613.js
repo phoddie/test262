@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.lastIndexOf are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype, "lastIndexOf", {
+verifyPrimordialProperty(Array.prototype, "lastIndexOf", {
   writable: true,
   enumerable: false,
   configurable: true,

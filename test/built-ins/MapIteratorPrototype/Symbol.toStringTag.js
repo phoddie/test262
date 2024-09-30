@@ -16,7 +16,7 @@ features: [Symbol.iterator, Symbol.toStringTag]
 
 var MapIteratorProto = Object.getPrototypeOf(new Map()[Symbol.iterator]());
 
-verifyBuiltinProperty(MapIteratorProto, Symbol.toStringTag, {
+verifyPrimordialProperty(MapIteratorProto, Symbol.toStringTag, {
     value: 'Map Iterator',
     enumerable: false,
     writable: false,

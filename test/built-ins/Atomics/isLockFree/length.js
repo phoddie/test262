@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.isLockFree, 'length', {
+verifyPrimordialProperty(Atomics.isLockFree, 'length', {
   value: 1,
   enumerable: false,
   writable: false,

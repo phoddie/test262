@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "SQRT1_2", {
+verifyPrimordialProperty(Math, "SQRT1_2", {
 	writable: false,
 	enumerable: false,
 	configurable: false

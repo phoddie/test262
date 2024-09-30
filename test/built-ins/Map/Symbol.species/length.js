@@ -25,7 +25,7 @@ features: [Symbol.species]
 
 var desc = Object.getOwnPropertyDescriptor(Map, Symbol.species);
 
-verifyBuiltinProperty(desc.get, "length", {
+verifyPrimordialProperty(desc.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

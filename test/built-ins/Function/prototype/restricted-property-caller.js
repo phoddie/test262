@@ -24,7 +24,7 @@ assert.throws(TypeError, function() {
   FunctionPrototype.caller = {};
 });
 
-verifyBuiltinProperty(FunctionPrototype, 'caller', {
+verifyPrimordialProperty(FunctionPrototype, 'caller', {
   enumerable: false,
   configurable: true,
 });

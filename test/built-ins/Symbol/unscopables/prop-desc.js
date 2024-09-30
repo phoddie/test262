@@ -13,7 +13,7 @@ features: [Symbol.unscopables]
 
 assert.sameValue(typeof Symbol.unscopables, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'unscopables', {
+verifyPrimordialProperty(Symbol, 'unscopables', {
     writable: false,
     enumerable: false,
     configurable: false

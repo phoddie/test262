@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.trim, "name", {
+verifyPrimordialProperty(String.prototype.trim, "name", {
   value: "trim",
   writable: false,
   enumerable: false,

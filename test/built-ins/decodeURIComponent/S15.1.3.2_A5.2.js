@@ -10,6 +10,6 @@ description: Checking use hasOwnProperty, delete
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(decodeURIComponent, "length", {
+verifyPrimordialProperty(decodeURIComponent, "length", {
   configurable: true
 });

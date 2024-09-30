@@ -8,6 +8,6 @@ es5id: 15.9.5.24_A1_T3
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "getMilliseconds", {
+verifyPrimordialProperty(Date.prototype, "getMilliseconds", {
   enumerable: false,
 });

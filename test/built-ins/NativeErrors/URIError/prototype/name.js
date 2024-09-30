@@ -17,7 +17,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(URIError.prototype, "name", {
+verifyPrimordialProperty(URIError.prototype, "name", {
   value: "URIError",
   writable: true,
   enumerable: false,

@@ -8,6 +8,6 @@ description: Checking if varying the RegExp.prototype.exec.length property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype.exec, "length", {
+verifyPrimordialProperty(RegExp.prototype.exec, "length", {
 	writable: false,
  });

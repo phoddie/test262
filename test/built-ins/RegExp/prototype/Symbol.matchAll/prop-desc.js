@@ -17,7 +17,7 @@ features: [Symbol.matchAll]
 
 assert.sameValue(typeof RegExp.prototype[Symbol.matchAll], 'function');
 
-verifyBuiltinProperty(RegExp.prototype, Symbol.matchAll, {
+verifyPrimordialProperty(RegExp.prototype, Symbol.matchAll, {
   enumerable: false,
   writable: true,
   configurable: true,

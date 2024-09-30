@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.isNaN, "length", {
+verifyPrimordialProperty(Number.isNaN, "length", {
   value: 1,
   writable: false,
   enumerable: false,

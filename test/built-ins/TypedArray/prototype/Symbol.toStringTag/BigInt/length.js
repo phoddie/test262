@@ -25,7 +25,7 @@ features: [BigInt, Symbol.toStringTag]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray.prototype, Symbol.toStringTag);
 
-verifyBuiltinProperty(desc.get, "length", {
+verifyPrimordialProperty(desc.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

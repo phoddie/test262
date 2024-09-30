@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'maxByteLength
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(ArrayBuffer.prototype, 'maxByteLength', {
+verifyPrimordialProperty(ArrayBuffer.prototype, 'maxByteLength', {
   enumerable: false,
   configurable: true
 });

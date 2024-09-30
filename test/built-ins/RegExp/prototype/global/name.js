@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(RegExp.prototype, 'global');
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get global",
   writable: false,
   enumerable: false,

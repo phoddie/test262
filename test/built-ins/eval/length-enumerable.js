@@ -8,6 +8,6 @@ description: Checking use propertyIsEnumerable, for-in
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(eval, "length", {
+verifyPrimordialProperty(eval, "length", {
   enumerable: false
 });

@@ -9,7 +9,7 @@ author: Jamie Kyle
 features: [Object.hasOwn]
 ---*/
 
-verifyBuiltinProperty(Object, "hasOwn", {
+verifyPrimordialProperty(Object, "hasOwn", {
   writable: true,
   enumerable: false,
   configurable: true,

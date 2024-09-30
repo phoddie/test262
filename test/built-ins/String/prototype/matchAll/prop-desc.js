@@ -17,7 +17,7 @@ features: [String.prototype.matchAll]
 
 assert.sameValue(typeof String.prototype.matchAll, 'function');
 
-verifyBuiltinProperty(String.prototype, 'matchAll', {
+verifyPrimordialProperty(String.prototype, 'matchAll', {
 	writable: true,
 	enumerable: false,
 	configurable: true

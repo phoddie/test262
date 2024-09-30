@@ -25,7 +25,7 @@ features: [TypedArray, array-find-from-last]
 
 assert.sameValue(TypedArray.prototype.findLastIndex.length, 1);
 
-verifyBuiltinProperty(TypedArray.prototype.findLastIndex, "length", {
+verifyPrimordialProperty(TypedArray.prototype.findLastIndex, "length", {
   enumerable: false,
   writable: false,
   configurable: true

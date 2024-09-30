@@ -17,7 +17,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof AsyncDisposableStack.prototype.use, 'function');
 
-verifyBuiltinProperty(AsyncDisposableStack.prototype, 'use', {
+verifyPrimordialProperty(AsyncDisposableStack.prototype, 'use', {
   enumerable: false,
   writable: true,
   configurable: true

@@ -24,7 +24,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.of, "length", {
+verifyPrimordialProperty(TypedArray.of, "length", {
   value: 0,
   writable: false,
   enumerable: false,

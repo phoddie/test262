@@ -8,7 +8,7 @@ description: Checking if varying the RegExp.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp, "prototype", {
+verifyPrimordialProperty(RegExp, "prototype", {
 	writable: false,
  });
  

@@ -10,7 +10,7 @@ features: [set-methods]
 ---*/
 assert.sameValue(typeof Set.prototype.intersection, "function");
 
-verifyBuiltinProperty(Set.prototype.intersection, "name", {
+verifyPrimordialProperty(Set.prototype.intersection, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

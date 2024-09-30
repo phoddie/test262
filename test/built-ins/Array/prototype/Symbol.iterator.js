@@ -14,7 +14,7 @@ features: [Symbol.iterator]
 esid: sec-array.prototype-@@iterator
 ---*/
 
-verifyBuiltinProperty(Array.prototype, Symbol.iterator, {
+verifyPrimordialProperty(Array.prototype, Symbol.iterator, {
     value: Array.prototype.values,
     writable: true,
     enumerable: false,

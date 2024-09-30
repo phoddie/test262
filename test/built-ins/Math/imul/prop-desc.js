@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.19
 ---*/
 
-verifyBuiltinProperty(Math, "imul", {
+verifyPrimordialProperty(Math, "imul", {
 	writable: true,
 	enumerable: false,
 	configurable: true

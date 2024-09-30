@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry]
 ---*/
 
-verifyBuiltinProperty(FinalizationRegistry, 'name', {
+verifyPrimordialProperty(FinalizationRegistry, 'name', {
   value: 'FinalizationRegistry',
   writable: false,
   enumerable: false,

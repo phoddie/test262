@@ -13,7 +13,7 @@ features: [Symbol]
 
 assert.sameValue(typeof Symbol.prototype.toString, 'function');
 
-verifyBuiltinProperty(Symbol.prototype, 'toString', {
+verifyPrimordialProperty(Symbol.prototype, 'toString', {
     writable: true,
     enumerable: false,
     configurable: true

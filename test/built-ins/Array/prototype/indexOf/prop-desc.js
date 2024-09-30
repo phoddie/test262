@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.indexOf, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "indexOf", {
+verifyPrimordialProperty(Array.prototype, "indexOf", {
   writable: true,
   enumerable: false,
   configurable: true

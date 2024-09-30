@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.cbrt, "name", {
+verifyPrimordialProperty(Math.cbrt, "name", {
   value: "cbrt",
   writable: false,
   enumerable: false,

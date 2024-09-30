@@ -22,7 +22,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray, change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype.toSorted, "length", {
+verifyPrimordialProperty(TypedArray.prototype.toSorted, "length", {
   value: 1,
   writable: false,
   enumerable: false,

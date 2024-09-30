@@ -9,7 +9,7 @@ features: [Float16Array]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype.getFloat16, "length", {
+verifyPrimordialProperty(DataView.prototype.getFloat16, "length", {
   value: 1,
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.max, "name", {
+verifyPrimordialProperty(Math.max, "name", {
   value: "max",
   writable: false,
   enumerable: false,

@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.replaceAll]
 ---*/
 
-verifyBuiltinProperty(String.prototype.replaceAll, 'name', {
+verifyPrimordialProperty(String.prototype.replaceAll, 'name', {
   value: 'replaceAll',
   enumerable: false,
   writable: false,

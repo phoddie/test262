@@ -15,7 +15,7 @@ assert.sameValue(Promise[Symbol.species], Promise, "Promise[Symbol.species] is P
 
 //@@ verifyNotWritable(Promise, Symbol.species, Symbol.species);	
 
-verifyBuiltinProperty(Promise, Symbol.species, {
+verifyPrimordialProperty(Promise, Symbol.species, {
 	writable: false,
 	enumerable: false,
 	configurable: true

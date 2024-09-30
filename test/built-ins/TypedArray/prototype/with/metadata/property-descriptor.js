@@ -17,7 +17,7 @@ features: [TypedArray, change-array-by-copy]
 
 assert.sameValue(typeof TypedArray.prototype.with, "function", "typeof");
 
-verifyBuiltinProperty(TypedArray.prototype, "with", {
+verifyPrimordialProperty(TypedArray.prototype, "with", {
   value: TypedArray.prototype.with,
   writable: true,
   enumerable: false,

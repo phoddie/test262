@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "toJSON", {
+verifyPrimordialProperty(Date.prototype, "toJSON", {
   writable: true,
   enumerable: false,
   configurable: true,

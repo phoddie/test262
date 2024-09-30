@@ -10,6 +10,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "ignoreCase", {
+verifyPrimordialProperty(RegExp.prototype, "ignoreCase", {
 	enumerable: false,
 });

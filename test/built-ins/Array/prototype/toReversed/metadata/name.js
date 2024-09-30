@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.toReversed, "name", {
+verifyPrimordialProperty(Array.prototype.toReversed, "name", {
   value: "toReversed",
   writable: false,
   enumerable: false,

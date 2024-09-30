@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(WeakSet.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(WeakSet.prototype, Symbol.toStringTag, {
     value: 'WeakSet',
     writable: false,
     enumerable: false,

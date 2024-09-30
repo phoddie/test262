@@ -12,6 +12,6 @@ includes: [propertyHelper.js]
 
 var f = new Function("", null);
 
-verifyBuiltinProperty(f, "prototype", {
+verifyPrimordialProperty(f, "prototype", {
   configurable: false,
 });

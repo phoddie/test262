@@ -24,7 +24,7 @@ features: [resizable-arraybuffer]
 
 var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'resizable');
 
-verifyBuiltinProperty(desc.get, 'length', {
+verifyPrimordialProperty(desc.get, 'length', {
   value: 0,
   enumerable: false,
   writable: false,

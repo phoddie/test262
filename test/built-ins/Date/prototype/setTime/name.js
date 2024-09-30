@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.setTime, "name", {
+verifyPrimordialProperty(Date.prototype.setTime, "name", {
   value: "setTime",
   writable: false,
   enumerable: false,

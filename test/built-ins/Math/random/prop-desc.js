@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "random", {
+verifyPrimordialProperty(Math, "random", {
 	writable: true,
 	enumerable: false,
 	configurable: true

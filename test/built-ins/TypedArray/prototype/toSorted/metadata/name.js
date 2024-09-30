@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray, change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype.toSorted, "name", {
+verifyPrimordialProperty(TypedArray.prototype.toSorted, "name", {
   value: "toSorted",
   writable: false,
   enumerable: false,

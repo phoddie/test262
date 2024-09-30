@@ -16,7 +16,7 @@ assert.sameValue(
   '`typeof Array.prototype.copyWithin` is `function`'
 );
 
-verifyBuiltinProperty(Array.prototype, "copyWithin", {
+verifyPrimordialProperty(Array.prototype, "copyWithin", {
   writable: true,
   enumerable: false,
   configurable: true

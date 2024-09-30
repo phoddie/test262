@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "setYear", {
+verifyPrimordialProperty(Date.prototype, "setYear", {
   enumerable: false,
   writable: true,
   configurable: true

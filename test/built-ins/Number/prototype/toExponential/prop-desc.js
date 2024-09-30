@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype, "toExponential", {
+verifyPrimordialProperty(Number.prototype, "toExponential", {
   enumerable: false,
   writable: true,
   configurable: true,

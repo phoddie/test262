@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [ShadowRealm]
 ---*/
 
-verifyBuiltinProperty(ShadowRealm, "length", {
+verifyPrimordialProperty(ShadowRealm, "length", {
   value: 0,
   enumerable: false,
   writable: false,

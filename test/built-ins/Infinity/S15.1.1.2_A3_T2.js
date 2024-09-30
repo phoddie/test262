@@ -9,6 +9,6 @@ flags: [noStrict]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(this, "Infinity", {
+verifyPrimordialProperty(this, "Infinity", {
 	configurable: false,
 });

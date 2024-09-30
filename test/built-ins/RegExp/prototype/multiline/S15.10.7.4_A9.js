@@ -10,6 +10,6 @@ description: Checking if deleting the multiline property succeeds
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "multiline", {
+verifyPrimordialProperty(RegExp.prototype, "multiline", {
 	configurable: true,
 });

@@ -19,7 +19,7 @@ assert.sameValue(
   '`typeof String.prototype.replaceAll` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'replaceAll', {
+verifyPrimordialProperty(String.prototype, 'replaceAll', {
   enumerable: false,
   writable: true,
   configurable: true,

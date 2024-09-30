@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [explicit-resource-management]
 ---*/
 
-verifyBuiltinProperty(AsyncDisposableStack.prototype.adopt, 'length', {
+verifyPrimordialProperty(AsyncDisposableStack.prototype.adopt, 'length', {
   value: 2,
   writable: false,
   enumerable: false,

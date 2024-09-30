@@ -17,7 +17,7 @@ features: [change-array-by-copy]
 
 assert.sameValue(typeof Array.prototype.toSpliced, "function", "typeof");
 
-verifyBuiltinProperty(Array.prototype, "toSpliced", {
+verifyPrimordialProperty(Array.prototype, "toSpliced", {
   value: Array.prototype.toSpliced,
   writable: true,
   enumerable: false,

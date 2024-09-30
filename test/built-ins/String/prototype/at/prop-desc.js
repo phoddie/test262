@@ -19,7 +19,7 @@ assert.sameValue(
   'The value of `typeof String.prototype.at` is "function"'
 );
 
-verifyBuiltinProperty(String.prototype, 'at', {
+verifyPrimordialProperty(String.prototype, 'at', {
   enumerable: false,
   writable: true,
   configurable: true

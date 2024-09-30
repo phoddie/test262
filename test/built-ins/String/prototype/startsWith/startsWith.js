@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof String.prototype.startsWith` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'startsWith', {
+verifyPrimordialProperty(String.prototype, 'startsWith', {
 	writable: true,
 	enumerable: false,
 	configurable: true

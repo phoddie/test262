@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(DataView.prototype, "byteOffset");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(DataView.prototype, "byteOffset", {
+verifyPrimordialProperty(DataView.prototype, "byteOffset", {
   enumerable: false,
   configurable: true
 });

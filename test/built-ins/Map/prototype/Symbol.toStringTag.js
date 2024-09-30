@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(Map.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(Map.prototype, Symbol.toStringTag, {
   value: "Map",
   writable: false,
   enumerable: false,

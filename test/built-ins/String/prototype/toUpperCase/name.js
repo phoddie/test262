@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.toUpperCase, "name", {
+verifyPrimordialProperty(String.prototype.toUpperCase, "name", {
   value: "toUpperCase",
   writable: false,
   enumerable: false,

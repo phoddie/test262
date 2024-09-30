@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.clz32, "length", {
+verifyPrimordialProperty(Math.clz32, "length", {
   value: 1,
   writable: false,
   enumerable: false,

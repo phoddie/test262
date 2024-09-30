@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.sin, "length", {
+verifyPrimordialProperty(Math.sin, "length", {
   value: 1,
   writable: false,
   enumerable: false,

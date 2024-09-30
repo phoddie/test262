@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.getUTCMonth, "name", {
+verifyPrimordialProperty(Date.prototype.getUTCMonth, "name", {
   value: "getUTCMonth",
   writable: false,
   enumerable: false,

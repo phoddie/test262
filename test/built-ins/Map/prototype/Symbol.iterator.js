@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [Symbol.iterator]
 ---*/
 
-verifyBuiltinProperty(Map.prototype, Symbol.iterator, {
+verifyPrimordialProperty(Map.prototype, Symbol.iterator, {
   value: Map.prototype.entries,
 	writable: true,
 	enumerable: false,

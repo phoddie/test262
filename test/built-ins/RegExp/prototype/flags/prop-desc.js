@@ -18,7 +18,7 @@ var d = Object.getOwnPropertyDescriptor(RegExp.prototype, 'flags');
 assert.sameValue(typeof d.get, 'function', 'typeof d.get');
 assert.sameValue(d.set, undefined, 'd.set');
 
-verifyBuiltinProperty(RegExp.prototype, 'flags', {
+verifyPrimordialProperty(RegExp.prototype, 'flags', {
   enumerable: false,
   configurable: true,
 });

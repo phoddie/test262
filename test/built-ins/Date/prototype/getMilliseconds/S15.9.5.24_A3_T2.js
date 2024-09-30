@@ -10,6 +10,6 @@ es5id: 15.9.5.24_A3_T2
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.getMilliseconds, "length", {
+verifyPrimordialProperty(Date.prototype.getMilliseconds, "length", {
   configurable: true
 });

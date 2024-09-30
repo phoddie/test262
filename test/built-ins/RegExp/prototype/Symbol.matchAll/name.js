@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [Symbol.matchAll]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype[Symbol.matchAll], "name", {
+verifyPrimordialProperty(RegExp.prototype[Symbol.matchAll], "name", {
   value: "[Symbol.matchAll]",
   writable: false,
   enumerable: false,

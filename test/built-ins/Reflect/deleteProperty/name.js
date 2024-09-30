@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [Reflect]
 ---*/
 
-verifyBuiltinProperty(Reflect.deleteProperty, "name", {
+verifyPrimordialProperty(Reflect.deleteProperty, "name", {
   value: "deleteProperty",
   writable: false,
   enumerable: false,

@@ -10,6 +10,6 @@ description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date, "prototype", {
+verifyPrimordialProperty(Date, "prototype", {
   configurable: false
 });

@@ -17,7 +17,7 @@ features: [AggregateError]
 
 assert.sameValue(typeof AggregateError.prototype, 'object');
 
-verifyBuiltinProperty(AggregateError, 'prototype', {
+verifyPrimordialProperty(AggregateError, 'prototype', {
   enumerable: false,
   writable: false,
   configurable: false

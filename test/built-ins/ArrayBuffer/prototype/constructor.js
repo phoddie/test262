@@ -18,7 +18,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(ArrayBuffer.prototype.constructor, ArrayBuffer);
 
-verifyBuiltinProperty(ArrayBuffer.prototype, "constructor", {
+verifyPrimordialProperty(ArrayBuffer.prototype, "constructor", {
   enumerable: false,
   writable: true,
   configurable: true,

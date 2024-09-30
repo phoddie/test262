@@ -8,6 +8,6 @@ description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "toLocaleString", {
+verifyPrimordialProperty(Date.prototype, "toLocaleString", {
   enumerable: false,
 });

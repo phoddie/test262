@@ -8,6 +8,6 @@ description: Checking if enumerating the Error.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error, "prototype", {
+verifyPrimordialProperty(Error, "prototype", {
   enumerable: false,
 });

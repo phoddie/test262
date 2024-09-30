@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Promise.any]
 ---*/
 
-verifyBuiltinProperty(Promise.any, 'length', {
+verifyPrimordialProperty(Promise.any, 'length', {
   configurable: true,
   writable: false,
   enumerable: false,

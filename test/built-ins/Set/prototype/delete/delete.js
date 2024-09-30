@@ -16,7 +16,7 @@ assert.sameValue(
   "`typeof Set.prototype.delete` is `'function'`"
 );
 
-verifyBuiltinProperty(Set.prototype, 'delete', {
+verifyPrimordialProperty(Set.prototype, 'delete', {
   writable: true,
   enumerable: false,
   configurable: true

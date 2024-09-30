@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function.prototype, "bind", {
+verifyPrimordialProperty(Function.prototype, "bind", {
   writable: true,
   enumerable: false,
   configurable: true,

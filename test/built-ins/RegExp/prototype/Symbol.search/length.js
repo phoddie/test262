@@ -20,7 +20,7 @@ features: [Symbol.search]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype[Symbol.search], "length", {
+verifyPrimordialProperty(RegExp.prototype[Symbol.search], "length", {
   value: 1,
   writable: false,
   enumerable: false,

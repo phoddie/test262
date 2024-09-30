@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Array.prototype.some are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype, "some", {
+verifyPrimordialProperty(Array.prototype, "some", {
   writable: true,
   enumerable: false,
   configurable: true,

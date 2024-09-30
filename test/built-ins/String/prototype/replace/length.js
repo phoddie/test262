@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.replace, "length", {
+verifyPrimordialProperty(String.prototype.replace, "length", {
   value: 2,
   writable: false,
   enumerable: false,

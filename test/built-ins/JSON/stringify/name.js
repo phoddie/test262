@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(JSON.stringify, 'name', {
+verifyPrimordialProperty(JSON.stringify, 'name', {
   value: 'stringify',
   writable: false,
   enumerable: false,

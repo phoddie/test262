@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Reflect]
 ---*/
 
-verifyBuiltinProperty(Reflect.ownKeys, "length", {
+verifyPrimordialProperty(Reflect.ownKeys, "length", {
   value: 1,
   writable: false,
   enumerable: false,

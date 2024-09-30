@@ -18,7 +18,7 @@ features:
 
 var SetIteratorProto = Object.getPrototypeOf(new Set()[Symbol.iterator]());
 
-verifyBuiltinProperty(SetIteratorProto, Symbol.toStringTag, {
+verifyPrimordialProperty(SetIteratorProto, Symbol.toStringTag, {
   value: "Set Iterator",
   writable: false,
   enumerable: false,

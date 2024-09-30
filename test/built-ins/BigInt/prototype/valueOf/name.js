@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyBuiltinProperty(BigInt.prototype.valueOf, "name", {
+verifyPrimordialProperty(BigInt.prototype.valueOf, "name", {
   value: "valueOf",
   writable: false,
   enumerable: false,

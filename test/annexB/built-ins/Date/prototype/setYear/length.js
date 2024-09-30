@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.setYear, "length", {
+verifyPrimordialProperty(Date.prototype.setYear, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

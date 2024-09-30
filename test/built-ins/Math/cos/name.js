@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.cos, "name", {
+verifyPrimordialProperty(Math.cos, "name", {
   value: "cos",
   writable: false,
   enumerable: false,

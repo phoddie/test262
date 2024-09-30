@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [string-trimming, String.prototype.trimEnd]
 ---*/
 
-verifyBuiltinProperty(String.prototype.trimEnd, "length", {
+verifyPrimordialProperty(String.prototype.trimEnd, "length", {
   value: 0,
   enumerable: false,
   writable: false,

@@ -9,6 +9,6 @@ flags: [noStrict]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(this, "NaN", {
+verifyPrimordialProperty(this, "NaN", {
 	configurable: false,
 });

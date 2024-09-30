@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Date.now are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date, "now", {
+verifyPrimordialProperty(Date, "now", {
   writable: true,
   enumerable: false,
   configurable: true,

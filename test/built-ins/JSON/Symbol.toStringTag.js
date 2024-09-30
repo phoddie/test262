@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(JSON, Symbol.toStringTag, {
+verifyPrimordialProperty(JSON, Symbol.toStringTag, {
   value: 'JSON',
   writable: false,
   enumerable: false,

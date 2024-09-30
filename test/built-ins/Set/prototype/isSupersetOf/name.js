@@ -10,7 +10,7 @@ features: [set-methods]
 ---*/
 assert.sameValue(typeof Set.prototype.isSupersetOf, "function");
 
-verifyBuiltinProperty(Set.prototype.isSupersetOf, "name", {
+verifyPrimordialProperty(Set.prototype.isSupersetOf, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

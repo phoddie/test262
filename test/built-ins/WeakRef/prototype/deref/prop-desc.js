@@ -17,7 +17,7 @@ features: [WeakRef]
 
 assert.sameValue(typeof WeakRef.prototype.deref, 'function');
 
-verifyBuiltinProperty(WeakRef.prototype, 'deref', {
+verifyPrimordialProperty(WeakRef.prototype, 'deref', {
   enumerable: false,
   writable: true,
   configurable: true

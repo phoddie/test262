@@ -7,7 +7,7 @@ esid: sec-date.parse
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date, "parse", {
+verifyPrimordialProperty(Date, "parse", {
   configurable: true,
  });
  

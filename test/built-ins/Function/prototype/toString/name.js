@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function.prototype.toString, "name", {
+verifyPrimordialProperty(Function.prototype.toString, "name", {
   value: "toString",
   writable: false,
   enumerable: false,

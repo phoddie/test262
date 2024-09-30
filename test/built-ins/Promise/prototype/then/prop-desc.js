@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Promise.prototype.then, 'function');
 
-verifyBuiltinProperty(Promise.prototype, 'then', {
+verifyPrimordialProperty(Promise.prototype, 'then', {
     configurable: true,
     writable: true,
     enumerable: false,

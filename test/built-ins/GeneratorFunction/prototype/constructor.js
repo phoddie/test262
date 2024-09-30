@@ -18,7 +18,7 @@ var GeneratorFunction = Object.getPrototypeOf(function*() {}).constructor;
 
 assert.sameValue(GeneratorFunction.prototype.constructor, GeneratorFunction);
 
-verifyBuiltinProperty(GeneratorFunction.prototype, 'constructor', {
+verifyPrimordialProperty(GeneratorFunction.prototype, 'constructor', {
   value: GeneratorFunction,
   enumerable: false,
   writable: false,

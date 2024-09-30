@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "log", {
+verifyPrimordialProperty(Math, "log", {
 	writable: true,
 	enumerable: false,
 	configurable: true

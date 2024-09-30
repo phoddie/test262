@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [explicit-resource-management]
 ---*/
 
-verifyBuiltinProperty(AsyncDisposableStack.prototype.defer, 'name', {
+verifyPrimordialProperty(AsyncDisposableStack.prototype.defer, 'name', {
   value: 'defer',
   writable: false,
   enumerable: false,

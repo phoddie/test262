@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.localeCompare, "name", {
+verifyPrimordialProperty(String.prototype.localeCompare, "name", {
   value: "localeCompare",
   writable: false,
   enumerable: false,

@@ -17,7 +17,7 @@ var descriptor = Object.getOwnPropertyDescriptor(
   DataView.prototype, 'buffer'
 );
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get buffer",
   writable: false,
   enumerable: false,

@@ -10,6 +10,6 @@ description: Checking if deleting the global property succeeds
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "global", {
+verifyPrimordialProperty(RegExp.prototype, "global", {
 	configurable: true,
 });

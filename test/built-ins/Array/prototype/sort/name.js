@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.sort, "name", {
+verifyPrimordialProperty(Array.prototype.sort, "name", {
   value: "sort",
   writable: false,
   enumerable: false,

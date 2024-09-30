@@ -23,7 +23,7 @@ var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "hasIndices");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(RegExp.prototype, "hasIndices", {
+verifyPrimordialProperty(RegExp.prototype, "hasIndices", {
   enumerable: false,
   configurable: true,
 });

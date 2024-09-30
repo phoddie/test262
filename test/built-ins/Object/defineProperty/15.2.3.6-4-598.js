@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "getPrototypeOf", {
+verifyPrimordialProperty(Object, "getPrototypeOf", {
   writable: true,
   enumerable: false,
   configurable: true,

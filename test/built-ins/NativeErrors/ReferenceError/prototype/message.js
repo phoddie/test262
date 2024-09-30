@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(ReferenceError.prototype, 'message', {
+verifyPrimordialProperty(ReferenceError.prototype, 'message', {
   value: "",
   enumerable: false,
   writable: true,

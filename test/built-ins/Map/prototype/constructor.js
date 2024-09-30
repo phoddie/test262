@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue((new Map()).constructor, Map);
 
-verifyBuiltinProperty(Map.prototype, 'constructor', {
+verifyPrimordialProperty(Map.prototype, 'constructor', {
   value: Map,
   writable: true,
   enumerable: false,

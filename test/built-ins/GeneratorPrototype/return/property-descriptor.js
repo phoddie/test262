@@ -13,7 +13,7 @@ features: [generators]
 function* g() {}
 var GeneratorPrototype = Object.getPrototypeOf(g).prototype;
 
-verifyBuiltinProperty(GeneratorPrototype, 'return', {
+verifyPrimordialProperty(GeneratorPrototype, 'return', {
     enumerable: false,
     writable: true,
     configurable: true,

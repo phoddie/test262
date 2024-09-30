@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [array-grouping]
 ---*/
 
-verifyBuiltinProperty(Object.groupBy, "length", {
+verifyPrimordialProperty(Object.groupBy, "length", {
   value: 2,
   enumerable: false,
   writable: false,

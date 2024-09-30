@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.create are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "getPrototypeOf", {
+verifyPrimordialProperty(Object, "getPrototypeOf", {
   writable: true,
   enumerable: false,
   configurable: true,

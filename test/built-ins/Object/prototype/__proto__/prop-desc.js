@@ -18,7 +18,7 @@ assert.sameValue(desc.value, undefined, '`value` property');
 assert.sameValue(typeof desc.get, 'function', '`get` property');
 assert.sameValue(typeof desc.set, 'function', '`set` property');
 
-verifyBuiltinProperty(Object.prototype, "__proto__", {
+verifyPrimordialProperty(Object.prototype, "__proto__", {
   enumerable: false,
   configurable: true
 });

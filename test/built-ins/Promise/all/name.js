@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Promise.all, "name", {
+verifyPrimordialProperty(Promise.all, "name", {
   value: "all",
   writable: false,
   enumerable: false,

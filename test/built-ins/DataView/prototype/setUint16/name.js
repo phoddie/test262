@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype.setUint16, "name", {
+verifyPrimordialProperty(DataView.prototype.setUint16, "name", {
   value: "setUint16",
   writable: false,
   enumerable: false,

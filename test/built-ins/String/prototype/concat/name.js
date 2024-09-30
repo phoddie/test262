@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.concat, "name", {
+verifyPrimordialProperty(String.prototype.concat, "name", {
   value: "concat",
   writable: false,
   enumerable: false,

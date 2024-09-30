@@ -16,7 +16,7 @@ assert.sameValue(
   "`typeof Set.prototype.entries` is `'function'`"
 );
 
-verifyBuiltinProperty(Set.prototype, 'entries', {
+verifyPrimordialProperty(Set.prototype, 'entries', {
   writable: true,
   enumerable: false,
   configurable: true

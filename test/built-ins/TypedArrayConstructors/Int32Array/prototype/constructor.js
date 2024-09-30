@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Int32Array.prototype, "constructor", {
+verifyPrimordialProperty(Int32Array.prototype, "constructor", {
   value: Int32Array,
   writable: true,
   enumerable: false,

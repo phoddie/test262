@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.isFrozen are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "isFrozen", {
+verifyPrimordialProperty(Object, "isFrozen", {
   writable: true,
   enumerable: false,
   configurable: true,

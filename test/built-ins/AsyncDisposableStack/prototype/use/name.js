@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [explicit-resource-management]
 ---*/
 
-verifyBuiltinProperty(AsyncDisposableStack.prototype.use, 'name', {
+verifyPrimordialProperty(AsyncDisposableStack.prototype.use, 'name', {
   value: 'use',
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype.setFloat32, "name", {
+verifyPrimordialProperty(DataView.prototype.setFloat32, "name", {
   value: "setFloat32",
   writable: false,
   enumerable: false,

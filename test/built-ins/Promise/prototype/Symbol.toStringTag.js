@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(Promise.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(Promise.prototype, Symbol.toStringTag, {
     value: "Promise",
     configurable: true,
     writable: false,

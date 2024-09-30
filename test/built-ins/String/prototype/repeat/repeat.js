@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof String.prototype.repeat` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'repeat', {
+verifyPrimordialProperty(String.prototype, 'repeat', {
 	writable: true,
 	enumerable: false,
 	configurable: true

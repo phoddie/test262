@@ -20,7 +20,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function.prototype, "length", {
+verifyPrimordialProperty(Function.prototype, "length", {
   value: 0,
   writable: false,
   enumerable: false,

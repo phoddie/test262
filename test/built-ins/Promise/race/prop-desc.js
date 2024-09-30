@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Promise, 'race', {
+verifyPrimordialProperty(Promise, 'race', {
     configurable: true,
     writable: true,
     enumerable: false,

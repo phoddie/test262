@@ -12,6 +12,6 @@ includes: [propertyHelper.js]
 
 var f = Function("arg1,arg2,arg3", "arg5,arg4", null);
 
-verifyBuiltinProperty(f, "length", {
+verifyPrimordialProperty(f, "length", {
   enumerable: false,
 });

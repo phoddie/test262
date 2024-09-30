@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.log10, "length", {
+verifyPrimordialProperty(Math.log10, "length", {
   value: 1,
   writable: false,
   enumerable: false,

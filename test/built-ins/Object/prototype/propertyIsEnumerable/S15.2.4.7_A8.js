@@ -12,6 +12,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.prototype.propertyIsEnumerable, "length", {
+verifyPrimordialProperty(Object.prototype.propertyIsEnumerable, "length", {
   enumerable: false,
 });

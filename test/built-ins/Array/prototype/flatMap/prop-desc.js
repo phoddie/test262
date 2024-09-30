@@ -20,7 +20,7 @@ assert.sameValue(
   '`typeof Array.prototype.flatMap` is `function`'
 );
 
-verifyBuiltinProperty(Array.prototype, 'flatMap', {
+verifyPrimordialProperty(Array.prototype, 'flatMap', {
   enumerable: false,
   writable: true,
   configurable: true,

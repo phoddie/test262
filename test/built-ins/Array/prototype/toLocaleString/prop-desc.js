@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.toLocaleString, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "toLocaleString", {
+verifyPrimordialProperty(Array.prototype, "toLocaleString", {
   writable: true,
   enumerable: false,
   configurable: true

@@ -8,7 +8,7 @@ author: Jordan Harband
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.entries, "length", {
+verifyPrimordialProperty(Object.entries, "length", {
   value: 1,
   writable: false,
   enumerable: false,

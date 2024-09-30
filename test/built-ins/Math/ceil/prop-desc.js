@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "ceil", {
+verifyPrimordialProperty(Math, "ceil", {
 	writable: true,
 	enumerable: false,
 	configurable: true

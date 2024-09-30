@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 async function* generator() {}
 const AsyncIteratorPrototype = Object.getPrototypeOf(Object.getPrototypeOf(generator.prototype))
 
-verifyBuiltinProperty(AsyncIteratorPrototype, Symbol.asyncDispose, {
+verifyPrimordialProperty(AsyncIteratorPrototype, Symbol.asyncDispose, {
   writable: true,
   enumerable: false,
   configurable: true,

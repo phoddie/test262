@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.isSubsetOf` is `'function'`"
 );
 
-verifyBuiltinProperty(Set.prototype, "isSubsetOf", {
+verifyPrimordialProperty(Set.prototype, "isSubsetOf", {
   enumerable: false,
   writable: true,
   configurable: true,

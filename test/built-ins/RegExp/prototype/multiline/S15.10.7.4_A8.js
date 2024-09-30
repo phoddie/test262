@@ -10,6 +10,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "multiline", {
+verifyPrimordialProperty(RegExp.prototype, "multiline", {
 	enumerable: false,
 });

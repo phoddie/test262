@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof Map.prototype.forEach` is `function`'
 );
 
-verifyBuiltinProperty(Map.prototype, 'forEach', {
+verifyPrimordialProperty(Map.prototype, 'forEach', {
   writable: true,
   enumerable: false,
   configurable: true

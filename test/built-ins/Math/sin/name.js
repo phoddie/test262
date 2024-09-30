@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.sin, "name", {
+verifyPrimordialProperty(Math.sin, "name", {
   value: "sin",
   writable: false,
   enumerable: false,

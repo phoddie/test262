@@ -7,6 +7,6 @@ esid: sec-date.prototype.sethours
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "setHours", {
+verifyPrimordialProperty(Date.prototype, "setHours", {
   configurable: true,
 });

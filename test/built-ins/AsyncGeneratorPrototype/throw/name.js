@@ -23,7 +23,7 @@ features: [async-iteration]
 async function* g() {}
 var AsyncGeneratorPrototype = Object.getPrototypeOf(g).prototype;
 
-verifyBuiltinProperty(AsyncGeneratorPrototype.throw, "name", {
+verifyPrimordialProperty(AsyncGeneratorPrototype.throw, "name", {
   value: "throw",
   enumerable: false,
   writable: false,

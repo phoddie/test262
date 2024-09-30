@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyBuiltinProperty(BigInt64Array, "prototype", {
+verifyPrimordialProperty(BigInt64Array, "prototype", {
   value: Object.getPrototypeOf(new BigInt64Array()),
   writable: false,
   enumerable: false,

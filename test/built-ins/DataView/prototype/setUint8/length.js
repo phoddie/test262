@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype.setUint8, "length", {
+verifyPrimordialProperty(DataView.prototype.setUint8, "length", {
   value: 2,
   writable: false,
   enumerable: false,

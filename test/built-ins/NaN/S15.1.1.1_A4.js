@@ -8,6 +8,6 @@ description: Use for-in statement
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(this, "NaN", {
+verifyPrimordialProperty(this, "NaN", {
 	enumerable: false,
 });

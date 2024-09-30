@@ -22,7 +22,7 @@ features: [TypedArray]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray.prototype, "byteLength");
 
-verifyBuiltinProperty(desc.get, "name", {
+verifyPrimordialProperty(desc.get, "name", {
   value: "get byteLength",
   writable: false,
   enumerable: false,

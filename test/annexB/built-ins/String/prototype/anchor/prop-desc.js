@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype, "anchor", {
+verifyPrimordialProperty(String.prototype, "anchor", {
   enumerable: false,
   writable: true,
   configurable: true

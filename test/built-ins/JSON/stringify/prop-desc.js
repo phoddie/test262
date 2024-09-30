@@ -13,7 +13,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(JSON, 'stringify', {
+verifyPrimordialProperty(JSON, 'stringify', {
   writable: true,
   enumerable: false,
   configurable: true,

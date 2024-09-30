@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype, "toPrecision", {
+verifyPrimordialProperty(Number.prototype, "toPrecision", {
   enumerable: false,
   writable: true,
   configurable: true,

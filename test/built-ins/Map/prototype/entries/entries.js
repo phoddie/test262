@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof Map.prototype.entries` is `function`'
 );
 
-verifyBuiltinProperty(Map.prototype, 'entries', {
+verifyPrimordialProperty(Map.prototype, 'entries', {
   writable: true,
   enumerable: false,
   configurable: true

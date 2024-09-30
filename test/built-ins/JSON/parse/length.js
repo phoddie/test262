@@ -17,7 +17,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(JSON.parse, 'length', {
+verifyPrimordialProperty(JSON.parse, 'length', {
   value: 2,
   writable: false,
   enumerable: false,

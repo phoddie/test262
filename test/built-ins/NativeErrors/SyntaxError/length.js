@@ -25,7 +25,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(SyntaxError, "length", {
+verifyPrimordialProperty(SyntaxError, "length", {
   value: 1,
   writable: false,
   enumerable: false,

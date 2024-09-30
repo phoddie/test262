@@ -14,7 +14,7 @@ features: [explicit-resource-management]
 
 var descriptor = Object.getOwnPropertyDescriptor(DisposableStack.prototype, 'disposed');
 
-verifyBuiltinProperty(descriptor.get, 'length', {
+verifyPrimordialProperty(descriptor.get, 'length', {
   value: 0,
   writable: false,
   enumerable: false,

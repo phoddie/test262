@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof String.prototype.codePointAt` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'codePointAt', {
+verifyPrimordialProperty(String.prototype, 'codePointAt', {
 	writable: true,
 	enumerable: false,
 	configurable: true

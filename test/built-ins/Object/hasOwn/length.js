@@ -23,7 +23,7 @@ author: Jamie Kyle
 features: [Object.hasOwn]
 ---*/
 
-verifyBuiltinProperty(Object.hasOwn, "length", {
+verifyPrimordialProperty(Object.hasOwn, "length", {
   value: 2,
   writable: false,
   enumerable: false,

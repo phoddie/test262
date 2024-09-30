@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(ArrayBuffer.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(ArrayBuffer.prototype, Symbol.toStringTag, {
     value: 'ArrayBuffer',
     enumerable: false,
     writable: false,

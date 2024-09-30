@@ -33,7 +33,7 @@ assert.sameValue(
   'The value of `typeof desc.get` is "function"'
 );
 
-verifyBuiltinProperty(Symbol.prototype, 'description', {
+verifyPrimordialProperty(Symbol.prototype, 'description', {
   enumerable: false,
   configurable: true,
 });

@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.splice, "length", {
+verifyPrimordialProperty(Array.prototype.splice, "length", {
   value: 2,
   writable: false,
   enumerable: false,

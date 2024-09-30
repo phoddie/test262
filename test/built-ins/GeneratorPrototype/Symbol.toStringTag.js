@@ -19,7 +19,7 @@ var GeneratorPrototype = Object.getPrototypeOf(
   Object.getPrototypeOf(function*() {}())
 );
 
-verifyBuiltinProperty(GeneratorPrototype, Symbol.toStringTag, {
+verifyPrimordialProperty(GeneratorPrototype, Symbol.toStringTag, {
   value: 'Generator',
   enumerable: false,
   writable: false,

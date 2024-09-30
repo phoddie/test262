@@ -8,6 +8,6 @@ description: Checking if deleting the Error.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error, "prototype", {
+verifyPrimordialProperty(Error, "prototype", {
   configurable: false,
 });

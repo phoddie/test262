@@ -17,7 +17,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof DisposableStack.prototype.adopt, 'function');
 
-verifyBuiltinProperty(DisposableStack.prototype, 'adopt', {
+verifyPrimordialProperty(DisposableStack.prototype, 'adopt', {
   enumerable: false,
   writable: true,
   configurable: true

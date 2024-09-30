@@ -13,7 +13,7 @@ features: [Symbol]
 
 assert.sameValue(typeof Symbol.keyFor, 'function');
 
-verifyBuiltinProperty(Symbol, 'keyFor', {
+verifyPrimordialProperty(Symbol, 'keyFor', {
     writable: true,
     enumerable: false,
     configurable: true

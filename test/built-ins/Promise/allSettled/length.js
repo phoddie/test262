@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Promise.allSettled]
 ---*/
 
-verifyBuiltinProperty(Promise.allSettled, 'length', {
+verifyPrimordialProperty(Promise.allSettled, 'length', {
   configurable: true,
   writable: false,
   enumerable: false,

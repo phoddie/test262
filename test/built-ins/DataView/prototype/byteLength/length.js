@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 
 var desc = Object.getOwnPropertyDescriptor(DataView.prototype, "byteLength");
 
-verifyBuiltinProperty(desc.get, "length", {
+verifyPrimordialProperty(desc.get, "length", {
   value: 0,
   writable: false,
   enumerable: false,

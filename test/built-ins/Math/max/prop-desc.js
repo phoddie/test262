@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "max", {
+verifyPrimordialProperty(Math, "max", {
 	writable: true,
 	enumerable: false,
 	configurable: true

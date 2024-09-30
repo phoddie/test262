@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.18
 ---*/
 
-verifyBuiltinProperty(Math, "hypot", {
+verifyPrimordialProperty(Math, "hypot", {
 	writable: true,
 	enumerable: false,
 	configurable: true

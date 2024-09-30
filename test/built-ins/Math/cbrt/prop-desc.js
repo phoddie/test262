@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.9
 ---*/
 
-verifyBuiltinProperty(Math, "cbrt", {
+verifyPrimordialProperty(Math, "cbrt", {
 	writable: true,
 	enumerable: false,
 	configurable: true

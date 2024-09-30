@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(RegExp.prototype, 'ignoreCase');
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get ignoreCase",
   writable: false,
   enumerable: false,

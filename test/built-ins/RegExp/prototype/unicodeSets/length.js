@@ -27,7 +27,7 @@ var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "unicodeSets");
 
 assert.sameValue(desc.get.length, 0);
 
-verifyBuiltinProperty(desc.get, "length", {
+verifyPrimordialProperty(desc.get, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

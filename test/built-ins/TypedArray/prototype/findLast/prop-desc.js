@@ -12,7 +12,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray, array-find-from-last]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype, "findLast", {
+verifyPrimordialProperty(TypedArray.prototype, "findLast", {
   writable: true,
   enumerable: false,
   configurable: true

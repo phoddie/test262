@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "isFinite", {
+verifyPrimordialProperty(Number, "isFinite", {
   enumerable: false,
   writable: true,
   configurable: true,

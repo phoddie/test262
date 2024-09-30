@@ -12,7 +12,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype, "reverse", {
+verifyPrimordialProperty(TypedArray.prototype, "reverse", {
   writable: true,
   enumerable: false,
   configurable: true

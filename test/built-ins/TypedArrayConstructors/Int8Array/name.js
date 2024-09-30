@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Int8Array, "name", {
+verifyPrimordialProperty(Int8Array, "name", {
   value: "Int8Array",
   writable: false,
   enumerable: false,

@@ -10,6 +10,6 @@ description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.toString, "length", {
+verifyPrimordialProperty(Date.prototype.toString, "length", {
   enumerable: false,
 });

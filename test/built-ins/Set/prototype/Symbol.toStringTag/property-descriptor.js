@@ -18,7 +18,7 @@ assert.sameValue(
   "The value of `SetProto[Symbol.toStringTag]` is `'Set'`"
 );
 
-verifyBuiltinProperty(SetProto, Symbol.toStringTag, {
+verifyPrimordialProperty(SetProto, Symbol.toStringTag, {
   writable: false,
   enumerable: false,
   configurable: true

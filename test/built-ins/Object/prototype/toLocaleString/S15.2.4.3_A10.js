@@ -12,6 +12,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.prototype.toLocaleString, "length", {
+verifyPrimordialProperty(Object.prototype.toLocaleString, "length", {
   writable: false,
 });

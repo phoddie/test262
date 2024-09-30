@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [Symbol.split]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype[Symbol.split], "name", {
+verifyPrimordialProperty(RegExp.prototype[Symbol.split], "name", {
   value: "[Symbol.split]",
   writable: false,
   enumerable: false,

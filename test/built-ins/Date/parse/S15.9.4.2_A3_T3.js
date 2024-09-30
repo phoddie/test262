@@ -9,7 +9,7 @@ esid: sec-date.parse
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.parse, "length", {
+verifyPrimordialProperty(Date.parse, "length", {
   enumerable: false
 });
 

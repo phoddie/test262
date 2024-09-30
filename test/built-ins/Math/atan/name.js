@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.atan, "name", {
+verifyPrimordialProperty(Math.atan, "name", {
   value: "atan",
   writable: false,
   enumerable: false,

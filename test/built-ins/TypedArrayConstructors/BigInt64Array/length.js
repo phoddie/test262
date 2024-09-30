@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [BigInt, TypedArray]
 ---*/
 
-verifyBuiltinProperty(BigInt64Array, "length", {
+verifyPrimordialProperty(BigInt64Array, "length", {
   value: 3,
   writable: false,
   enumerable: false,

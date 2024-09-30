@@ -17,7 +17,7 @@ var descriptor = Object.getOwnPropertyDescriptor(
   DataView.prototype, 'byteLength'
 );
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get byteLength",
   writable: false,
   enumerable: false,

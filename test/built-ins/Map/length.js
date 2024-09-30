@@ -10,7 +10,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Map, "length", {
+verifyPrimordialProperty(Map, "length", {
   value: 0,
   writable: false,
   enumerable: false,

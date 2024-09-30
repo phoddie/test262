@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.lastIndexOf, "length", {
+verifyPrimordialProperty(Array.prototype.lastIndexOf, "length", {
   value: 1,
   writable: false,
   enumerable: false,

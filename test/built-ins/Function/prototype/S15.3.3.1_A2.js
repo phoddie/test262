@@ -8,6 +8,6 @@ description: Checking if enumerating the Function.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function, "prototype", {
+verifyPrimordialProperty(Function, "prototype", {
   enumerable: false,
 });

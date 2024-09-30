@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [Symbol.unscopables]
 ---*/
 
-verifyBuiltinProperty(Array.prototype, Symbol.unscopables, {
+verifyPrimordialProperty(Array.prototype, Symbol.unscopables, {
     writable: false,
     enumerable: false,
     configurable: true

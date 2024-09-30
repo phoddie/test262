@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(DataView.prototype, "buffer");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(DataView.prototype, "buffer", {
+verifyPrimordialProperty(DataView.prototype, "buffer", {
   enumerable: false,
   configurable: true
 });

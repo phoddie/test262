@@ -9,6 +9,6 @@ esid: sec-date.prototype.setdate
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.setDate, "length", {
+verifyPrimordialProperty(Date.prototype.setDate, "length", {
   configurable: true
 });

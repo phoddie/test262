@@ -15,7 +15,7 @@ assert.sameValue(
   '`typeof Array.prototype.findLastIndex` is `function`'
 );
 
-verifyBuiltinProperty(Array.prototype, "findLastIndex", {
+verifyPrimordialProperty(Array.prototype, "findLastIndex", {
   enumerable: false,
   writable: true,
   configurable: true

@@ -7,7 +7,7 @@ description: Testing descriptor property of Atomics.store
 includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
-verifyBuiltinProperty(Atomics, 'store', {
+verifyPrimordialProperty(Atomics, 'store', {
   enumerable: false,
   writable: true,
   configurable: true,

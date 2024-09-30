@@ -19,7 +19,7 @@ var desc = Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, 'growabl
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(SharedArrayBuffer.prototype, 'growable', {
+verifyPrimordialProperty(SharedArrayBuffer.prototype, 'growable', {
   enumerable: false,
   configurable: true
 });

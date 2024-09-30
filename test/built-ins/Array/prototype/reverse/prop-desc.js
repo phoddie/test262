@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.reverse, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "reverse", {
+verifyPrimordialProperty(Array.prototype, "reverse", {
   writable: true,
   enumerable: false,
   configurable: true

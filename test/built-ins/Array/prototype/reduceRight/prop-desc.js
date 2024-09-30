@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.reduceRight, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "reduceRight", {
+verifyPrimordialProperty(Array.prototype, "reduceRight", {
   writable: true,
   enumerable: false,
   configurable: true

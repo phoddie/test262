@@ -31,7 +31,7 @@ assert.sameValue(
   'The value of `typeof obj.propertyIsEnumerable` is expected to be "function"'
 );
 
-verifyBuiltinProperty(obj, "the_property", {
+verifyPrimordialProperty(obj, "the_property", {
   enumerable: true,
 });
 

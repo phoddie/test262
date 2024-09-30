@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof String.prototype.normalize` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'normalize', {
+verifyPrimordialProperty(String.prototype, 'normalize', {
 	writable: true,
 	enumerable: false,
 	configurable: true

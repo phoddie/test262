@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "cos", {
+verifyPrimordialProperty(Math, "cos", {
 	writable: true,
 	enumerable: false,
 	configurable: true

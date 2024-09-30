@@ -20,7 +20,7 @@ features: [Symbol.toPrimitive]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Symbol.prototype[Symbol.toPrimitive], "length", {
+verifyPrimordialProperty(Symbol.prototype[Symbol.toPrimitive], "length", {
   value: 1,
   writable: false,
   enumerable: false,

@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [string-trimming, String.prototype.trimEnd]
 ---*/
 
-verifyBuiltinProperty(String.prototype.trimRight, "name", {
+verifyPrimordialProperty(String.prototype.trimRight, "name", {
   value: "trimEnd",
   enumerable: false,
   writable: false,

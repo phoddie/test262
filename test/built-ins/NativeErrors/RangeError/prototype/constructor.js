@@ -16,7 +16,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RangeError.prototype, 'constructor', {
+verifyPrimordialProperty(RangeError.prototype, 'constructor', {
   value: RangeError,
   enumerable: false,
   writable: true,

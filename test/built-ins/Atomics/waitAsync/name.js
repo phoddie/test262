@@ -9,7 +9,7 @@ includes: [propertyHelper.js]
 features: [Atomics.waitAsync, Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.waitAsync, 'name', {
+verifyPrimordialProperty(Atomics.waitAsync, 'name', {
   value: 'waitAsync',
   enumerable: false,
   writable: false,

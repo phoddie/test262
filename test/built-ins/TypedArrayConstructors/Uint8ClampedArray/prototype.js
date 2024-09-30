@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Uint8ClampedArray, "prototype", {
+verifyPrimordialProperty(Uint8ClampedArray, "prototype", {
   value: Object.getPrototypeOf(new Uint8ClampedArray(0)),
   writable: false,
   enumerable: false,

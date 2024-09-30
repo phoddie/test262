@@ -6,7 +6,7 @@ description: Property descriptor of Error.prototype.constructor
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error.prototype, 'constructor', {
+verifyPrimordialProperty(Error.prototype, 'constructor', {
   enumerable: false,
   writable: true,
   configurable: true,

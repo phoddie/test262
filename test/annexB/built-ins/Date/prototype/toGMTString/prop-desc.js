@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "toGMTString", {
+verifyPrimordialProperty(Date.prototype, "toGMTString", {
   enumerable: false,
   writable: true,
   configurable: true,

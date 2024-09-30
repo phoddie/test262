@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.toSpliced, "name", {
+verifyPrimordialProperty(Array.prototype.toSpliced, "name", {
   value: "toSpliced",
   writable: false,
   enumerable: false,

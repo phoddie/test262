@@ -18,7 +18,7 @@ assert.sameValue(
   'typeof WeakSet.prototype.delete is "function"'
 );
 
-verifyBuiltinProperty(WeakSet.prototype, 'delete', {
+verifyPrimordialProperty(WeakSet.prototype, 'delete', {
   writable: true,
   enumerable: false,
   configurable: true

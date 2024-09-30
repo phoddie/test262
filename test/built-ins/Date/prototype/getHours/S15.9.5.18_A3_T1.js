@@ -10,6 +10,6 @@ es5id: 15.9.5.18_A3_T1
 description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.getHours, "length", {
+verifyPrimordialProperty(Date.prototype.getHours, "length", {
   writable: false,
 });

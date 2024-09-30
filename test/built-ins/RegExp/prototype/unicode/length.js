@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 
 var getter = Object.getOwnPropertyDescriptor(RegExp.prototype, 'unicode').get;
 
-verifyBuiltinProperty(getter, "length", {
+verifyPrimordialProperty(getter, "length", {
   value: 0,
   writable: false,
   enumerable: false,

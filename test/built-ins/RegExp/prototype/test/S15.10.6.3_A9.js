@@ -10,6 +10,6 @@ description: Checking if deleting RegExp.prototype.test.length property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype.test, "length", {
+verifyPrimordialProperty(RegExp.prototype.test, "length", {
 	configurable: true,
 });

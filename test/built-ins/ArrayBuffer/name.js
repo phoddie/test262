@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(ArrayBuffer.name, "ArrayBuffer");
 
-verifyBuiltinProperty(ArrayBuffer, "name", {
+verifyPrimordialProperty(ArrayBuffer, "name", {
   writable: false,
   enumerable: false,
   configurable: true,

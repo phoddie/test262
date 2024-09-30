@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [Promise.prototype.finally]
 ---*/
 
-verifyBuiltinProperty(Promise.prototype.finally, "length", {
+verifyPrimordialProperty(Promise.prototype.finally, "length", {
   value: 1,
   enumerable: false,
   configurable: true,

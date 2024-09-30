@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics, 'exchange', {
+verifyPrimordialProperty(Atomics, 'exchange', {
   enumerable: false,
   writable: true,
   configurable: true,

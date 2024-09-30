@@ -13,6 +13,7 @@ defines:
   - verifyNotEnumerable
   - verifyConfigurable
   - verifyNotConfigurable
+  - verifyPrimordialProperty
 ---*/
 
 // @ts-check
@@ -228,7 +229,7 @@ function verifyNotConfigurable(obj, name) {
   }
 }
 
-function verifyBuiltinProperty(obj, name, desc, options) {
+function verifyPrimordialProperty(obj, name, desc, options) {
   assert(
     arguments.length > 2,
     'verifyProperty should receive at least 3 arguments: obj, name, and descriptor'

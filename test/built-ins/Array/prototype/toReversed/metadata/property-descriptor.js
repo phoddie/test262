@@ -17,7 +17,7 @@ features: [change-array-by-copy]
 
 assert.sameValue(typeof Array.prototype.toReversed, "function", "typeof");
 
-verifyBuiltinProperty(Array.prototype, "toReversed", {
+verifyPrimordialProperty(Array.prototype, "toReversed", {
   value: Array.prototype.toReversed,
   writable: true,
   enumerable: false,

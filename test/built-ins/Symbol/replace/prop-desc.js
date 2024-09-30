@@ -13,7 +13,7 @@ features: [Symbol.replace]
 
 assert.sameValue(typeof Symbol.replace, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'replace', {
+verifyPrimordialProperty(Symbol, 'replace', {
     writable: false,
     enumerable: false,
     configurable: false

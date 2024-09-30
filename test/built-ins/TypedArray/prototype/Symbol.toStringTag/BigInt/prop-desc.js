@@ -24,7 +24,7 @@ var desc = Object.getOwnPropertyDescriptor(
 
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
-verifyBuiltinProperty(TypedArrayPrototype, Symbol.toStringTag, {
+verifyPrimordialProperty(TypedArrayPrototype, Symbol.toStringTag, {
   enumerable: false,
   configurable: true
 });

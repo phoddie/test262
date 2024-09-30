@@ -8,6 +8,6 @@ description: Checking use hasOwnProperty, delete
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(encodeURI, "length", {
+verifyPrimordialProperty(encodeURI, "length", {
   configurable: true
 });

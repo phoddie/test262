@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(Math, Symbol.toStringTag, {
+verifyPrimordialProperty(Math, Symbol.toStringTag, {
     value: "Math",
     configurable: true,
     writable: false,

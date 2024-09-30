@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Object.seal are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "seal", {
+verifyPrimordialProperty(Object, "seal", {
   writable: true,
   enumerable: false,
   configurable: true,

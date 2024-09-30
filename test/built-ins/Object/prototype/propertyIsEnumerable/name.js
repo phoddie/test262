@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.prototype.propertyIsEnumerable, "name", {
+verifyPrimordialProperty(Object.prototype.propertyIsEnumerable, "name", {
   value: "propertyIsEnumerable",
   writable: false,
   enumerable: false,

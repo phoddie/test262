@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Float32Array, "prototype", {
+verifyPrimordialProperty(Float32Array, "prototype", {
   value: Object.getPrototypeOf(new Float32Array(0)),
   writable: false,
   enumerable: false,

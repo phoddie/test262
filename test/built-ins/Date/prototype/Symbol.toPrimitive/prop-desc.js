@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [Symbol.toPrimitive]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, Symbol.toPrimitive, {
+verifyPrimordialProperty(Date.prototype, Symbol.toPrimitive, {
   enumerable: false,
   writable: false,
   configurable: true

@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.load, 'name', {
+verifyPrimordialProperty(Atomics.load, 'name', {
   value: 'load',
   enumerable: false,
   writable: false,

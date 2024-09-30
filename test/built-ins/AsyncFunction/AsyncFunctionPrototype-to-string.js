@@ -13,7 +13,7 @@ features: [Symbol.toStringTag]
 var AsyncFunction = async function foo() {}.constructor;
 var AFP = AsyncFunction.prototype;
 
-verifyBuiltinProperty(AFP, Symbol.toStringTag, {
+verifyPrimordialProperty(AFP, Symbol.toStringTag, {
   value: "AsyncFunction",
   writable: false,
   enumerable: false,

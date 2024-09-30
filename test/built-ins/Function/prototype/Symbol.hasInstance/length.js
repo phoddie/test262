@@ -19,7 +19,7 @@ features: [Symbol.hasInstance]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function.prototype[Symbol.hasInstance], "length", {
+verifyPrimordialProperty(Function.prototype[Symbol.hasInstance], "length", {
   value: 1,
   writable: false,
   enumerable: false,

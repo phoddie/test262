@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "LN2", {
+verifyPrimordialProperty(Math, "LN2", {
 	writable: false,
 	enumerable: false,
 	configurable: false

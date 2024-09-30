@@ -29,70 +29,70 @@ var unscopables = Array.prototype[Symbol.unscopables];
 
 assert.sameValue(Object.getPrototypeOf(unscopables), null);
 
-verifyBuiltinProperty(unscopables, "copyWithin", {
+verifyPrimordialProperty(unscopables, "copyWithin", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "entries", {
+verifyPrimordialProperty(unscopables, "entries", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "fill", {
+verifyPrimordialProperty(unscopables, "fill", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "find", {
+verifyPrimordialProperty(unscopables, "find", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "findIndex", {
+verifyPrimordialProperty(unscopables, "findIndex", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "flat", {
+verifyPrimordialProperty(unscopables, "flat", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "flatMap", {
+verifyPrimordialProperty(unscopables, "flatMap", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "includes", {
+verifyPrimordialProperty(unscopables, "includes", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "keys", {
+verifyPrimordialProperty(unscopables, "keys", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });
 
-verifyBuiltinProperty(unscopables, "values", {
+verifyPrimordialProperty(unscopables, "values", {
     value: true,
     writable: true,
     enumerable: true,

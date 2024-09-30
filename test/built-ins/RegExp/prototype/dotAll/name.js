@@ -20,7 +20,7 @@ assert.sameValue(
   "get dotAll"
 );
 
-verifyBuiltinProperty(desc.get, "name", {
+verifyPrimordialProperty(desc.get, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

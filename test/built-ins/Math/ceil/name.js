@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.ceil, "name", {
+verifyPrimordialProperty(Math.ceil, "name", {
   value: "ceil",
   writable: false,
   enumerable: false,

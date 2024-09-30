@@ -9,6 +9,6 @@ esid: sec-date.prototype.tolocaledatestring
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "toLocaleDateString", {
+verifyPrimordialProperty(Date.prototype, "toLocaleDateString", {
   enumerable: false,
 });

@@ -9,6 +9,6 @@ description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date, "UTC", {
+verifyPrimordialProperty(Date, "UTC", {
   enumerable: false,
 });

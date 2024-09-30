@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Int8Array, "BYTES_PER_ELEMENT", {
+verifyPrimordialProperty(Int8Array, "BYTES_PER_ELEMENT", {
   value: 1,
   writable: false,
   enumerable: false,

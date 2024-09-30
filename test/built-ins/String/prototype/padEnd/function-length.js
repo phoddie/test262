@@ -8,7 +8,7 @@ author: Jordan Harband
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.padEnd, "length", {
+verifyPrimordialProperty(String.prototype.padEnd, "length", {
   value: 1,
   writable: false,
   enumerable: false,

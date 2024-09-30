@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 features: [FinalizationRegistry, Symbol, Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(FinalizationRegistry.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(FinalizationRegistry.prototype, Symbol.toStringTag, {
   value: 'FinalizationRegistry',
   writable: false,
   enumerable: false,

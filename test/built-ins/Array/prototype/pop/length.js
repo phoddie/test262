@@ -21,7 +21,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.pop, "length", {
+verifyPrimordialProperty(Array.prototype.pop, "length", {
   value: 0,
   writable: false,
   enumerable: false,

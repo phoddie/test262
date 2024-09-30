@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 features: [arraybuffer-transfer]
 ---*/
 
-verifyBuiltinProperty(ArrayBuffer.prototype, 'transferToFixedLength', {
+verifyPrimordialProperty(ArrayBuffer.prototype, 'transferToFixedLength', {
   enumerable: false,
   writable: true,
   configurable: true

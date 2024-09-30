@@ -18,7 +18,7 @@ assert.sameValue(
   'typeof WeakMap.prototype.has is "function"'
 );
 
-verifyBuiltinProperty(WeakMap.prototype, 'has', {
+verifyPrimordialProperty(WeakMap.prototype, 'has', {
   writable: true,
   enumerable: false,
   configurable: true

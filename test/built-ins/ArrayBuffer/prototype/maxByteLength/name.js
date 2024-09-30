@@ -16,7 +16,7 @@ features: [resizable-arraybuffer]
 
 var desc = Object.getOwnPropertyDescriptor(ArrayBuffer.prototype, 'maxByteLength');
 
-verifyBuiltinProperty(desc.get, 'name', {
+verifyPrimordialProperty(desc.get, 'name', {
   value: 'get maxByteLength',
   enumerable: false,
   writable: false,

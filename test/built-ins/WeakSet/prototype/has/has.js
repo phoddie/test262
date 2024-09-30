@@ -18,7 +18,7 @@ assert.sameValue(
   'typeof WeakSet.prototype.has is "function"'
 );
 
-verifyBuiltinProperty(WeakSet.prototype, 'has', {
+verifyPrimordialProperty(WeakSet.prototype, 'has', {
   writable: true,
   enumerable: false,
   configurable: true

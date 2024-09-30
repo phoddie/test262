@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "fround", {
+verifyPrimordialProperty(Math, "fround", {
 	writable: true,
 	enumerable: false,
 	configurable: true

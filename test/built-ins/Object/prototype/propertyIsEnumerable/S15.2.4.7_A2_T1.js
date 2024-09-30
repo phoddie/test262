@@ -16,6 +16,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object.prototype, "propertyIsEnumerable", {
+verifyPrimordialProperty(Object.prototype, "propertyIsEnumerable", {
   enumerable: false,
 });

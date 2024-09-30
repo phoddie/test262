@@ -8,6 +8,6 @@ description: eval.length === 1
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(eval, "length", {
+verifyPrimordialProperty(eval, "length", {
   value: 1
 });

@@ -10,7 +10,7 @@ features: [set-methods]
 ---*/
 assert.sameValue(typeof Set.prototype.symmetricDifference, "function");
 
-verifyBuiltinProperty(Set.prototype.symmetricDifference, "length", {
+verifyPrimordialProperty(Set.prototype.symmetricDifference, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

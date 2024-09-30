@@ -23,7 +23,7 @@ assert.sameValue(
   'The value of Array.prototype.at.name is expected to be "at"'
 );
 
-verifyBuiltinProperty(Array.prototype.at, 'name', {
+verifyPrimordialProperty(Array.prototype.at, 'name', {
   enumerable: false,
   writable: false,
   configurable: true

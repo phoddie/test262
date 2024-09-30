@@ -17,7 +17,7 @@ features: [TypedArray, change-array-by-copy]
 
 assert.sameValue(typeof TypedArray.prototype.toReversed, "function", "typeof");
 
-verifyBuiltinProperty(TypedArray.prototype, "toReversed", {
+verifyPrimordialProperty(TypedArray.prototype, "toReversed", {
   value: TypedArray.prototype.toReversed,
   writable: true,
   enumerable: false,

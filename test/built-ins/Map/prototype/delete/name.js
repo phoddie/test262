@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Map.prototype.delete, "name", {
+verifyPrimordialProperty(Map.prototype.delete, "name", {
   value: "delete",
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(ArrayBuffer.prototype.slice, "name", {
+verifyPrimordialProperty(ArrayBuffer.prototype.slice, "name", {
   value: "slice",
   writable: false,
   enumerable: false,

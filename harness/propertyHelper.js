@@ -13,6 +13,7 @@ defines:
   - verifyNotEnumerable # deprecated
   - verifyConfigurable # deprecated
   - verifyNotConfigurable # deprecated
+  - verifyPrimordialProperty
 ---*/
 
 // @ts-check
@@ -269,18 +270,22 @@ function verifyNotConfigurable(obj, name) {
   }
 }
 
-function verifyBuiltinProperty(obj, name, desc, options) {
+function verifyPrimordialProperty(obj, name, desc, options) {
   assert(
     arguments.length > 2,
-    'verifyBuiltinProperty should receive at least 3 arguments: obj, name, and descriptor'
+    'verifyPrimordialProperty should receive at least 3 arguments: obj, name, and descriptor'
   );
 
   if (desc && (true === desc.writable) || (true === desc.configurable)) {
-    const LOCKED_DOWN = ($262 && (typeof $262.isLockedDown === "function")) ? $262.isLockedDown() : false
+    const LOCKED_DOWN = ($262 && (typeof $262.isLockedDown === "function")) ? $262.isLockedDown() : false;
     if (LOCKED_DOWN) {
-      desc = {...desc};
-      if (desc.writable) desc.writable = false;
-      if (desc.configurable) desc.configurable = false;
+      var copy = {};
+      var names = Object.getOwnPropertyNames(desc);
+      for (var i = 0; i < names.length; i++) {
+        var n = names[i];
+        copy[n] = ((n === "writable") || (n === "configurable")) ? false : desc[n];
+      }
+      desc = copy;
     }
   }
 

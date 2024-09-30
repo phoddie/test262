@@ -12,6 +12,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function.prototype.call, "length", {
+verifyPrimordialProperty(Function.prototype.call, "length", {
   configurable: true,
 });

@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "floor", {
+verifyPrimordialProperty(Math, "floor", {
 	writable: true,
 	enumerable: false,
 	configurable: true

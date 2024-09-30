@@ -14,7 +14,7 @@ function* g() {}
 var Generator = Object.getPrototypeOf(g);
 var GeneratorPrototype = Generator.prototype;
 
-verifyBuiltinProperty(GeneratorPrototype, 'constructor', {
+verifyPrimordialProperty(GeneratorPrototype, 'constructor', {
     value: Generator,
     enumerable: false,
     writable: false,

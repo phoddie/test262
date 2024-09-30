@@ -24,7 +24,7 @@ includes: [propertyHelper.js]
 features: [AggregateError]
 ---*/
 
-verifyBuiltinProperty(AggregateError, 'length', {
+verifyPrimordialProperty(AggregateError, 'length', {
   value: 2,
   writable: false,
   enumerable: false,

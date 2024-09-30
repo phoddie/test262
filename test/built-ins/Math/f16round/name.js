@@ -9,7 +9,7 @@ features: [Float16Array]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.f16round, 'name', {
+verifyPrimordialProperty(Math.f16round, 'name', {
   value: 'f16round',
   enumerable: false,
   writable: false,

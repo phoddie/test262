@@ -8,6 +8,6 @@ description: Checking if varying "Object.prototype" property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "prototype", {
+verifyPrimordialProperty(Object, "prototype", {
   writable: false,
 });

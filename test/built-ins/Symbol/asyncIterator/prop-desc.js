@@ -14,7 +14,7 @@ features: [Symbol.asyncIterator]
 
 assert.sameValue(typeof Symbol.asyncIterator, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'asyncIterator', {
+verifyPrimordialProperty(Symbol, 'asyncIterator', {
     enumerable: false,
     writable: false,
     configurable: false,

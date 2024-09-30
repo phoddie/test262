@@ -17,7 +17,7 @@ var descriptor = Object.getOwnPropertyDescriptor(
   DataView.prototype, 'byteOffset'
 );
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get byteOffset",
   writable: false,
   enumerable: false,

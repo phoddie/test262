@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "min", {
+verifyPrimordialProperty(Math, "min", {
 	writable: true,
 	enumerable: false,
 	configurable: true

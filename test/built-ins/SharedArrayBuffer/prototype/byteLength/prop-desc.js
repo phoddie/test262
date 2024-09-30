@@ -10,7 +10,7 @@ features: [SharedArrayBuffer]
 
 var desc = Object.getOwnPropertyDescriptor(SharedArrayBuffer.prototype, "byteLength");
 
-verifyBuiltinProperty(SharedArrayBuffer.prototype, 'byteLength', {
+verifyPrimordialProperty(SharedArrayBuffer.prototype, 'byteLength', {
   enumerable: false,
   configurable: true
 });

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.splice, "name", {
+verifyPrimordialProperty(Array.prototype.splice, "name", {
   value: "splice",
   writable: false,
   enumerable: false,

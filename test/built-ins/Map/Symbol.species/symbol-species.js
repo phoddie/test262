@@ -16,7 +16,7 @@ var desc = Object.getOwnPropertyDescriptor(Map, Symbol.species);
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(Map, Symbol.species, {
+verifyPrimordialProperty(Map, Symbol.species, {
 	enumerable: false,
 	configurable: true
  });

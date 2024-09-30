@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.findIndex, "name", {
+verifyPrimordialProperty(Array.prototype.findIndex, "name", {
   value: "findIndex",
   writable: false,
   enumerable: false,

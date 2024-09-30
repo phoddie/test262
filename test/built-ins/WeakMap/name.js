@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(WeakMap, "name", {
+verifyPrimordialProperty(WeakMap, "name", {
   value: "WeakMap",
   writable: false,
   enumerable: false,

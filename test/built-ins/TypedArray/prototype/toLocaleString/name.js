@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype.toLocaleString, "name", {
+verifyPrimordialProperty(TypedArray.prototype.toLocaleString, "name", {
   value: "toLocaleString",
   writable: false,
   enumerable: false,

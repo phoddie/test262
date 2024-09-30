@@ -17,7 +17,7 @@ features: [TypedArray, change-array-by-copy]
 
 assert.sameValue(typeof TypedArray.prototype.toSorted, "function", "typeof");
 
-verifyBuiltinProperty(TypedArray.prototype, "toSorted", {
+verifyPrimordialProperty(TypedArray.prototype, "toSorted", {
   value: TypedArray.prototype.toSorted,
   writable: true,
   enumerable: false,

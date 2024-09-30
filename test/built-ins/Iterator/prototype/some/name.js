@@ -21,7 +21,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Iterator.prototype.some, 'name', {
+verifyPrimordialProperty(Iterator.prototype.some, 'name', {
   value: 'some',
   writable: false,
   enumerable: false,

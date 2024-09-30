@@ -8,6 +8,6 @@ description: Checking if enumerating Number.MAX_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "MAX_VALUE", {
+verifyPrimordialProperty(Number, "MAX_VALUE", {
 	enumerable: false,
 });

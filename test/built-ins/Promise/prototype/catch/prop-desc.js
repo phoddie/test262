@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Promise.prototype.catch, 'function');
 
-verifyBuiltinProperty(Promise.prototype, 'catch', {
+verifyPrimordialProperty(Promise.prototype, 'catch', {
     configurable: true,
     writable: true,
     enumerable: false,

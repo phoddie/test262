@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.atan2, "length", {
+verifyPrimordialProperty(Math.atan2, "length", {
   value: 2,
   writable: false,
   enumerable: false,

@@ -13,7 +13,7 @@ features: [Symbol.search]
 
 assert.sameValue(typeof Symbol.search, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'search', {
+verifyPrimordialProperty(Symbol, 'search', {
     writable: false,
     enumerable: false,
     configurable: false

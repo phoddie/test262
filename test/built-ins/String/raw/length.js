@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.raw, "length", {
+verifyPrimordialProperty(String.raw, "length", {
   value: 1,
   writable: false,
   enumerable: false,

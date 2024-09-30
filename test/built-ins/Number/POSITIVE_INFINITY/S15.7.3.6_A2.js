@@ -8,6 +8,6 @@ description: Checking if varying Number.POSITIVE_INFINITY fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "POSITIVE_INFINITY", {
+verifyPrimordialProperty(Number, "POSITIVE_INFINITY", {
 	writable: false,
 });

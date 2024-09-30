@@ -18,7 +18,7 @@ assert.sameValue(
   'typeof WeakMap.prototype.delete is "function"'
 );
 
-verifyBuiltinProperty(WeakMap.prototype, 'delete', {
+verifyPrimordialProperty(WeakMap.prototype, 'delete', {
   writable: true,
   enumerable: false,
   configurable: true

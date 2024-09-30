@@ -10,6 +10,6 @@ includes: [propertyHelper.js]
 
 var obj = Function.prototype;
 
-verifyBuiltinProperty(Function, "prototype", {
+verifyPrimordialProperty(Function, "prototype", {
   writable: false,
 });

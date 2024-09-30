@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.random, "length", {
+verifyPrimordialProperty(Math.random, "length", {
   value: 0,
   writable: false,
   enumerable: false,

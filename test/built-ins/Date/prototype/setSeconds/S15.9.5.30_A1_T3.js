@@ -7,6 +7,6 @@ esid: sec-date.prototype.setseconds
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "setSeconds", {
+verifyPrimordialProperty(Date.prototype, "setSeconds", {
   enumerable: false,
 });

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.hypot, "name", {
+verifyPrimordialProperty(Math.hypot, "name", {
   value: "hypot",
   writable: false,
   enumerable: false,

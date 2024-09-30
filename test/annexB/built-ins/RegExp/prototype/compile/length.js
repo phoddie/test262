@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype.compile, "length", {
+verifyPrimordialProperty(RegExp.prototype.compile, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

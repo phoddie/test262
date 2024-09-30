@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "isNaN", {
+verifyPrimordialProperty(Number, "isNaN", {
   enumerable: false,
   writable: true,
   configurable: true,

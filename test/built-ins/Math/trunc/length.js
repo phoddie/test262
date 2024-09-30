@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.trunc, "length", {
+verifyPrimordialProperty(Math.trunc, "length", {
   value: 1,
   writable: false,
   enumerable: false,

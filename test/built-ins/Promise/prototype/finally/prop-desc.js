@@ -14,7 +14,7 @@ features: [Promise.prototype.finally]
 
 assert.sameValue(typeof Promise.prototype.finally, 'function');
 
-verifyBuiltinProperty(Promise.prototype, 'finally', {
+verifyPrimordialProperty(Promise.prototype, 'finally', {
     configurable: true,
     writable: true,
     enumerable: false,

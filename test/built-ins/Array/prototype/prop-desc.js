@@ -15,7 +15,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array, "prototype", {
+verifyPrimordialProperty(Array, "prototype", {
   writable: false,
   enumerable: false,
   configurable: false

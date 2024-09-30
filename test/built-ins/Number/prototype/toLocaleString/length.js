@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype.toLocaleString, "length", {
+verifyPrimordialProperty(Number.prototype.toLocaleString, "length", {
   value: 0,
   writable: false,
   enumerable: false,

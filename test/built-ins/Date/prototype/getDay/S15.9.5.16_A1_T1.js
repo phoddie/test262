@@ -8,6 +8,6 @@ es5id: 15.9.5.16_A1_T1
 description: Checking absence of ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "getDate", {
+verifyPrimordialProperty(Date.prototype, "getDate", {
   writable: true
 });

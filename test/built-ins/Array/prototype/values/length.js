@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.values, "length", {
+verifyPrimordialProperty(Array.prototype.values, "length", {
   value: 0,
   writable: false,
   enumerable: false,

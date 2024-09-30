@@ -8,6 +8,6 @@ description: Checking absence of ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "setHours", {
+verifyPrimordialProperty(Date.prototype, "setHours", {
   writable: true,
 });

@@ -6,7 +6,7 @@ description: Property descriptor of Error.prototype.message
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error.prototype, 'message', {
+verifyPrimordialProperty(Error.prototype, 'message', {
   enumerable: false,
   writable: true,
   configurable: true,

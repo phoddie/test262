@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.isInteger, "name", {
+verifyPrimordialProperty(Number.isInteger, "name", {
   value: "isInteger",
   writable: false,
   enumerable: false,

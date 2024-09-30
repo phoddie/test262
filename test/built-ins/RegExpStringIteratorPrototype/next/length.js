@@ -26,7 +26,7 @@ features: [Symbol.matchAll]
 
 var RegExpStringIteratorProto = Object.getPrototypeOf(/./[Symbol.matchAll](''));
 
-verifyBuiltinProperty(RegExpStringIteratorProto.next, "length", {
+verifyPrimordialProperty(RegExpStringIteratorProto.next, "length", {
   value: 0,
   writable: false,
   enumerable: false,

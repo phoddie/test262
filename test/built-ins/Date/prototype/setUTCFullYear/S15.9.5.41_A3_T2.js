@@ -9,6 +9,6 @@ esid: sec-date.prototype.setutcfullyear
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.setUTCFullYear, "length", {
+verifyPrimordialProperty(Date.prototype.setUTCFullYear, "length", {
   configurable: true
 });

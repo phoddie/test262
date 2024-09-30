@@ -19,7 +19,7 @@ features: [arraybuffer-transfer]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(ArrayBuffer.prototype.transfer, 'name', {
+verifyPrimordialProperty(ArrayBuffer.prototype.transfer, 'name', {
   value: 'transfer',
   enumerable: false,
   writable: false,

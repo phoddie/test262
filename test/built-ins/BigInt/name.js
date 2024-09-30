@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [BigInt]
 ---*/
 
-verifyBuiltinProperty(BigInt, "name", {
+verifyPrimordialProperty(BigInt, "name", {
   value: "BigInt",
   writable: false,
   enumerable: false,

@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype, "substr", {
+verifyPrimordialProperty(String.prototype, "substr", {
   enumerable: false,
   writable: true,
   configurable: true

@@ -22,7 +22,7 @@ features: [TypedArray]
 
 var desc = Object.getOwnPropertyDescriptor(TypedArray.prototype, "byteOffset");
 
-verifyBuiltinProperty(desc.get, "name", {
+verifyPrimordialProperty(desc.get, "name", {
   value: "get byteOffset",
   writable: false,
   enumerable: false,

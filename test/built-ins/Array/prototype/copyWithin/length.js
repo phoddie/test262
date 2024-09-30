@@ -10,7 +10,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.copyWithin, "length", {
+verifyPrimordialProperty(Array.prototype.copyWithin, "length", {
   value: 2,
   writable: false,
   enumerable: false,

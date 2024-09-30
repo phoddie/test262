@@ -20,7 +20,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "parseInt", {
+verifyPrimordialProperty(Number, "parseInt", {
   value: parseInt,
   enumerable: false,
   writable: true,

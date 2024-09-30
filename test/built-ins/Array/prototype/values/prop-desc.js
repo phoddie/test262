@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.values, 'function');
 
-verifyBuiltinProperty(Array.prototype, "values", {
+verifyPrimordialProperty(Array.prototype, "values", {
     writable: true,
     enumerable: false,
     configurable: true

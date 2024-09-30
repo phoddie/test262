@@ -17,7 +17,7 @@ features: [Symbol.search]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype[Symbol.search], "name", {
+verifyPrimordialProperty(RegExp.prototype[Symbol.search], "name", {
   value: "[Symbol.search]",
   writable: false,
   enumerable: false,

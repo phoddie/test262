@@ -13,7 +13,7 @@ var descriptor = Object.getOwnPropertyDescriptor(
   SharedArrayBuffer.prototype, 'byteLength'
 );
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get byteLength",
   writable: false,
   enumerable: false,

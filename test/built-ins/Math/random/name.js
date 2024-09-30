@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.random, "name", {
+verifyPrimordialProperty(Math.random, "name", {
   value: "random",
   writable: false,
   enumerable: false,

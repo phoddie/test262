@@ -10,7 +10,7 @@ includes: [propertyHelper.js]
 features: [Atomics]
 ---*/
 
-verifyBuiltinProperty(Atomics.isLockFree, 'name', {
+verifyPrimordialProperty(Atomics.isLockFree, 'name', {
   value: 'isLockFree',
   enumerable: false,
   writable: false,

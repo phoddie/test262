@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView.prototype.getUint32, "name", {
+verifyPrimordialProperty(DataView.prototype.getUint32, "name", {
   value: "getUint32",
   writable: false,
   enumerable: false,

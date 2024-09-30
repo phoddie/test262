@@ -13,7 +13,7 @@ includes: [propertyHelper.js]
 features: [String.prototype.isWellFormed]
 ---*/
 
-verifyBuiltinProperty(String.prototype.isWellFormed, 'name', {
+verifyPrimordialProperty(String.prototype.isWellFormed, 'name', {
   enumerable: false,
   writable: false,
   configurable: true,

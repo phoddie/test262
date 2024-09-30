@@ -25,7 +25,7 @@ features: [Symbol.iterator]
 
 var StringIteratorProto = Object.getPrototypeOf(new String()[Symbol.iterator]());
 
-verifyBuiltinProperty(StringIteratorProto.next, "length", {
+verifyPrimordialProperty(StringIteratorProto.next, "length", {
   value: 0,
   writable: false,
   enumerable: false,

@@ -30,6 +30,6 @@ var ThrowTypeError = Object.getOwnPropertyDescriptor(function() {
   return arguments;
 }(), "callee").get;
 
-verifyBuiltinProperty(ThrowTypeError, "name", {
+verifyPrimordialProperty(ThrowTypeError, "name", {
   value: "", writable: false, enumerable: false, configurable: false
 });

@@ -14,7 +14,7 @@ features: [async-iteration]
 async function* g() {}
 var AsyncGeneratorPrototype = Object.getPrototypeOf(g).prototype;
 
-verifyBuiltinProperty(AsyncGeneratorPrototype, "next", {
+verifyPrimordialProperty(AsyncGeneratorPrototype, "next", {
   enumerable: false,
   writable: true,
   configurable: true,

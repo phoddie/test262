@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Atomics, Symbol, Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(Atomics, Symbol.toStringTag, {
+verifyPrimordialProperty(Atomics, Symbol.toStringTag, {
   value: 'Atomics',
   enumerable: false,
   writable: false,

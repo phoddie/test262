@@ -10,6 +10,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype.test, "length", {
+verifyPrimordialProperty(RegExp.prototype.test, "length", {
 	enumerable: false,
 });

@@ -23,7 +23,7 @@ includes: [propertyHelper.js]
 features: [Symbol]
 ---*/
 
-verifyBuiltinProperty(Symbol.for, "length", {
+verifyPrimordialProperty(Symbol.for, "length", {
   value: 1,
   writable: false,
   enumerable: false,

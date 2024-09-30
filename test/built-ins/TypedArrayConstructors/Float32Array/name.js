@@ -21,7 +21,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Float32Array, "name", {
+verifyPrimordialProperty(Float32Array, "name", {
   value: "Float32Array",
   writable: false,
   enumerable: false,

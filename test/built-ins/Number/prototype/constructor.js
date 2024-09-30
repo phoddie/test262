@@ -13,7 +13,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype, "constructor", {
+verifyPrimordialProperty(Number.prototype, "constructor", {
   value: Number,
   enumerable: false,
   writable: true,

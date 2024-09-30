@@ -9,6 +9,6 @@ esid: sec-date.prototype.tolocalestring
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.toLocaleString, "length", {
+verifyPrimordialProperty(Date.prototype.toLocaleString, "length", {
   configurable: true
 });

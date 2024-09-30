@@ -8,6 +8,6 @@ description: Checking use hasOwnProperty, delete
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(parseFloat, "length", {
+verifyPrimordialProperty(parseFloat, "length", {
   configurable: true
 });

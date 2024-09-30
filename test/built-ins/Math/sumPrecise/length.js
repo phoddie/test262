@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Math.sumPrecise]
 ---*/
 
-verifyBuiltinProperty(Math.sumPrecise, "length", {
+verifyPrimordialProperty(Math.sumPrecise, "length", {
   value: 1,
   writable: false,
   enumerable: false,

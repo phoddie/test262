@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.iterator]
 ---*/
 
-verifyBuiltinProperty(Set.prototype, Symbol.iterator, {
+verifyPrimordialProperty(Set.prototype, Symbol.iterator, {
     value: Set.prototype.values,
     writable: true,
     enumerable: false,

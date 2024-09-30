@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "tan", {
+verifyPrimordialProperty(Math, "tan", {
 	writable: true,
 	enumerable: false,
 	configurable: true

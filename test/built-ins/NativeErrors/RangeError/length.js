@@ -25,7 +25,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RangeError, "length", {
+verifyPrimordialProperty(RangeError, "length", {
   value: 1,
   writable: false,
   enumerable: false,

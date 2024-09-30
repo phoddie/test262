@@ -12,7 +12,7 @@ features: [Symbol.isConcatSpreadable]
 
 assert.sameValue(typeof Symbol.isConcatSpreadable, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'isConcatSpreadable', {
+verifyPrimordialProperty(Symbol, 'isConcatSpreadable', {
     writable: false,
     enumerable: false,
     configurable: false

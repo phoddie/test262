@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [change-array-by-copy]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.toSorted, "name", {
+verifyPrimordialProperty(Array.prototype.toSorted, "name", {
   value: "toSorted",
   writable: false,
   enumerable: false,

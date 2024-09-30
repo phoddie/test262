@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype.includes, "name", {
+verifyPrimordialProperty(TypedArray.prototype.includes, "name", {
   value: "includes",
   writable: false,
   enumerable: false,

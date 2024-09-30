@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.35
 ---*/
 
-verifyBuiltinProperty(Math, "trunc", {
+verifyPrimordialProperty(Math, "trunc", {
 	writable: true,
 	enumerable: false,
 	configurable: true

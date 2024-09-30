@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.slice, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "slice", {
+verifyPrimordialProperty(Array.prototype, "slice", {
   writable: true,
   enumerable: false,
   configurable: true

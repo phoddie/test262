@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(Float64Array.prototype, "constructor", {
+verifyPrimordialProperty(Float64Array.prototype, "constructor", {
   value: Float64Array,
   writable: true,
   enumerable: false,

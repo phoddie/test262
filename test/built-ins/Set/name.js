@@ -10,7 +10,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Set, "name", {
+verifyPrimordialProperty(Set, "name", {
   value: "Set",
   writable: false,
   enumerable: false,

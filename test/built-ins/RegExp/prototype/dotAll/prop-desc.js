@@ -23,7 +23,7 @@ var desc = Object.getOwnPropertyDescriptor(RegExp.prototype, "dotAll");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(RegExp.prototype, "dotAll", {
+verifyPrimordialProperty(RegExp.prototype, "dotAll", {
   enumerable: false,
   configurable: true,
 });

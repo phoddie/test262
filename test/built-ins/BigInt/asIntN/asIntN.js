@@ -14,7 +14,7 @@ features: [BigInt]
 
 assert.sameValue(typeof BigInt.asIntN, 'function');
 
-verifyBuiltinProperty(BigInt, "asIntN", {
+verifyPrimordialProperty(BigInt, "asIntN", {
   enumerable: false,
   writable: true,
   configurable: true

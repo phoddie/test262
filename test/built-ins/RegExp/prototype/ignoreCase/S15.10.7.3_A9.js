@@ -10,6 +10,6 @@ description: Checking if deleting the ignoreCase property succeeds
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "ignoreCase", {
+verifyPrimordialProperty(RegExp.prototype, "ignoreCase", {
 	configurable: true,
 });

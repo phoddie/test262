@@ -22,7 +22,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.italics, "length", {
+verifyPrimordialProperty(String.prototype.italics, "length", {
   enumerable: false,
   writable: false,
   configurable: true,

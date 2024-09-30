@@ -13,7 +13,7 @@ features: [Symbol.iterator]
 
 assert.sameValue(typeof Symbol.iterator, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'iterator', {
+verifyPrimordialProperty(Symbol, 'iterator', {
     writable: false,
     enumerable: false,
     configurable: false

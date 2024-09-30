@@ -7,7 +7,7 @@ description: ES5 Attributes - all attributes in Array.prototype.map are correct
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype, "map", {
+verifyPrimordialProperty(Array.prototype, "map", {
   writable: true,
   enumerable: false,
   configurable: true,

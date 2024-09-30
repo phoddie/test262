@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.13
 ---*/
 
-verifyBuiltinProperty(Math, "cosh", {
+verifyPrimordialProperty(Math, "cosh", {
 	writable: true,
 	enumerable: false,
 	configurable: true

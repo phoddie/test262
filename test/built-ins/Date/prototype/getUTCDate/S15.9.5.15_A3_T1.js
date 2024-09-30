@@ -10,6 +10,6 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.getUTCDate, "length", {
+verifyPrimordialProperty(Date.prototype.getUTCDate, "length", {
   writable: false
 });

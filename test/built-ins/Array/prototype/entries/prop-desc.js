@@ -17,7 +17,7 @@ assert.sameValue(
   '`typeof Array.prototype.entries` is `function`'
 );
 
-verifyBuiltinProperty(Array.prototype, "entries", {
+verifyPrimordialProperty(Array.prototype, "entries", {
   writable: true,
   enumerable: false,
   configurable: true

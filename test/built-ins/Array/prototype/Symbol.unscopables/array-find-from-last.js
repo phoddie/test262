@@ -20,14 +20,14 @@ var unscopables = Array.prototype[Symbol.unscopables];
 
 assert.sameValue(Object.getPrototypeOf(unscopables), null);
 
-verifyBuiltinProperty(unscopables, "findLast", {
+verifyPrimordialProperty(unscopables, "findLast", {
     value: true,
     writable: true,
     enumerable: true,
     configurable: true
 });  
 
-verifyBuiltinProperty(unscopables, "findLastIndex", {
+verifyPrimordialProperty(unscopables, "findLastIndex", {
     value: true,
     writable: true,
     enumerable: true,

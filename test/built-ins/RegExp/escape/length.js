@@ -11,7 +11,7 @@ includes: [propertyHelper.js]
 features: [RegExp.escape]
 ---*/
 
-verifyBuiltinProperty(RegExp.escape, "length", {
+verifyPrimordialProperty(RegExp.escape, "length", {
   value: 1,
   writable: false,
   enumerable: false,

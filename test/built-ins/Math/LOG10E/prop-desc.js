@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "LOG10E", {
+verifyPrimordialProperty(Math, "LOG10E", {
 	writable: false,
 	enumerable: false,
 	configurable: false

@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(WeakMap.prototype.get, "name", {
+verifyPrimordialProperty(WeakMap.prototype.get, "name", {
   value: "get",
   writable: false,
   enumerable: false,

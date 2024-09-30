@@ -14,7 +14,7 @@ features: [String.prototype.at]
 ---*/
 assert.sameValue(typeof String.prototype.at, 'function');
 
-verifyBuiltinProperty(String.prototype.at, "length", {
+verifyPrimordialProperty(String.prototype.at, "length", {
   value: 1,
   writable: false,
   enumerable: false,

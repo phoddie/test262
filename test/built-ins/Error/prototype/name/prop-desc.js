@@ -6,7 +6,7 @@ description: Property descriptor of Error.prototype.name
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Error.prototype, 'name', {
+verifyPrimordialProperty(Error.prototype, 'name', {
   enumerable: false,
   writable: true,
   configurable: true,

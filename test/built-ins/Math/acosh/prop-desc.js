@@ -7,7 +7,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.3
 ---*/
 
-verifyBuiltinProperty(Math, "acosh", {
+verifyPrimordialProperty(Math, "acosh", {
 	writable: true,
 	enumerable: false,
 	configurable: true

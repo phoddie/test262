@@ -16,7 +16,7 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Array.prototype.sort, 'function', 'typeof');
 
-verifyBuiltinProperty(Array.prototype, "sort", {
+verifyPrimordialProperty(Array.prototype, "sort", {
   writable: true,
   enumerable: false,
   configurable: true

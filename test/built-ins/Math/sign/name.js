@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.sign, "name", {
+verifyPrimordialProperty(Math.sign, "name", {
   value: "sign",
   writable: false,
   enumerable: false,

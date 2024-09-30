@@ -9,6 +9,6 @@ esid: sec-date.parse
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.parse, "length", {
+verifyPrimordialProperty(Date.parse, "length", {
   configurable: true,
 });

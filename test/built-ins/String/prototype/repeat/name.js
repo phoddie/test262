@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.repeat, "name", {
+verifyPrimordialProperty(String.prototype.repeat, "name", {
   value: "repeat",
   writable: false,
   enumerable: false,

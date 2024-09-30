@@ -14,7 +14,7 @@ assert.sameValue(
   '`typeof Array.prototype.findIndex` is `function`'
 );
 
-verifyBuiltinProperty(Array.prototype, "findIndex", {
+verifyPrimordialProperty(Array.prototype, "findIndex", {
   writable: true,
   enumerable: false,
   configurable: true

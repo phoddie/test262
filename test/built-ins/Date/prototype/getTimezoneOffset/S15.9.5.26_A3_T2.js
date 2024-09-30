@@ -9,6 +9,6 @@ esid: sec-date.prototype.gettimezoneoffset
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.getTimezoneOffset, "length", {
+verifyPrimordialProperty(Date.prototype.getTimezoneOffset, "length", {
   configurable: true
 });

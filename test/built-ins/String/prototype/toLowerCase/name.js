@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.toLowerCase, "name", {
+verifyPrimordialProperty(String.prototype.toLowerCase, "name", {
   value: "toLowerCase",
   writable: false,
   enumerable: false,

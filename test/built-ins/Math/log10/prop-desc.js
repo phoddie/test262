@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 es6id: 20.2.2.20
 ---*/
 
-verifyBuiltinProperty(Math, "log10", {
+verifyPrimordialProperty(Math, "log10", {
 	writable: true,
 	enumerable: false,
 	configurable: true

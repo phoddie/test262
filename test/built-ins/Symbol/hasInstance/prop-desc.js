@@ -12,7 +12,7 @@ features: [Symbol.hasInstance]
 
 assert.sameValue(typeof Symbol.hasInstance, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'hasInstance', {
+verifyPrimordialProperty(Symbol, 'hasInstance', {
     writable: false,
     enumerable: false,
     configurable: false

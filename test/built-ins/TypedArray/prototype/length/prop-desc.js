@@ -20,7 +20,7 @@ var desc = Object.getOwnPropertyDescriptor(TypedArrayPrototype, "length");
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, "function");
 
-verifyBuiltinProperty(TypedArray.prototype, "length", {
+verifyPrimordialProperty(TypedArray.prototype, "length", {
   enumerable: false,
   configurable: true
 });

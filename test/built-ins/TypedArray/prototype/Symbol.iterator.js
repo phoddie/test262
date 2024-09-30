@@ -15,7 +15,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [Symbol.iterator]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype, Symbol.iterator, {
+verifyPrimordialProperty(TypedArray.prototype, Symbol.iterator, {
   value: TypedArray.prototype.values,
   writable: true,
   enumerable: false,

@@ -16,7 +16,7 @@ assert.sameValue(
   'typeof Map.prototype.delete is "function"'
 );
 
-verifyBuiltinProperty(Map.prototype, 'delete', {
+verifyPrimordialProperty(Map.prototype, 'delete', {
   writable: true,
   enumerable: false,
   configurable: true

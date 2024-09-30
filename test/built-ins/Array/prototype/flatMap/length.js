@@ -14,7 +14,7 @@ assert.sameValue(
   'The value of `Array.prototype.flatmap.length` is `1`'
 );
 
-verifyBuiltinProperty(Array.prototype.flatMap, 'length', {
+verifyPrimordialProperty(Array.prototype.flatMap, 'length', {
   enumerable: false,
   writable: false,
   configurable: true,

@@ -16,7 +16,7 @@ features: [Symbol.toStringTag]
 
 assert.sameValue(Symbol.prototype[Symbol.toStringTag], 'Symbol');
 
-verifyBuiltinProperty(Symbol.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(Symbol.prototype, Symbol.toStringTag, {
     writable: false,
     enumerable: false,
     configurable: true

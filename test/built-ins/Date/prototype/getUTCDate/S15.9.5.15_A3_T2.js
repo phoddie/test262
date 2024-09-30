@@ -9,6 +9,6 @@ esid: sec-date.prototype.getutcdate
 description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype.getUTCDate, "length", {
+verifyPrimordialProperty(Date.prototype.getUTCDate, "length", {
   configurable: true
 });

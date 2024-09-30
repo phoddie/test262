@@ -8,7 +8,7 @@ includes: [propertyHelper.js]
 features: [Atomics.pause]
 ---*/
 
-verifyBuiltinProperty(Atomics.pause, 'name', {
+verifyPrimordialProperty(Atomics.pause, 'name', {
   value: 'pause',
   enumerable: false,
   writable: false,

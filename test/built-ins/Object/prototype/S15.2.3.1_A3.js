@@ -7,6 +7,6 @@ description: Checking if deleting "Object.prototype" property fails;
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Object, "prototype", {
+verifyPrimordialProperty(Object, "prototype", {
   configurable: false,
 });

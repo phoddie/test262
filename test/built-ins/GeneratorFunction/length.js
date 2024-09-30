@@ -11,7 +11,7 @@ features: [generators]
 
 var GeneratorFunction = Object.getPrototypeOf(function*() {}).constructor;
 
-verifyBuiltinProperty(GeneratorFunction, "length", {
+verifyPrimordialProperty(GeneratorFunction, "length", {
   value: 1,
   writable: false,
   enumerable: false,

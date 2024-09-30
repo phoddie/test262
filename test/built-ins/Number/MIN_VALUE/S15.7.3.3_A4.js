@@ -8,6 +8,6 @@ description: Checking if enumerating Number.MIN_VALUE fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number, "MIN_VALUE", {
+verifyPrimordialProperty(Number, "MIN_VALUE", {
 	enumerable: false,
 });

@@ -23,7 +23,7 @@ assert.sameValue(
   'The value of `typeof Array.prototype.at` is expected to be "function"'
 );
 
-verifyBuiltinProperty(Array.prototype, 'at', {
+verifyPrimordialProperty(Array.prototype, 'at', {
   enumerable: false,
   writable: true,
   configurable: true

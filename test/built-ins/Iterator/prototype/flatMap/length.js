@@ -14,7 +14,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Iterator.prototype.flatMap, 'length', {
+verifyPrimordialProperty(Iterator.prototype.flatMap, 'length', {
   value: 1,
   writable: false,
   enumerable: false,

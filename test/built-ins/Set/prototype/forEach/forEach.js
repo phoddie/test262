@@ -16,7 +16,7 @@ assert.sameValue(
   "`typeof Set.prototype.forEach` is `'function'`"
 );
 
-verifyBuiltinProperty(Set.prototype, 'forEach', {
+verifyPrimordialProperty(Set.prototype, 'forEach', {
   writable: true,
   enumerable: false,
   configurable: true

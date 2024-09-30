@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(RegExp.prototype, 'sticky');
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get sticky",
   writable: false,
   enumerable: false,

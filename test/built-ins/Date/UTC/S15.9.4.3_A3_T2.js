@@ -11,6 +11,6 @@ description: Checking DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.UTC, "length", {
+verifyPrimordialProperty(Date.UTC, "length", {
   configurable: true,
 });

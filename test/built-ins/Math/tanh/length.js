@@ -18,7 +18,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.tanh, "length", {
+verifyPrimordialProperty(Math.tanh, "length", {
   value: 1,
   writable: false,
   enumerable: false,

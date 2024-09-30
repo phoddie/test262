@@ -10,6 +10,6 @@ description: Checking ReadOnly attribute
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype.toLocaleDateString, "length", {
+verifyPrimordialProperty(Date.prototype.toLocaleDateString, "length", {
   writable: false
 });

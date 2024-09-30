@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Map, "name", {
+verifyPrimordialProperty(Map, "name", {
   value: "Map",
   writable: false,
   enumerable: false,

@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.now, "name", {
+verifyPrimordialProperty(Date.now, "name", {
   value: "now",
   writable: false,
   enumerable: false,

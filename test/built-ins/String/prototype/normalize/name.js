@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.normalize, "name", {
+verifyPrimordialProperty(String.prototype.normalize, "name", {
   value: "normalize",
   writable: false,
   enumerable: false,

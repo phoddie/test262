@@ -18,7 +18,7 @@ assert.sameValue(
   '`typeof String.prototype.endsWith` is `function`'
 );
 
-verifyBuiltinProperty(String.prototype, 'endsWith', {
+verifyPrimordialProperty(String.prototype, 'endsWith', {
 	writable: true,
 	enumerable: false,
 	configurable: true

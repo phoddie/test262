@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(DataView, "prototype", {
+verifyPrimordialProperty(DataView, "prototype", {
   writable: false,
   enumerable: false,
   configurable: false

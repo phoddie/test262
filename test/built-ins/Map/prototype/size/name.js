@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(Map.prototype, 'size');
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get size",
   writable: false,
   enumerable: false,

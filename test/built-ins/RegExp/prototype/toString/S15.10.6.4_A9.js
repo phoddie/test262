@@ -12,6 +12,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype.toString, "length", {
+verifyPrimordialProperty(RegExp.prototype.toString, "length", {
 	configurable: true,
 });

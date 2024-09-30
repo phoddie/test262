@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(WeakSet.prototype.add, "name", {
+verifyPrimordialProperty(WeakSet.prototype.add, "name", {
   value: "add",
   writable: false,
   enumerable: false,

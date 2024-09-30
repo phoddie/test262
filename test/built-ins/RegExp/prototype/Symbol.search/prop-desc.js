@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [Symbol.search]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, Symbol.search, {
+verifyPrimordialProperty(RegExp.prototype, Symbol.search, {
     enumerable: false,
     writable: true,
     configurable: true,

@@ -15,7 +15,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(ArrayBuffer, Symbol.species);
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get [Symbol.species]",
   writable: false,
   enumerable: false,

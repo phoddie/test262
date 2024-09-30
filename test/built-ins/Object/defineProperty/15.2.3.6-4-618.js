@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype, "filter", {
+verifyPrimordialProperty(Array.prototype, "filter", {
   writable: true,
   enumerable: false,
   configurable: true,

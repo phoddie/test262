@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(String.prototype.startsWith, "name", {
+verifyPrimordialProperty(String.prototype.startsWith, "name", {
   value: "startsWith",
   writable: false,
   enumerable: false,

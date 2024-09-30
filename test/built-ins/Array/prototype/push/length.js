@@ -25,7 +25,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.push, "length", {
+verifyPrimordialProperty(Array.prototype.push, "length", {
   value: 1,
   writable: false,
   enumerable: false,

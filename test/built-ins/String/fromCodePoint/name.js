@@ -12,7 +12,7 @@ includes: [propertyHelper.js]
 features: [String.fromCodePoint]
 ---*/
 
-verifyBuiltinProperty(String.fromCodePoint, "name", {
+verifyPrimordialProperty(String.fromCodePoint, "name", {
   value: "fromCodePoint",
   writable: false,
   enumerable: false,

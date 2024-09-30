@@ -13,7 +13,7 @@ features: [explicit-resource-management]
 
 assert.sameValue(typeof Symbol.dispose, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'dispose', {
+verifyPrimordialProperty(Symbol, 'dispose', {
     writable: false,
     enumerable: false,
     configurable: false

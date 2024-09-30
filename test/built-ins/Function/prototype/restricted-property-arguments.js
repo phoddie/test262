@@ -23,7 +23,7 @@ assert.throws(TypeError, function() {
   FunctionPrototype.arguments = {};
 });
 
-verifyBuiltinProperty(FunctionPrototype, 'arguments', {
+verifyPrimordialProperty(FunctionPrototype, 'arguments', {
   enumerable: false,
   configurable: true
 });

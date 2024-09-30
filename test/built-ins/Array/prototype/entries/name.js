@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Array.prototype.entries, "name", {
+verifyPrimordialProperty(Array.prototype.entries, "name", {
   value: "entries",
   writable: false,
   enumerable: false,

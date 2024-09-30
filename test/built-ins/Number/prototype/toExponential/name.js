@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype.toExponential, "name", {
+verifyPrimordialProperty(Number.prototype.toExponential, "name", {
   value: "toExponential",
   writable: false,
   enumerable: false,

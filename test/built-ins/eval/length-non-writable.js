@@ -8,6 +8,6 @@ description: Checking if varying the length property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(eval, "length", {
+verifyPrimordialProperty(eval, "length", {
   writable: false
 });

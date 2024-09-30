@@ -17,7 +17,7 @@ includes: [propertyHelper.js]
 features: [ShadowRealm]
 ---*/
 
-verifyBuiltinProperty(ShadowRealm, "name", {
+verifyPrimordialProperty(ShadowRealm, "name", {
   value: "ShadowRealm",
   enumerable: false,
   writable: false,

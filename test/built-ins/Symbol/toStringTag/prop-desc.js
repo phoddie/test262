@@ -13,7 +13,7 @@ features: [Symbol.toStringTag]
 
 assert.sameValue(typeof Symbol.toStringTag, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'toStringTag', {
+verifyPrimordialProperty(Symbol, 'toStringTag', {
     writable: false,
     enumerable: false,
     configurable: false

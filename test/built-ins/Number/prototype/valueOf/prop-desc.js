@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Number.prototype, "valueOf", {
+verifyPrimordialProperty(Number.prototype, "valueOf", {
   enumerable: false,
   writable: true,
   configurable: true,

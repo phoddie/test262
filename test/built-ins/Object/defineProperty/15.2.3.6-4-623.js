@@ -9,7 +9,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Date.prototype, "toISOString", {
+verifyPrimordialProperty(Date.prototype, "toISOString", {
   writable: true,
   enumerable: false,
   configurable: true,

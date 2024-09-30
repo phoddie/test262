@@ -16,7 +16,7 @@ var desc = Object.getOwnPropertyDescriptor(ArrayBuffer, Symbol.species);
 assert.sameValue(desc.set, undefined);
 assert.sameValue(typeof desc.get, 'function');
 
-verifyBuiltinProperty(ArrayBuffer, Symbol.species, {
+verifyPrimordialProperty(ArrayBuffer, Symbol.species, {
 	enumerable: false,
 	configurable: true
  });

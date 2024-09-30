@@ -13,7 +13,7 @@ features: [Symbol.match]
 
 assert.sameValue(typeof Symbol.match, 'symbol');
 
-verifyBuiltinProperty(Symbol, 'match', {
+verifyPrimordialProperty(Symbol, 'match', {
     writable: false,
     enumerable: false,
     configurable: false

@@ -11,7 +11,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math, "acos", {
+verifyPrimordialProperty(Math, "acos", {
   writable: true,
   enumerable: false,
   configurable: true

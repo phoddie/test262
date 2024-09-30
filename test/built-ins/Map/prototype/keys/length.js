@@ -12,7 +12,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Map.prototype.keys, "length", {
+verifyPrimordialProperty(Map.prototype.keys, "length", {
   value: 0,
   writable: false,
   enumerable: false,

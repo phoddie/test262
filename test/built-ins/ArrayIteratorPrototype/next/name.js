@@ -22,7 +22,7 @@ features: [Symbol.iterator]
 
 var ArrayIteratorProto = Object.getPrototypeOf([][Symbol.iterator]());
 
-verifyBuiltinProperty(ArrayIteratorProto.next, "name", {
+verifyPrimordialProperty(ArrayIteratorProto.next, "name", {
   value: "next",
   writable: false,
   enumerable: false,

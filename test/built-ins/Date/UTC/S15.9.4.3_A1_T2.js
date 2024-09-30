@@ -8,7 +8,7 @@ es5id: 15.9.4.3_A1_T2
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date, "UTC", {
+verifyPrimordialProperty(Date, "UTC", {
   configurable: true,
  });
 

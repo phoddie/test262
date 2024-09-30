@@ -20,7 +20,7 @@ includes: [propertyHelper.js, testTypedArray.js]
 features: [TypedArray]
 ---*/
 
-verifyBuiltinProperty(TypedArray.prototype.map, "name", {
+verifyPrimordialProperty(TypedArray.prototype.map, "name", {
   value: "map",
   writable: false,
   enumerable: false,

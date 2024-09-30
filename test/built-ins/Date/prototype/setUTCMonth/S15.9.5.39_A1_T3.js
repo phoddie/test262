@@ -7,6 +7,6 @@ esid: sec-date.prototype.setutcmonth
 description: Checking DontEnum attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "setUTCMonth", {
+verifyPrimordialProperty(Date.prototype, "setUTCMonth", {
   enumerable: false,
 });

@@ -10,6 +10,6 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(RegExp.prototype, "global", {
+verifyPrimordialProperty(RegExp.prototype, "global", {
 	enumerable: false,
 });

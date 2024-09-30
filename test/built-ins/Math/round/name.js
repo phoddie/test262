@@ -19,7 +19,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Math.round, "name", {
+verifyPrimordialProperty(Math.round, "name", {
   value: "round",
   writable: false,
   enumerable: false,

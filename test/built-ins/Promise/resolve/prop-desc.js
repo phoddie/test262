@@ -14,7 +14,7 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Promise, 'resolve', {
+verifyPrimordialProperty(Promise, 'resolve', {
     configurable: true,
     writable: true,
     enumerable: false,

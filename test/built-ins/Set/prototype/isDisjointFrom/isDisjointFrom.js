@@ -13,7 +13,7 @@ assert.sameValue(
   "`typeof Set.prototype.isDisjointFrom` is `'function'`"
 );
 
-verifyBuiltinProperty(Set.prototype, "isDisjointFrom", {
+verifyPrimordialProperty(Set.prototype, "isDisjointFrom", {
   enumerable: false,
   writable: true,
   configurable: true,

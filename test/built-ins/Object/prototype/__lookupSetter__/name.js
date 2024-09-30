@@ -20,7 +20,7 @@ includes: [propertyHelper.js]
 features: [__setter__]
 ---*/
 
-verifyBuiltinProperty(Object.prototype.__lookupSetter__, "name", {
+verifyPrimordialProperty(Object.prototype.__lookupSetter__, "name", {
   enumerable: false,
   writable: false,
   configurable: true,

@@ -21,7 +21,7 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Iterator.prototype.every, 'name', {
+verifyPrimordialProperty(Iterator.prototype.every, 'name', {
   value: 'every',
   writable: false,
   enumerable: false,

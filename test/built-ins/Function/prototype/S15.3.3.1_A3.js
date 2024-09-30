@@ -8,6 +8,6 @@ description: Checking if deleting the Function.prototype property fails
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(Function, "prototype", {
+verifyPrimordialProperty(Function, "prototype", {
   configurable: false,
 });

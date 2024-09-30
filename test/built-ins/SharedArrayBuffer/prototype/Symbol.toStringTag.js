@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 features: [SharedArrayBuffer, Symbol.toStringTag]
 ---*/
 
-verifyBuiltinProperty(SharedArrayBuffer.prototype, Symbol.toStringTag, {
+verifyPrimordialProperty(SharedArrayBuffer.prototype, Symbol.toStringTag, {
     value: 'SharedArrayBuffer',
     writable: false,
     enumerable: false,

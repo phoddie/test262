@@ -7,6 +7,6 @@ esid: sec-date.prototype.totimestring
 description: Checking absence of DontDelete attribute
 includes: [propertyHelper.js]
 ---*/
-verifyBuiltinProperty(Date.prototype, "toTimeString", {
+verifyPrimordialProperty(Date.prototype, "toTimeString", {
   configurable: true,
 });

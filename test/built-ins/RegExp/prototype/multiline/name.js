@@ -14,7 +14,7 @@ includes: [propertyHelper.js]
 
 var descriptor = Object.getOwnPropertyDescriptor(RegExp.prototype, 'multiline');
 
-verifyBuiltinProperty(descriptor.get, "name", {
+verifyPrimordialProperty(descriptor.get, "name", {
   value: "get multiline",
   writable: false,
   enumerable: false,

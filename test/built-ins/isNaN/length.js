@@ -8,7 +8,7 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyBuiltinProperty(isNaN, "length", {
+verifyPrimordialProperty(isNaN, "length", {
   value: 1,
   writable: false,
   enumerable: false,
