@@ -13,6 +13,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Number, "POSITIVE_INFINITY");
-verifyNotWritable(Number, "POSITIVE_INFINITY");
-verifyNotConfigurable(Number, "POSITIVE_INFINITY");
+verifyPrimordialProperty(Number, "POSITIVE_INFINITY", {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

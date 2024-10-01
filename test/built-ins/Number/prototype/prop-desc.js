@@ -13,6 +13,8 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(Number, "prototype");
-verifyNotWritable(Number, "prototype");
-verifyNotConfigurable(Number, "prototype");
+verifyPrimordialProperty(Number, "prototype", {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

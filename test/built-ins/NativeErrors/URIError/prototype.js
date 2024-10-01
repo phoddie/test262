@@ -14,6 +14,8 @@ includes: [propertyHelper.js]
 
 assert.sameValue(URIError.prototype, Object.getPrototypeOf(new URIError));
 
-verifyNotEnumerable(URIError, "prototype");
-verifyNotWritable(URIError, "prototype");
-verifyNotConfigurable(URIError, "prototype");
+verifyPrimordialProperty(URIError, 'prototype', {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

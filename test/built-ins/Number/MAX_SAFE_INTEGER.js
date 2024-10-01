@@ -17,6 +17,8 @@ assert.sameValue(desc.set, undefined, 'Does not define a `get` accessor');
 assert.sameValue(desc.get, undefined, 'Does not define a `set` accessor');
 assert.sameValue(desc.value, 9007199254740991);
 
-verifyNotEnumerable(Number, 'MAX_SAFE_INTEGER');
-verifyNotWritable(Number, 'MAX_SAFE_INTEGER');
-verifyNotConfigurable(Number, 'MAX_SAFE_INTEGER');
+verifyPrimordialProperty(Number, "MAX_SAFE_INTEGER", {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

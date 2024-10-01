@@ -18,6 +18,8 @@ assert.sameValue(
   'Error.prototype.isPrototypeOf(Error()) returns true'
 );
 
-verifyNotEnumerable(Error, 'prototype');
-verifyNotWritable(Error, 'prototype');
-verifyNotConfigurable(Error, 'prototype');
+verifyPrimordialProperty(Error, 'prototype', {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

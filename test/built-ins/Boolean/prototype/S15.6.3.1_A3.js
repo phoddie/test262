@@ -10,8 +10,6 @@ flags: [onlyStrict]
 ---*/
 
 // CHECK#1
-verifyNotConfigurable(Boolean, "prototype");
-
-assert.throws(TypeError, () => {
-  delete Boolean.prototype;
+verifyPrimordialProperty(Boolean, "prototype", {
+	configurable: false,
 });

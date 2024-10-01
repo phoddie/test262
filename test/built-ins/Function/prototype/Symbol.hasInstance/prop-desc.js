@@ -12,6 +12,8 @@ includes: [propertyHelper.js]
 
 assert.sameValue(typeof Function.prototype[Symbol.hasInstance], 'function');
 
-verifyNotEnumerable(Function.prototype, Symbol.hasInstance);
-verifyNotWritable(Function.prototype, Symbol.hasInstance);
-verifyNotConfigurable(Function.prototype, Symbol.hasInstance);
+verifyPrimordialProperty(Function.prototype, Symbol.hasInstance, {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

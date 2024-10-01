@@ -15,17 +15,30 @@ includes: [propertyHelper.js]
 
 var str = new String('abc');
 
+verifyProperty(str, '0', {
+	enumerable: true,
+	writable: false,
+	configurable: false,
+});
+
+
 assert.sameValue(str[0], 'a');
-verifyEnumerable(str, '0');
-verifyNotWritable(str, '0');
-verifyNotConfigurable(str, '0');
+verifyProperty(str, '0', {
+	enumerable: true,
+	writable: false,
+	configurable: false,
+});
 
 assert.sameValue(str[1], 'b');
-verifyEnumerable(str, '1');
-verifyNotWritable(str, '1');
-verifyNotConfigurable(str, '1');
+verifyProperty(str, '1', {
+	enumerable: true,
+	writable: false,
+	configurable: false,
+});
 
 assert.sameValue(str[2], 'c');
-verifyEnumerable(str, '2');
-verifyNotWritable(str, '2');
-verifyNotConfigurable(str, '2');
+verifyProperty(str, '2', {
+	enumerable: true,
+	writable: false,
+	configurable: false,
+});

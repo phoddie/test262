@@ -40,7 +40,10 @@ result = Reflect.defineProperty(p, "attr", {
 
 assert.sameValue(result, true, "result === true");
 
-verifyEqualTo(target, "attr", 2);
-verifyNotWritable(target, "attr");
-verifyNotEnumerable(target, "attr");
-verifyNotConfigurable(target, "attr");
+verifyProperty(target, "attr", {
+  value: 2,
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});
+

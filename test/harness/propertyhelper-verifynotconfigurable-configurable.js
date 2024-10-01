@@ -14,7 +14,9 @@ Object.defineProperty(obj, 'a', {
 });
 
 try {
-  verifyNotConfigurable(obj, 'a');
+  verifyProperty(obj, 'a', {
+    configurable: false,
+  });
 } catch(err) {
   threw = true;
   if (err.constructor !== Test262Error) {

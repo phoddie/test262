@@ -25,8 +25,9 @@ includes: [propertyHelper.js]
 
 var re = new RegExp('');
 
-assert.sameValue(re.lastIndex, 0);
-
-verifyNotEnumerable(re, 'lastIndex');
-verifyWritable(re, 'lastIndex');
-verifyNotConfigurable(re, 'lastIndex');
+verifyProperty(re, 'lastIndex', {
+  value: 0,
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

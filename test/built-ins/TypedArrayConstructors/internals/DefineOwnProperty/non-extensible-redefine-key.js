@@ -52,6 +52,8 @@ testWithTypedArrayConstructors(function(TA) {
   var desc = Object.getOwnPropertyDescriptor(sample, "bar");
   assert.sameValue(desc.get, fnget, "accessor's get");
   assert.sameValue(desc.set, fnset, "accessor's set");
-  verifyNotEnumerable(sample, "bar");
-  verifyNotConfigurable(sample, "bar");
+  verifyProperty(sample, "bar", {
+    enumerable: false,
+    configurable: false,
+  });
 });

@@ -7,6 +7,8 @@ description: >
 includes: [propertyHelper.js]
 ---*/
 
-verifyNotEnumerable(WeakMap, 'prototype');
-verifyNotWritable(WeakMap, 'prototype');
-verifyNotConfigurable(WeakMap, 'prototype');
+verifyPrimordialProperty(WeakMap, 'prototype', {
+  enumerable: false,
+  writable: false,
+  configurable: false,
+});

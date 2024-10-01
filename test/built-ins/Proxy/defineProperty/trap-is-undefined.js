@@ -37,7 +37,9 @@ Object.defineProperty(p, "attr", {
   value: 2
 });
 
-verifyEqualTo(target, "attr", 2);
-verifyNotWritable(target, "attr");
-verifyNotEnumerable(target, "attr");
-verifyNotConfigurable(target, "attr");
+verifyProperty(target, "attr", {
+  value: 2,
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});

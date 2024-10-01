@@ -12,4 +12,6 @@ Object.defineProperty(obj, 'a', {
   configurable: false
 });
 
-verifyNotConfigurable(obj, 'a');
+verifyProperty(obj, 'a', {
+  configurable: false,
+});

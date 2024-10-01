@@ -9,6 +9,8 @@ includes: [propertyHelper.js]
 ---*/
 
 var AsyncFunction = async function foo() {}.constructor;
-verifyNotConfigurable(AsyncFunction, 'prototype');
-verifyNotWritable(AsyncFunction, 'prototype');
-verifyNotEnumerable(AsyncFunction, 'prototype');
+verifyPrimordialProperty(AsyncFunction, 'prototype', {
+	configurable: false,
+	writable: false,
+	enumerable: false
+});

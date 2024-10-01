@@ -70,7 +70,9 @@ testWithTypedArrayConstructors(function(TA) {
     verifyEnumerable(sample2, key);
     assert.sameValue(desc.get, fnget, "accessor's get [" + key + "]");
     assert.sameValue(desc.set, fnset, "accessor's set [" + key + "]");
-    verifyNotConfigurable(sample2, key);
+    verifyProperty(sample2, key, {
+      configurable: false,
+    });
 
     assert.sameValue(sample2[0], undefined,"no value is set on sample2[0]");
     assert.sameValue(sample2.length, 0, "length is still 0");

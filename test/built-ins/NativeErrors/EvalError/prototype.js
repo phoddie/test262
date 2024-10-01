@@ -14,6 +14,8 @@ includes: [propertyHelper.js]
 
 assert.sameValue(EvalError.prototype, Object.getPrototypeOf(new EvalError));
 
-verifyNotEnumerable(EvalError, "prototype");
-verifyNotWritable(EvalError, "prototype");
-verifyNotConfigurable(EvalError, "prototype");
+verifyPrimordialProperty(EvalError, 'prototype', {
+	enumerable: false,
+	writable: false,
+	configurable: false,
+});
