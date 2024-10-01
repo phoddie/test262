@@ -16,7 +16,9 @@ Object.defineProperty(obj, s, {
 });
 
 try {
-  verifyNotEnumerable(obj, s);
+  verifyProperty(obj, s, {
+    enumerable: false,
+  });
 } catch(err) {
   threw = true;
   if (err.constructor !== Test262Error) {

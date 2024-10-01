@@ -8,6 +8,6 @@ description: Use for-in statement
 includes: [propertyHelper.js]
 ---*/
 
-verifyPrimordialProperty(this, "Infinity", {
+verifyProperty(this, "Infinity", {
 	enumerable: false,
 });

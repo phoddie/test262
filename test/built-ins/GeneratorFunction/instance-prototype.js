@@ -30,8 +30,8 @@ assert.sameValue(
   Object.getPrototypeOf(instance).prototype
 );
 
-verifyPrimordialProperty(instance, 'prototype', {
+verifyProperty(instance, 'prototype', {
 	enumerable: false,
-	writable: false,
+	writable: true,
 	configurable: false,
 });

@@ -20,52 +20,64 @@ target = Object.defineProperty(function() {}, 'name', {
   value: undefined
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
 
 target = Object.defineProperty(function() {}, 'name', {
   value: null
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
 
 target = Object.defineProperty(function() {}, 'name', {
   value: true
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
 
 target = Object.defineProperty(function() {}, 'name', {
   value: Symbol('s')
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
 
 target = Object.defineProperty(function() {}, 'name', {
   value: 23
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
 
 target = Object.defineProperty(function() {}, 'name', {
   value: {}
 });
 
-assert.sameValue(target.bind().name, 'bound ');
-verifyNotEnumerable(target.bind(), 'name');
-verifyNotWritable(target.bind(), 'name');
-verifyConfigurable(target.bind(), 'name');
+verifyProperty(target.bind(), 'name', {
+  value: 'bound ',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});

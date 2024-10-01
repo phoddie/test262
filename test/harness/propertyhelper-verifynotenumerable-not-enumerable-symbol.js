@@ -15,4 +15,6 @@ Object.defineProperty(obj, s, {
   enumerable: false
 });
 
-verifyNotEnumerable(obj, s);
+verifyProperty(obj, s, {
+  enumerable: false,
+});

@@ -51,10 +51,11 @@ testWithTypedArrayConstructors(function(TA) {
     );
 
     assert.sameValue(sample1[key], 42, "value is set to [" + key + "]");
-    verifyNotEnumerable(sample1, key);
-    verifyWritable(sample1, key);
-    verifyConfigurable(sample1, key);
-
+    verifyProperty(sample1, key, {
+      enumerable: false,
+      writable: true,
+      configurable: true,
+    });
     assert.sameValue(sample1[0], undefined, "no value is set on sample1[0]");
     assert.sameValue(sample1.length, 0, "length is still 0");
 

@@ -16,7 +16,10 @@ info: |
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Function().name, 'anonymous');
-verifyNotEnumerable(Function(), 'name');
-verifyNotWritable(Function(), 'name');
-verifyConfigurable(Function(), 'name');
+verifyProperty(Function(), 'name', {
+    value: 'anonymous',
+    enumerable: false,
+    writable: false,
+    configurable: true,
+  });
+  

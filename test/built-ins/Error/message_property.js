@@ -18,7 +18,9 @@ includes: [propertyHelper.js]
 var message = "my-message";
 var error = new Error(message);
 
-verifyEqualTo(error, "message", message);
-verifyNotEnumerable(error, "message");
-verifyWritable(error, "message");
-verifyConfigurable(error, "message");
+verifyProperty(error, 'message', {
+  value: message,
+  enumerable: false,
+  writable: true,
+  configurable: true,
+});

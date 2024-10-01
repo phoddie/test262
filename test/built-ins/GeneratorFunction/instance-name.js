@@ -19,7 +19,10 @@ features: [generators]
 
 var GeneratorFunction = Object.getPrototypeOf(function*() {}).constructor;
 
-assert.sameValue(GeneratorFunction().name, 'anonymous');
-verifyNotEnumerable(GeneratorFunction(), 'name');
-verifyNotWritable(GeneratorFunction(), 'name');
-verifyConfigurable(GeneratorFunction(), 'name');
+verifyPrimordialProperty(GeneratorFunction(), 'name', {
+    value: 'anonymous',
+    enumerable: false,
+    writable: false,
+    configurable: true,
+  });
+  

@@ -33,6 +33,9 @@ assert.sameValue(GeneratorFunction('x', '').length, 1);
 assert.sameValue(GeneratorFunction('x', 'y', '').length, 2);
 assert.sameValue(GeneratorFunction('x, y', '').length, 2);
 
-verifyNotEnumerable(GeneratorFunction(), 'length');
-verifyNotWritable(GeneratorFunction(), 'length');
-verifyConfigurable(GeneratorFunction(), 'length');
+verifyPrimordialProperty(GeneratorFunction(), 'length', {
+    enumerable: false,
+    writable: false,
+    configurable: true,
+  });
+  

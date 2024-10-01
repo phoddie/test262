@@ -50,10 +50,12 @@ testWithBigIntTypedArrayConstructors(function(TA) {
       "return true after defining data property [" + key + "]"
     );
 
-    assert.sameValue(sample1[key], 42n, "value is set to [" + key + "]");
-    verifyNotEnumerable(sample1, key);
-    verifyWritable(sample1, key);
-    verifyConfigurable(sample1, key);
+    verifyProperty(sample, key, {
+      value: 42n,
+      enumerable: false,
+      writable: true,
+      configurable: true,
+    });
 
     assert.sameValue(sample1[0], undefined, "no value is set on sample1[0]");
     assert.sameValue(sample1.length, 0, "length is still 0");

@@ -28,10 +28,13 @@ testWithBigIntTypedArrayConstructors(function(TA) {
     "return true after defining property"
   );
 
-  assert.sameValue(sample[s1], 42);
-  verifyNotWritable(sample, s1);
-  verifyNotEnumerable(sample, s1);
-  verifyConfigurable(sample, s1);
+  verifyProperty(sample, s1, {
+    value: 42,
+    writable: false,
+    enumerable: false,
+    configurable: true,
+  });
+
 
   var s2 = Symbol("bar");
   var fnset = function() {};

@@ -17,7 +17,9 @@ var target = Object.defineProperty(function() {}, 'name', {
   value: 'target'
 });
 
-assert.sameValue(target.bind().bind().name, 'bound bound target');
-verifyNotEnumerable(target.bind().bind(), 'name');
-verifyNotWritable(target.bind().bind(), 'name');
-verifyConfigurable(target.bind().bind(), 'name');
+verifyProperty(target.bind().bind(), 'name', {
+  value: 'bound bound target',
+  enumerable: false,
+  writable: false,
+  configurable: true,
+});
